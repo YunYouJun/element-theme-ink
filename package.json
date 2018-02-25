@@ -1,0 +1,38 @@
+{
+  "name": "element-theme-ink",
+  "version": "0.0.1",
+  "description": "Element component ink theme.",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YunYouJun/element-theme-ink.git"
+  },
+  "keywords": [
+    "element",
+    "theme",
+    "ink"
+  ],
+  "author": "YunYouJun <me@yunyoujun.cn>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YunYouJun/element-theme-ink/issues"
+  },
+  "homepage": "https://github.com/YunYouJun/element-theme-ink#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "element-theme": "^2.0.1",
+    "element-theme-chalk": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
