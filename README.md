@@ -4,6 +4,8 @@
 
 Base on [element-theme-chalk](https://github.com/ElementUI/theme-chalk)
 
+Preview: [element-theme-ink-preview](https://github.yunyoujun.cn/element-theme-ink-preview)
+
 ## Installation
 
 ```shell
