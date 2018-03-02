@@ -1,8 +1,9 @@
 @import "../common/var";
+
 @mixin button-plain($color) {
   color: $color;
-  background: mix($--color-white, $color, 90%);
-  border-color: mix($--color-white, $color, 60%);
+  background: transparent;
+  border: 1px solid $color;
 
   &:hover,
   &:focus {

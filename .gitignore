@@ -1,4 +1,5 @@
 .sass-cache/
 *.css.map
 node_modules
-theme
+
+# src webpack generate

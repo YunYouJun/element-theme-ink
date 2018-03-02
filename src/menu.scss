@@ -79,7 +79,7 @@
 
       &.is-active {
         .el-submenu__title {
-          border-bottom: 2px solid $--color-primary;
+          border-bottom: 2px solid $--color-dark;
           color: $--color-text-primary;
         }
       }
@@ -122,7 +122,7 @@
       color: $--color-text-primary;
     }
     & > .el-menu-item.is-active {
-      border-bottom: 2px solid $--color-primary;
+      border-bottom: 2px solid $--color-dark;
       color: $--color-text-primary;
     }
   }
@@ -204,7 +204,7 @@
     vertical-align: middle;
   }
   @include when(active) {
-    color: $--color-primary;
+    color: $--color-dark;
     i {
       color: inherit;
     }
@@ -242,7 +242,7 @@
   }
   @include when(active) {
     .el-submenu__title {
-      border-bottom-color: $--color-primary;
+      border-bottom-color: $--color-dark;
     }
   }
   @include when(opened) {
