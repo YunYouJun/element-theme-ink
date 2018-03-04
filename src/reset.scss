@@ -28,27 +28,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: #{$--font-size-base + 16px};
+  font-size: #{$--font-size-large + 16px};
 }
 
 h2 {
-  font-size: #{$--font-size-base + 8px};
+  font-size: #{$--font-size-large + 8px};
   font-weight: normal;
 }
 
 h3 {
-  font-size: #{$--font-size-base + 4px};
+  font-size: #{$--font-size-large + 4px};
   font-weight: normal;
 }
 
-h4, h5, h6, p {
-  font-size: inherit;
+h4 {
+  font-size: #{$--font-size-large + 2px};
+}
+
+h5 {
+  font-size: #{$--font-size-large};
+}
+
+h6 {
+  font-size: $--font-size-base;
+}
+
+h4, h5, h6 {
   font-weight: normal;
 }
 
 p {
-  line-height: 1.8;
+  font-size: inherit;
   font-weight: inherit;
+  line-height: 1.8;
 
   &:first-child {
     margin-top: 0;

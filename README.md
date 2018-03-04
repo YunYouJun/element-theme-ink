@@ -4,13 +4,17 @@
 
 > element component ink theme.
 
-Base on [element-theme-chalk](https://github.com/ElementUI/theme-chalk)
+Base on [element](https://github.com/ElemeFE/element) & [element-theme-chalk](https://github.com/ElementUI/theme-chalk)
 
-Preview: [element-theme-ink-preview](https://github.yunyoujun.cn/element-theme-ink-preview)
+GitHub: [element-theme-ink](https://github.com/YunYouJun/element-theme-ink)
+
+Preview: [element-theme-ink-preview](https://yunyoujun.github.io/element-theme-ink-preview)
 
 ## Installation
 
-### [Install Element](http://element-cn.eleme.io/#/zh-CN/component/installation)
+### Install Element
+
+可参见 Element 官方文档 [安装](http://element-cn.eleme.io/#/zh-CN/component/installation)
 
 ```sh
 npm install element-ui -S
