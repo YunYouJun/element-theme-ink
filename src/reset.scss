@@ -1,0 +1,75 @@
+@import 'common/var';
+
+body {
+  font-family: Lato, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  font-weight: 300;
+  font-size: $--font-size-base;
+  color: $--color-black;
+  margin: 0px;
+}
+
+a {
+  color: $--color-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: mix($--color-white, $--color-primary, $--button-hover-tint-percent);
+  }
+
+  &:active {
+    color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $--color-text-primary;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: #{$--font-size-base + 16px};
+}
+
+h2 {
+  font-size: #{$--font-size-base + 8px};
+  font-weight: normal;
+}
+
+h3 {
+  font-size: #{$--font-size-base + 4px};
+  font-weight: normal;
+}
+
+h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.8;
+  font-weight: inherit;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+sup, sub {
+  font-size: #{$--font-size-base - 1px};
+}
+
+small {
+  font-size: #{$--font-size-base - 2px};
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
