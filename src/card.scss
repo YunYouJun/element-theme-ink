@@ -6,8 +6,14 @@
   border: 1px solid $--card-border-color;
   background-color: $--color-white;
   overflow: hidden;
-  box-shadow: $--box-shadow-light;
   color: $--color-text-primary;
+  transition: 0.5s;
+
+  &:hover,
+  &:focus {
+    border-color: 1px solid #000;
+    box-shadow: $--box-shadow-light;
+  }
 
   @include e(header) {
     padding: #{$--card-padding - 2 $--card-padding};

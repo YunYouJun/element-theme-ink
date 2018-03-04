@@ -25,7 +25,7 @@
     &:focus,
     &:active {
       color: mix($--color-white, $color, 40%);
-      background-color: mix($--color-white, $color, 90%);
+      background-color: transparent;
       border-color: mix($--color-white, $color, 80%);
     }
   }
