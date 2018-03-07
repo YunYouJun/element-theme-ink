@@ -13,6 +13,7 @@
   border: $--border-base;
   border-color: $--button-default-border;
   color: $--button-default-color;
+  text-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
   -webkit-appearance: none;
   text-align: center;
   box-sizing: border-box;
@@ -59,11 +60,21 @@
     }
 
     &:active {
-      background: $--color-white;
+      background: mix($--color-black, $--color-white, $--button-active-shade-percent);
       border-color: $--color-black;
       color: $--color-black;
       outline: none;
     }
+  }
+
+  @include when(glow) {
+    @include glow(glowing);
+  }
+
+  @keyframes glowing {
+    from { box-shadow: 0 0 0 rgba($--button-default-border, 0.3);}
+    50% { box-shadow: 0 0 20px rgba($--button-default-border, 0.6);}
+    to { box-shadow: 0 0 0 rgba($--button-default-border, 0.3);}
   }
 
   @include when(active) {
@@ -119,22 +130,22 @@
     padding: 12px 23px;
   }
   @include m(dark) {
-    @include button-variant($--button-dark-color, $--button-dark-fill, $--button-dark-border);
+    @include button-variant($--button-dark-color, $--button-dark-fill, $--button-dark-border, button-dark);
   }
   @include m(primary) {
-    @include button-variant($--button-primary-color, $--button-primary-fill, $--button-dark-border);
+    @include button-variant($--button-primary-color, $--button-primary-fill, $--button-primary-border, button-primary);
   }
   @include m(success) {
-    @include button-variant($--button-success-color, $--button-success-fill, $--button-dark-border);
+    @include button-variant($--button-success-color, $--button-success-fill, $--button-success-border, button-success);
   }
   @include m(warning) {
-    @include button-variant($--button-warning-color, $--button-warning-fill, $--button-dark-border);
+    @include button-variant($--button-warning-color, $--button-warning-fill, $--button-warning-border, button-warning);
   }
   @include m(danger) {
-    @include button-variant($--button-danger-color, $--button-danger-fill, $--button-dark-border);
+    @include button-variant($--button-danger-color, $--button-danger-fill, $--button-danger-border, button-danger);
   }
   @include m(info) {
-    @include button-variant($--button-info-color, $--button-info-fill, $--button-dark-border);
+    @include button-variant($--button-info-color, $--button-info-fill, $--button-info-border, button-info);
   }
   @include m(medium) {
     @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);

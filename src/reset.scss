@@ -8,6 +8,12 @@ body {
   margin: 0px;
 }
 
+::selection
+{
+  color: #fff;
+  background: $--color-dark;
+}
+
 a {
   color: $--color-primary;
   text-decoration: none;

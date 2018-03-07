@@ -17,7 +17,6 @@ $--color-light: #fff !default;
 $--color-white: #fff !default;
 $--color-black: #000 !default;
 
-$--color-dark: #409EFF !default;
 $--color-dark-light-1: mix($--color-white, $--color-dark, 10%) !default; /* 53a8ff */
 $--color-dark-light-2: mix($--color-white, $--color-dark, 20%) !default; /* 66b1ff */
 $--color-dark-light-3: mix($--color-white, $--color-dark, 30%) !default; /* 79bbff */
@@ -28,7 +27,7 @@ $--color-dark-light-7: mix($--color-white, $--color-dark, 70%) !default; /* c6e2
 $--color-dark-light-8: mix($--color-white, $--color-dark, 80%) !default; /* d9ecff */
 $--color-dark-light-9: mix($--color-white, $--color-dark, 90%) !default; /* ecf5ff */
 
-$--color-primary: #409EFF !default;
+$--color-primary: #0078E7 !default;
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
@@ -39,10 +38,10 @@ $--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
 
-$--color-success: #67c23a !default;
-$--color-warning: #e6a23c !default;
-$--color-danger: #f56c6c !default;
-$--color-info: #909399 !default;
+$--color-success: #21ba45 !default;
+$--color-warning: #f2711c !default;
+$--color-danger: #db2828 !default;
+$--color-info: #42B8DD !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -438,27 +437,27 @@ $--button-disabled-fill: transparent !default;
 $--button-disabled-border: $--border-color-lighter !default;
 
 $--button-dark-border: $--color-dark !default;
-$--button-dark-color: $--color-white !default;
+$--button-dark-color: $--color-dark !default;
 $--button-dark-fill: $--color-dark !default;
 
 $--button-primary-border: $--color-primary !default;
-$--button-primary-color: $--color-white !default;
+$--button-primary-color: $--color-primary !default;
 $--button-primary-fill: $--color-primary !default;
 
 $--button-success-border: $--color-success !default;
-$--button-success-color: $--color-white !default;
+$--button-success-color: $--color-success !default;
 $--button-success-fill: $--color-success !default;
 
 $--button-warning-border: $--color-warning !default;
-$--button-warning-color: $--color-white !default;
+$--button-warning-color: $--color-warning !default;
 $--button-warning-fill: $--color-warning !default;
 
 $--button-danger-border: $--color-danger !default;
-$--button-danger-color: $--color-white !default;
+$--button-danger-color: $--color-danger !default;
 $--button-danger-fill: $--color-danger !default;
 
 $--button-info-border: $--color-info !default;
-$--button-info-color: $--color-white !default;
+$--button-info-color: $--color-info !default;
 $--button-info-fill: $--color-info !default;
 
 $--button-hover-tint-percent: 20% !default;

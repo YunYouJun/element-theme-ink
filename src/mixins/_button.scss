@@ -31,14 +31,31 @@
   }
 }
 
-@mixin button-variant($color, $background-color, $border-color) {
-  color: $color;
+@mixin glow($animation-name) {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: $animation-name;
+}
+
+@mixin button-glow($color, $btn-name) {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: glowing-#{$btn-name};
+  @keyframes glowing-#{$btn-name} {
+    from { box-shadow: 0 0 0 rgba($color, 0.3);}
+    50% { box-shadow: 0 0 20px rgba($color, 0.6);}
+    to { box-shadow: 0 0 0 rgba($color, 0.3);}
+  }
+}
+
+@mixin button-variant($color, $background-color, $border-color, $btn-name) {
+  color: $--color-white;
   background-color: $background-color;
   border-color: $border-color;
 
   &:hover,
   &:focus {
-    background: mix($--color-white, $background-color, $--button-hover-tint-percent);
+    background: transparent;
     border-color: mix($--color-white, $border-color, $--button-hover-tint-percent);
     color: $color;
   }
@@ -46,7 +63,7 @@
   &:active {
     background: mix($--color-black, $background-color, $--button-active-shade-percent);
     border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
-    color: $color;
+    color: $--color-white;
     outline: none;
   }
 
@@ -69,6 +86,10 @@
 
   &.is-plain {
     @include button-plain($background-color);
+  }
+
+  &.is-glow {
+    @include button-glow($border-color, $btn-name);
   }
 }
 
