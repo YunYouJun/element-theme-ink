@@ -78,6 +78,7 @@ $--border-color-lighter: #ebeef5 !default;
 $--border-color-extra-light: #f2f6fc !default;
 $--border-color-hover: $--color-text-placeholder !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
+$--border-dark: $--border-width-base $--border-style-base $--border-color-dark !default;
 $--border-radius-base: 2px !default;
 $--border-radius-small: 2px !default;
 $--border-radius-circle: 100% !default;
@@ -194,12 +195,12 @@ $--radio-disabled-checked-input-border-color: $--disabled-border-base !default;
 $--radio-disabled-checked-input-fill: $--disabled-fill-base !default;
 $--radio-disabled-checked-icon-color: $--color-text-placeholder !default;
 
-$--radio-checked-text-color: $--color-primary !default;
-$--radio-checked-input-border-color: $--color-primary !default;
+$--radio-checked-text-color: $--color-black !default;
+$--radio-checked-input-border-color: $--color-black !default;
 $--radio-checked-input-fill: $--color-white !default;
-$--radio-checked-icon-color: $--color-primary !default;
+$--radio-checked-icon-color: $--color-white !default;
 
-$--radio-input-border-color-hover: $--color-primary !default;
+$--radio-input-border-color-hover: $--color-dark !default;
 
 $--radio-bordered-height: 40px !default;
 $--radio-bordered-padding: 12px 20px 0 10px !default;
@@ -217,10 +218,10 @@ $--radio-bordered-mini-input-width: 12px !default;
 $--radio-bordered-mini-height: 28px !default;
 
 $--radio-button-font-size: $--font-size-base !default;
-$--radio-button-checked-fill: $--color-primary !default;
+$--radio-button-checked-fill: $--color-dark !default;
 $--radio-button-checked-color: $--color-white !default;
-$--radio-button-checked-border-color: $--color-primary !default;
-$--radio-button-disabled-checked-fill: $--border-color-extra-light !default;
+$--radio-button-checked-border-color: $--color-dark !default;
+$--radio-button-disabled-checked-fill: $--color-dark-light-3 !default;
 
 /* Select
 -------------------------- */
@@ -434,7 +435,7 @@ $--button-default-border: $--border-color-base !default;
 
 $--button-disabled-color: $--color-text-placeholder !default;
 $--button-disabled-fill: transparent !default;
-$--button-disabled-border: $--border-color-lighter !default;
+$--button-disabled-border: $--border-color-base !default;
 
 $--button-dark-border: $--color-dark !default;
 $--button-dark-color: $--color-dark !default;
