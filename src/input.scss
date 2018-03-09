@@ -229,7 +229,7 @@
 
   @include e((append, prepend)) {
     background-color: $--background-color-base;
-    color: $--color-info;
+    color: $--color-dark;
     vertical-align: middle;
     display: table-cell;
     position: relative;

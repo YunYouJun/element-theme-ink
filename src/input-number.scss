@@ -26,13 +26,13 @@
     width: $--input-height;
     height: auto;
     text-align: center;
-    background: $--background-color-base;
-    color: $--color-text-regular;
+    background: transparent;
+    color: $--color-dark;
     cursor: pointer;
     font-size: 13px;
 
     &:hover {
-      color: $--color-primary;
+      color: $--color-black;
 
       &:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled) {
         border-color: $--input-focus-border;
@@ -40,7 +40,7 @@
     }
 
     &.is-disabled {
-      color: $--disabled-color-base;
+      color: $--color-dark-light-3;
       cursor: not-allowed;
     }
   }

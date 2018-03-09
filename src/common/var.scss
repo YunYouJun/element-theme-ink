@@ -56,7 +56,7 @@ $--color-info-lighter: mix($--color-white, $--color-info, 90%) !default;
 $--color-text-primary: #303133 !default;
 $--color-text-regular: #606266 !default;
 $--color-text-secondary: #909399 !default;
-$--color-text-placeholder: #c0c4cc !default;
+$--color-text-placeholder: #999 !default;
 
 /* Link
 -------------------------- */
@@ -65,18 +65,19 @@ $--link-hover-color: $--color-dark !default;
 
 /* Background
 -------------------------- */
-$--background-color-base: #f5f7fa !default;
+// $--background-color-base: #f5f7fa !default;
+$--background-color-base: transparent !default;
 
 /* Border
 -------------------------- */
 $--border-width-base: 1px !default;
 $--border-style-base: solid !default;
-$--border-color-base: #dcdfe6 !default;
+$--border-color-base: #999 !default;
 $--border-color-dark: rgba(0, 0, 0, 0.3) !default;
 $--border-color-light: #e4e7ed !default;
 $--border-color-lighter: #ebeef5 !default;
 $--border-color-extra-light: #f2f6fc !default;
-$--border-color-hover: $--color-text-placeholder !default;
+$--border-color-hover: $--color-dark !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 $--border-dark: $--border-width-base $--border-style-base $--border-color-dark !default;
 $--border-radius-base: 2px !default;
@@ -95,6 +96,7 @@ $--fill-base: $--color-white !default;
 
 /* Font
 -------------------------- */
+$--font-family: Lato, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
 $--font-path: 'fonts' !default;
 $--font-size-base: 14px !default;
 $--font-size-small: 13px !default;
@@ -122,7 +124,7 @@ $--disabled-border-base: $--border-color-light !default;
 /* Icon
 -------------------------- */
 $--icon-color: #666 !default;
-$--icon-color-base: $--color-info !default;
+$--icon-color-base: $--color-black !default;
 
 /* Checkbox
 -------------------------- */
@@ -145,12 +147,12 @@ $--checkbox-disabled-checked-input-fill: $--border-color-extra-light !default;
 $--checkbox-disabled-checked-input-border-color: $--border-color-base !default;
 $--checkbox-disabled-checked-icon-color: $--color-text-placeholder !default;
 
-$--checkbox-checked-text-color: $--color-primary !default;
-$--checkbox-checked-input-border-color: $--color-primary !default;
-$--checkbox-checked-input-fill: $--color-primary !default;
-$--checkbox-checked-icon-color: $--fill-base !default;
+$--checkbox-checked-text-color: $--color-dark !default;
+$--checkbox-checked-input-border-color: $--color-black !default;
+$--checkbox-checked-input-fill: $--color-white !default;
+$--checkbox-checked-icon-color: $--color-black !default;
 
-$--checkbox-input-border-color-hover: $--color-primary !default;
+$--checkbox-input-border-color-hover: $--color-dark-light-7 !default;
 
 $--checkbox-bordered-height: 40px !default;
 $--checkbox-bordered-padding: 9px 20px 9px 10px !default;
@@ -168,9 +170,9 @@ $--checkbox-bordered-mini-input-width: 12px !default;
 $--checkbox-bordered-mini-height: 28px !default;
 
 $--checkbox-button-font-size: $--font-size-base !default;
-$--checkbox-button-checked-fill: $--color-primary !default;
+$--checkbox-button-checked-fill: $--color-dark !default;
 $--checkbox-button-checked-color: $--color-white !default;
-$--checkbox-button-checked-border-color: $--color-primary !default;
+$--checkbox-button-checked-border-color: $--color-dark-light-7 !default;
 
 
 
@@ -339,14 +341,14 @@ $--input-border-color-hover: $--border-color-hover !default;
 $--input-fill: $--color-white !default;
 $--input-fill-disabled: $--disabled-fill-base !default;
 $--input-color-disabled: $--font-color-disabled-base !default;
-$--input-icon-color: $--color-text-placeholder !default;
+$--input-icon-color: $--color-dark !default;
 $--input-placeholder-color: $--color-text-placeholder !default;
 $--input-max-width: 314px !default;
 
 $--input-hover-border: $--border-color-hover !default;
 $--input-clear-hover-color: $--color-text-secondary !default;
 
-$--input-focus-border: $--color-primary !default;
+$--input-focus-border: $--color-black !default;
 $--input-focus-fill: $--color-white !default;
 
 $--input-disabled-fill: $--disabled-fill-base !default;

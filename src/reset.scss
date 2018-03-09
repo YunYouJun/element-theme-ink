@@ -2,7 +2,7 @@
 
 body {
   font-family: Lato, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-  font-weight: 300;
+  font-weight: $--font-weight-primary;
   font-size: $--font-size-base;
   color: $--color-black;
   margin: 0px;
@@ -12,6 +12,15 @@ body {
 {
   color: #fff;
   background: $--color-dark;
+}
+
+::placeholder
+{
+  font-weight: $--font-weight-primary;
+}
+::-webkit-input-placeholder
+{
+  font-weight: $--font-weight-primary;
 }
 
 a {
@@ -90,4 +99,8 @@ hr {
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #ccc;
+}
+
+textarea {
+  font-family: inherit;
 }
