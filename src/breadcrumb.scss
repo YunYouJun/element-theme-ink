@@ -9,7 +9,6 @@
 
   @include e(separator) {
     margin: 0 9px;
-    font-weight: bold;
     color: $--color-text-placeholder;
 
     &[class*=icon] {
@@ -23,13 +22,13 @@
 
     @include e(inner) {
       &, & a {
-        font-weight: bold;
         transition: $--color-transition-base;
         color: $--color-text-primary;
 
         &:hover {
-          color: $--color-primary;
+          color: $--color-black;
           cursor: pointer;
+          border-bottom: 1px dashed #999;
         }
       }
     }
