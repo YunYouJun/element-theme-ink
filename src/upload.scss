@@ -28,39 +28,40 @@
 
   /* 照片墙模式 */
   @include m(picture-card) {
-    background-color: #fbfdff;
-    border: 1px dashed #c0ccda;
+    background-color: transparent;
+    border: 1px dashed $--color-dark;
     border-radius: 6px;
     box-sizing: border-box;
-    width: 148px;
-    height: 148px;
+    width: 180px;
+    height: 180px;
     cursor: pointer;
-    line-height: 146px;
-    vertical-align: top;
 
     i {
-      font-size: 28px;
-      color: #8c939d;
+      color: $--color-dark;
+      font-size: 30px;
+      color: $--color-text-placeholder;
+      margin: 40px 0 16px;
+      line-height: 50px;
     }
 
     &:hover {
-      border-color: $--color-primary;
-      color: $--color-primary;
+      border-color: $--color-black;
+      color: $--color-black;
     }
   }
   &:focus {
-    border-color: $--color-primary;
-    color: $--color-primary;
+    border-color: $--color-black;
+    color: $--color-black;
 
     .el-upload-dragger {
-      border-color: $--color-primary;
+      border-color: $--color-black;
     }
   }
 }
 
 @include b(upload-dragger) {
   background-color: #fff;
-  border: 1px dashed #d9d9d9;
+  border: 1px dashed $--color-dark;
   border-radius: 6px;
   box-sizing: border-box;
   width: 360px;
@@ -72,7 +73,7 @@
 
   .el-icon-upload {
     font-size: 67px;
-    color: $--color-text-placeholder;
+    color: $--color-dark;
     margin: 40px 0 16px;
     line-height: 50px;
   }
@@ -99,7 +100,7 @@
   }
 
   &:hover {
-    border-color: $--color-primary;
+    border-color: $--color-black;
   }
 
   @include when(dragover) {
@@ -156,7 +157,7 @@
       right: 5px;
       cursor: pointer;
       opacity: .75;
-      color: $--color-text-regular;
+      color: $--color-dark;
       //transform: scale(.7);
 
       &:hover {
@@ -271,7 +272,7 @@
     .el-upload-list__item {
       overflow: hidden;
       background-color: #fff;
-      border: 1px solid #c0ccda;
+      border: 1px solid $--color-dark;
       border-radius: 6px;
       box-sizing: border-box;
       width: 148px;
@@ -386,7 +387,7 @@
       overflow: hidden;
       z-index: 0;
       background-color: #fff;
-      border: 1px solid #c0ccda;
+      border: 1px solid $--color-dark;
       border-radius: 6px;
       box-sizing: border-box;
       margin-top: 10px;
