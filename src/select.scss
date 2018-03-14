@@ -49,7 +49,7 @@
         transition: $--color-transition-base;
 
         &:hover {
-          color: $--select-close-hover-color;
+          color: $--color-black;
         }
       }
     }
@@ -121,18 +121,21 @@
 
   .el-tag {
     box-sizing: border-box;
-    border-color: transparent;
+    border-color: $--color-dark;
     margin: 2px 0 2px 6px;
-    background-color: #f0f2f5;
+    background-color: $--color-white;
+    color: $--color-dark;
 
     &__close.el-icon-close {
-      background-color: $--color-text-placeholder;
+      background-color: transparent;
       right: -7px;
       top: 0;
-      color: $--color-white;
+      color: $--color-dark;
 
       &:hover {
-        background-color: $--color-text-secondary;
+        background-color: transparent;
+        color: $--color-black;
+        border: 1px solid $--color-black;
       }
 
       &::before {

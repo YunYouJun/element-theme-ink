@@ -73,7 +73,7 @@ $--background-color-base: transparent !default;
 $--border-width-base: 1px !default;
 $--border-style-base: solid !default;
 $--border-color-base: #999 !default;
-$--border-color-dark: rgba(0, 0, 0, 0.3) !default;
+$--border-color-dark: $--color-dark !default;
 $--border-color-light: #e4e7ed !default;
 $--border-color-lighter: #ebeef5 !default;
 $--border-color-extra-light: #f2f6fc !default;
@@ -232,9 +232,9 @@ $--select-disabled-border: $--disabled-border-base !default;
 $--select-font-size: $--font-size-base !default;
 $--select-close-hover-color: $--color-text-secondary !default;
 
-$--select-input-color: $--color-text-placeholder !default;
+$--select-input-color: $--color-dark !default;
 $--select-multiple-input-color: #666 !default;
-$--select-input-focus-background: $--color-primary !default;
+$--select-input-focus-background: $--color-black !default;
 $--select-input-font-size: 14px !default;
 
 $--select-option-color: $--color-text-regular !default;
@@ -242,10 +242,10 @@ $--select-option-disabled-color: $--color-text-placeholder !default;
 $--select-option-disabled-background: $--color-white !default;
 $--select-option-height: 34px !default;
 $--select-option-hover-background: $--background-color-base !default;
-$--select-option-selected: $--color-primary !default;
+$--select-option-selected: $--color-black !default;
 $--select-option-selected-hover: $--background-color-base !default;
 
-$--select-group-color: $--color-info !default;
+$--select-group-color: $--color-black !default;
 $--select-group-height: 30px !default;
 $--select-group-font-size: 12px !default;
 
@@ -255,7 +255,7 @@ $--select-dropdown-empty-color: #999 !default;
 $--select-dropdown-max-height: 274px !default;
 $--select-dropdown-padding: 6px 0 !default;
 $--select-dropdown-empty-padding: 10px 0 !default;
-$--select-dropdown-border: solid 1px $--border-color-light !default;
+$--select-dropdown-border: solid 1px $--border-color-dark !default;
 
 /* Alert
 -------------------------- */
@@ -331,7 +331,7 @@ $--notification-danger-color: $--color-danger !default;
 /* Input
 -------------------------- */
 $--input-font-size: $--font-size-base !default;
-$--input-color: $--color-text-regular !default;
+$--input-color: $--color-text-primary !default;
 $--input-width: 140px !default;
 $--input-height: 40px !default;
 $--input-border: $--border-base !default;
@@ -523,7 +523,7 @@ $--pagination-hover-color: $--color-white !default;
 -------------------------- */
 $--popover-fill: $--color-white !default;
 $--popover-font-size: $--font-size-base !default;
-$--popover-border-color: $--border-color-lighter !default;
+$--popover-border-color: $--border-color-dark !default;
 $--popover-arrow-size: 6px !default;
 $--popover-padding: 12px !default;
 $--popover-padding-large: 18px 20px !default;

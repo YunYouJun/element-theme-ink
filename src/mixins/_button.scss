@@ -4,6 +4,7 @@
   color: $color;
   background: transparent;
   border: 1px solid $color;
+  transition: .2s;
 
   &:hover,
   &:focus {

@@ -16,6 +16,7 @@
     & .el-select-dropdown__item.selected {
       color: $--select-option-selected;
       background-color: $--select-dropdown-background;
+      font-weight: normal;
 
       &.hover {
         background-color: $--select-option-hover-background;
@@ -27,7 +28,7 @@
         font-family: 'element-icons';
         content: "\E611";
         font-size: 12px;
-        font-weight: bold;
+        font-weight: normal;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
