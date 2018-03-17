@@ -16,6 +16,7 @@
     position: relative;
     cursor: pointer;
     vertical-align: middle;
+    border: $--border-dark;
 
     &.show-input {
       margin-right: 160px;
@@ -24,6 +25,7 @@
 
     &.disabled {
       cursor: default;
+      border: $--border-base;
 
       .el-slider__bar {
         background-color: $--slider-disable-color;
@@ -107,7 +109,7 @@
   @include e(button) {
     width: $--slider-button-size;
     height: $--slider-button-size;
-    border: solid 2px $--slider-main-background-color;
+    border: solid 1px $--slider-main-background-color;
     background-color: $--color-white;
     border-radius: 50%;
     transition: .2s;
@@ -117,6 +119,7 @@
     &.hover,
     &.dragging {
       transform: scale(1.2);
+      box-shadow: $--box-shadow-light;
     }
 
     &:hover,
@@ -133,7 +136,6 @@
     position: absolute;
     height: $--slider-height;
     width: $--slider-height;
-    border-radius: $--border-radius-circle;
     background-color: $--slider-stop-background-color;
     transform: translateX(-50%);
   }

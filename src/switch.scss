@@ -21,13 +21,14 @@
     height: $--switch-height;
     display: inline-block;
     font-size: $--switch-font-size;
-    font-weight: 500;
+    font-weight: 300;
     cursor: pointer;
     vertical-align: middle;
-    color: $--color-text-primary;
+    color: $--color-dark;
 
     @include when(active) {
-      color: $--color-primary;
+      color: $--color-black;
+      font-weight: normal;
     }
 
     @include m(left) {
@@ -73,7 +74,7 @@
       position: absolute;
       top: 1px;
       left: 1px;
-      border-radius: $--border-radius-circle;
+      border-radius: 2px;
       transition: transform .3s;
       width: $--switch-button-size;
       height: $--switch-button-size;

@@ -473,13 +473,13 @@ $--cascader-height: 200px !default;
 
 /* Switch
 -------------------------- */
-$--switch-on-color: $--color-primary !default;
+$--switch-on-color: $--color-dark !default;
 $--switch-off-color: $--border-color-base !default;
 $--switch-disabled-color: $--border-color-lighter !default;
 $--switch-disabled-text-color: $--color-text-placeholder !default;
 
 $--switch-font-size: $--font-size-base !default;
-$--switch-core-border-radius: 10px !default;
+$--switch-core-border-radius: 2px !default;
 $--switch-width: 40px !default;
 $--switch-height: 20px !default;
 $--switch-button-size: 16px !default;
@@ -596,14 +596,14 @@ $--card-padding: 20px !default;
 
 /* Slider
 --------------------------*/
-$--slider-main-background-color: $--color-primary !default;
-$--slider-runway-background-color: $--border-color-light !default;
-$--slider-button-hover-color: mix($--color-primary, black, 97%) !default;
-$--slider-stop-background-color: $--color-white !default;
+$--slider-main-background-color: $--color-dark !default;
+$--slider-runway-background-color: $--color-light !default;
+$--slider-button-hover-color: mix($--color-dark, black, 97%) !default;
+$--slider-stop-background-color: $--color-text-placeholder !default;
 $--slider-disable-color: $--color-text-placeholder !default;
 
 $--slider-margin: 16px 0 !default;
-$--slider-border-radius: 3px !default;
+$--slider-border-radius: 1px !default;
 $--slider-height: 6px !default;
 $--slider-button-size: 16px !default;
 $--slider-button-wrapper-size: 36px !default;
