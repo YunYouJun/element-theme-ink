@@ -12,7 +12,7 @@ $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
 /* Colors
 -------------------------- */
 $--color-dark: #303133 !default;
-$--color-light: #fff !default;
+$--color-light: #fafbfc !default;
 
 $--color-white: #fff !default;
 $--color-black: #000 !default;
@@ -342,6 +342,7 @@ $--input-fill: $--color-white !default;
 $--input-fill-disabled: $--disabled-fill-base !default;
 $--input-color-disabled: $--font-color-disabled-base !default;
 $--input-icon-color: $--color-dark !default;
+$--input-icon-hover-color: $--color-black !default;
 $--input-placeholder-color: $--color-text-placeholder !default;
 $--input-max-width: 314px !default;
 
@@ -428,8 +429,8 @@ $--button-small-padding-horizontal: 15px !default;
 
 $--button-mini-font-size: 12px !default;
 $--button-mini-border-radius: #{$--border-radius-base - 1} !default;
-$--button-mini-padding-vertical: 7px !default;
-$--button-mini-padding-horizontal: 15px !default;
+$--button-mini-padding-vertical: 6px !default;
+$--button-mini-padding-horizontal: 12px !default;
 
 $--button-default-color: $--color-text-primary !default;
 $--button-default-fill: transparent !default;
@@ -635,12 +636,12 @@ $--datepicker-color: $--color-text-regular !default;
 $--datepicker-off-color: $--color-text-placeholder !default;
 $--datepicker-header-color: $--color-text-regular !default;
 $--datepicker-icon-color: $--color-text-primary !default;
-$--datepicker-border-color: $--disabled-border-base !default;
+$--datepicker-border-color: $--border-color-dark !default;
 $--datepicker-inner-border-color: #e4e4e4 !default;
 $--datepicker-inrange-color: $--border-color-extra-light !default;
 $--datepicker-inrange-hover-color: $--border-color-extra-light !default;
-$--datepicker-active-color: $--color-primary !default;
-$--datepicker-text-hover-color: $--color-primary !default;
+$--datepicker-active-color: $--color-black !default;
+$--datepicker-text-hover-color: $--color-black !default;
 $--datepicker-cell-hover-color: #fff !default;
 
 /* Loading

@@ -21,7 +21,7 @@
 }
 
 .time-select-item.selected:not(.disabled) {
-  color: $--color-primary;
+  color: $--color-black;
   font-weight: bold;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .time-select-item:hover {
-  background-color: $--background-color-base;
+  background-color: $--color-light;
   font-weight: bold;
   cursor: pointer;
 }

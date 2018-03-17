@@ -41,7 +41,7 @@
 
   @include e(arrow) {
     font-size: 12px;
-    color: $--color-text-secondary;
+    color: $--color-dark;
     position: absolute;
     left: 0;
     width: 100%;
@@ -52,7 +52,7 @@
     cursor: pointer;
 
     &:hover {
-      color: $--color-primary;
+      color: $--color-black;
     }
 
     &.el-icon-arrow-up {

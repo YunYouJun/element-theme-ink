@@ -33,7 +33,7 @@
   .el-range__icon {
     font-size: 14px;
     margin-left: -5px;
-    color: $--color-text-placeholder;
+    color: $--color-black;
     float: left;
     line-height: 32px;
   }
@@ -84,10 +84,10 @@
   }
 
   @include when(active) {
-    border-color: $--color-primary;
+    border-color: $--color-dark;
 
     &:hover {
-      border-color: $--color-primary;
+      border-color: $--color-black;
     }
   }
 

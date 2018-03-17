@@ -169,7 +169,6 @@
   @include e(btn) {
     border: 1px solid #dcdcdc;
     color: #333;
-    line-height: 24px;
     border-radius: 2px;
     padding: 0 20px;
     cursor: pointer;
@@ -189,12 +188,12 @@
 
   @include e(link-btn) {
     cursor: pointer;
-    color: $--color-primary;
+    color: $--color-dark;
     text-decoration: none;
     padding: 15px;
     font-size: 12px;
     &:hover {
-      color: tint($--color-primary, $--button-hover-tint-percent);
+      color: tint($--color-dark, $--button-hover-tint-percent);
     }
   }
 }

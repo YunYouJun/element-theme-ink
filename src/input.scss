@@ -123,6 +123,10 @@
     text-align: center;
     color: $--input-icon-color;
     transition: all .3s;
+
+    &:hover {
+      color: $--input-icon-hover-color;
+    }
   }
 
   @include e(icon) {
