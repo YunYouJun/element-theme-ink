@@ -21,7 +21,8 @@
     padding: 10px;
     border-radius: 50%;
     color: $--color-white;
-    background-color: $--color-primary;
+    background-color: $--color-black;
+    border-color: $--color-black;
     font-size: 0;
 
     @include when(with-texts) {
@@ -107,7 +108,7 @@
     }
 
     &:hover {
-      color: $--color-primary;
+      color: $--color-black;
     }
 
     &.el-checkbox .el-checkbox__label {
