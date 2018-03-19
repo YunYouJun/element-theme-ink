@@ -60,8 +60,8 @@ $--color-text-placeholder: #999 !default;
 
 /* Link
 -------------------------- */
-$--link-color: $--color-dark-light-2 !default;
-$--link-hover-color: $--color-dark !default;
+$--link-color: $--color-dark !default;
+$--link-hover-color: $--color-black !default;
 
 /* Background
 -------------------------- */
@@ -578,7 +578,7 @@ $--tree-expand-icon-color: $--color-text-placeholder !default;
 /* Dropdown
 -------------------------- */
 $--dropdown-menu-box-shadow: $--box-shadow-light !default;
-$--dropdown-menuItem-hover-fill: $--color-primary-light-9 !default;
+$--dropdown-menuItem-hover-fill: $--color-dark-light-9 !default;
 $--dropdown-menuItem-hover-color: $--link-color !default;
 
 /* Badge
@@ -591,7 +591,7 @@ $--badge-size: 18px !default;
 
 /* Card
 --------------------------*/
-$--card-border-color: $--border-color-dark !default;
+$--card-border-color: $--border-color-base !default;
 $--card-border-radius: 4px !default;
 $--card-padding: 20px !default;
 
@@ -668,7 +668,7 @@ $--carousel-indicator-out-color: $--border-color-hover !default;
 
 /* Collapse
 --------------------------*/
-$--collapse-border-color: $--border-color-lighter !default;
+$--collapse-border-color: $--border-color-base !default;
 $--collapse-header-height: 48px !default;
 $--collapse-header-padding: 20px !default;
 $--collapse-header-fill: $--color-white !default;
@@ -680,7 +680,7 @@ $--collapse-content-color: $--color-text-primary !default;
 
 /* Transfer
 --------------------------*/
-$--transfer-border-color: $--border-color-lighter !default;
+$--transfer-border-color: $--border-color-base !default;
 $--transfer-border-radius: $--border-radius-base !default;
 $--transfer-panel-width: 200px !default;
 $--transfer-panel-header-height: 40px !default;

@@ -23,12 +23,13 @@
       float: right;
       line-height: 48px;
       font-weight: 300;
+      color: $--color-black;
       @include when(active) {
         transform: rotate(90deg);
       }
     }
     &.focusing:focus:not(:hover){
-      color: $--color-primary;
+      color: $--color-black;
     }
     @include when(active) {
       border-bottom-color: transparent;

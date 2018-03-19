@@ -11,7 +11,7 @@
 
   &:hover,
   &:focus {
-    border-color: 1px solid #000;
+    border-color: $--color-black;
     box-shadow: $--box-shadow-light;
   }
 

@@ -63,10 +63,11 @@
   top: 0;
   left: 0;
   z-index: 10;
-  padding: 10px 0;
+  // padding: 10px 0;
+  padding: 0;
   margin: 5px 0;
   background-color: $--color-white;
-  border: 1px solid $--border-color-lighter;
+  border: 1px solid $--border-color-base;
   border-radius: $--border-radius-base;
   box-shadow: $--dropdown-menu-box-shadow;
 
