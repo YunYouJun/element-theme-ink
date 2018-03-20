@@ -44,9 +44,9 @@
   position: absolute;
 
   .el-loading-text {
-    color: $--color-primary;
+    color: $--color-white;
     margin: 3px 0;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .circular {
@@ -59,13 +59,14 @@
     animation: loading-dash 1.5s ease-in-out infinite;
     stroke-dasharray: 90, 150;
     stroke-dashoffset: 0;
-    stroke-width: 2;
-    stroke: $--color-primary;
+    stroke-width: 1;
+    stroke: $--color-black;
     stroke-linecap: round;
   }
 
   i {
-    color: $--color-primary;
+    font-size: 22px;
+    color: $--color-white;
   }
 }
 

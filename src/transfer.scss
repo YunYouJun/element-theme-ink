@@ -20,10 +20,20 @@
     margin: 0 auto;
     padding: 10px;
     border-radius: 50%;
-    color: $--color-white;
-    background-color: $--color-black;
+    color: $--color-dark;
+    background-color: $--color-white;
     border-color: $--color-black;
     font-size: 0;
+
+    &:hover {
+      border-color: $--color-dark;
+      background-color: $--color-dark;
+      color: $--color-white;
+    }
+
+    &:active {
+      background-color: $--color-black;
+    }
 
     @include when(with-texts) {
       border-radius: $--border-radius-base;
