@@ -20,6 +20,7 @@
   margin: 0;
   transition: .2s;
   font-weight: $--button-font-weight;
+  line-height: 1;
   @include utils-user-select(none);
   & + .el-button {
     margin-left: 10px;
@@ -157,16 +158,17 @@
   }
   @include m(text) {
     border-color: transparent;
-    color: $--color-primary;
+    color: $--color-dark;
     background: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 5px;
+    border-bottom: dashed $--color-dark 1px;
 
     &:hover,
     &:focus {
-      color: mix($--color-white, $--color-primary, $--button-hover-tint-percent);
+      color: $--color-dark;
+      background-color: $--color-gray;
       border-color: transparent;
-      background-color: transparent;
+      border-bottom: dashed $--color-black 1px;
     }
     &:active {
       color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
@@ -178,6 +180,7 @@
     &.is-disabled:hover,
     &.is-disabled:focus {
       border-color: transparent;
+      border-bottom: dashed $--border-color-base 1px;
     }
   }
 }

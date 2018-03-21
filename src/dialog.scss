@@ -6,7 +6,7 @@
 @include b(dialog) {
   position: relative;
   margin: 0 auto 50px;
-  background: $--color-white;
+  background: rgba(255, 255, 255, 0.8);
   border-radius: $--border-radius-small;
   box-shadow: $--dialog-box-shadow;
   box-sizing: border-box;
@@ -33,6 +33,7 @@
   @include e(header) {
     padding: $--dialog-padding-primary;
     padding-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   @include e(headerbtn) {
@@ -47,12 +48,12 @@
     font-size: $--message-close-size;
 
     .el-dialog__close {
-      color: $--color-info;
+      color: $--color-dark;
     }
 
     &:focus, &:hover {
       .el-dialog__close {
-        color: $--color-primary;
+        color: $--color-black;
       }
     }
   }
@@ -68,13 +69,15 @@
     color: $--color-text-regular;
     line-height: $--dialog-line-height;
     font-size: $--dialog-font-size;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3) inset, 0px -20px 20px -20px rgba(0, 0, 0, 0.3) inset;
   }
 
   @include e(footer) {
     padding: $--dialog-padding-primary;
-    padding-top: 10px;
     text-align: right;
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.6);
   }
 
   // 内容居中布局

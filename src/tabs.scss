@@ -12,14 +12,14 @@
     bottom: 0;
     left: 0;
     height: 2px;
-    background-color: $--color-primary;
+    background-color: $--color-black;
     z-index: 1;
     transition: transform .3s cubic-bezier(.645,.045,.355,1);
     list-style: none;
   }
   @include e(new-tab) {
     float: right;
-    border: 1px solid #d3dce6;
+    border: 1px solid $--border-color-base;
     height: 18px;
     width: 18px;
     line-height: 18px;
@@ -27,7 +27,7 @@
     border-radius: 3px;
     text-align: center;
     font-size: 12px;
-    color: #d3dce6;
+    color: $--color-dark;
     cursor: pointer;
     transition: all .15s;
 
@@ -36,7 +36,7 @@
     }
 
     &:hover {
-      color: $--color-primary;
+      color: $--color-black;
     }
   }
   @include e(nav-wrap) {

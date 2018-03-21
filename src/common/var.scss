@@ -17,6 +17,9 @@ $--color-light: #fafbfc !default;
 $--color-white: #fff !default;
 $--color-black: #000 !default;
 
+$--color-gray: #eee !default;
+$--color-purple: #8e71c1 !default;
+
 $--color-dark-light-1: mix($--color-white, $--color-dark, 10%) !default; /* 53a8ff */
 $--color-dark-light-2: mix($--color-white, $--color-dark, 20%) !default; /* 66b1ff */
 $--color-dark-light-3: mix($--color-white, $--color-dark, 30%) !default; /* 79bbff */
@@ -399,7 +402,7 @@ $--group-title-width: 66px !default;
 /* Tab
 -------------------------- */
 $--tab-font-size: $--font-size-base !default;
-$--tab-border-line: 1px solid #e4e4e4 !default;
+$--tab-border-line: 1px solid $--color-gray !default;
 $--tab-header-color-active: $--color-text-secondary !default;
 $--tab-header-color-hover: $--color-text-regular !default;
 $--tab-header-color: $--color-text-regular !default;
@@ -488,12 +491,12 @@ $--switch-button-size: 16px !default;
 /* Dialog
 -------------------------- */
 $--dialog-background-color: $--color-primary-light-4 !default;
-$--dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !default;
-$--dialog-close-hover-color: $--color-primary !default;
+$--dialog-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3) !default;
+$--dialog-close-hover-color: $--color-black !default;
 $--dialog-title-font-size: $--font-size-large !default;
 $--dialog-font-size: 14px !default;
 $--dialog-line-height: $--font-line-height-primary !default;
-$--dialog-padding-primary: 20px !default;
+$--dialog-padding-primary: 15px !default;
 
 /* Table
 -------------------------- */

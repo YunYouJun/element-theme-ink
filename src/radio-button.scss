@@ -75,7 +75,7 @@
 
   &:first-child {
     .el-radio-button__inner {
-      border-left: $--border-base;
+      border-left: $--border-dark;
       border-radius: $--border-radius-base 0 0 $--border-radius-base;
       box-shadow: none !important;
     }
