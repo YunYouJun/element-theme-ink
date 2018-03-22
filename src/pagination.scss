@@ -169,7 +169,7 @@
     .btn-next,
     .el-pager li {
       margin: 0 5px;
-      background-color: $--color-info-lighter;
+      background-color: $--color-gray;
       color: $--color-text-regular;
       min-width: 30px;
       border-radius: 2px;
@@ -189,7 +189,7 @@
       }
 
       &.active {
-        background-color: $--color-primary;
+        background-color: $--color-dark;
         color: $--color-white;
       }
     }

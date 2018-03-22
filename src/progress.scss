@@ -68,6 +68,16 @@
     }
   }
 
+  @include when(dark) {
+    .el-progress-bar__inner {
+      background-color: $--color-dark;
+    }
+
+    .el-progress__text {
+      color: $--color-dark;
+    }
+  }
+
   @include when(exception) {
     .el-progress-bar__inner {
       background-color: $--color-danger;

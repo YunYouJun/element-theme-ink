@@ -15,13 +15,16 @@
   align-items: center;
   transition: opacity .2s;
 
+  font-weight: normal;
+
   @include when(center) {
     justify-content: center;
   }
 
   @include m(success) {
-    background-color: $--alert-success-color;
+    background-color: rgba($--alert-success-color, 0.5);
     color: $--color-success;
+    border: 1px solid $--color-success;
 
     .el-alert__description {
       color: $--color-success;
@@ -29,8 +32,9 @@
   }
 
   @include m(info) {
-    background-color: $--alert-info-color;
+    background-color: rgba($--alert-info-color, 0.5);
     color: $--color-info;
+    border: 1px solid $--color-info;
 
     .el-alert__description {
       color: $--color-info;
@@ -38,8 +42,9 @@
   }
 
   @include m(warning) {
-    background-color: $--alert-warning-color;
+    background-color: rgba($--alert-warning-color, 0.5);
     color: $--color-warning;
+    border: 1px solid $--color-warning;
 
     .el-alert__description {
       color: $--color-warning;
@@ -47,8 +52,9 @@
   }
 
   @include m(error) {
-    background-color: $--alert-danger-color;
+    background-color: rgba($--alert-danger-color, 0.5);
     color: $--color-danger;
+    border: 1px solid $--color-danger;
 
     .el-alert__description {
       color: $--color-danger;
@@ -57,7 +63,8 @@
 
   @include e(content) {
     display: table-cell;
-    padding: 0 8px;
+    padding: 0 10px;
+    padding-left: 15px;
   }
 
   @include e(icon) {

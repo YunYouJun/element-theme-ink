@@ -37,7 +37,7 @@
 }
 
 @include b(menu) {
-  border-right: solid 1px #e6e6e6;
+  border-right: solid 1px $--border-color-base;
   list-style: none;
   position: relative;
   margin: 0;

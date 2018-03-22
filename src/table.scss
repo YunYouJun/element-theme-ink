@@ -204,7 +204,7 @@
       box-sizing: border-box;
 
       &.highlight {
-        color: $--color-primary;
+        color: $--color-black;
       }
     }
 
@@ -470,11 +470,11 @@
   }
 
   .ascending .sort-caret.ascending {
-    border-bottom-color: $--color-primary;
+    border-bottom-color: $--color-black;
   }
 
   .descending .sort-caret.descending {
-    border-top-color: $--color-primary;
+    border-top-color: $--color-black;
   }
 
   .hidden-columns {

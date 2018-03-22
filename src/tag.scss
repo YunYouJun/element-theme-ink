@@ -38,6 +38,25 @@
     }
   }
 
+  @include m(dark) {
+    background-color: $--tag-dark-fill;
+    border-color: $--tag-dark-border;
+    color: $--tag-dark-color;
+
+    @include when(hit) {
+      border-color: $--tag-dark-color;
+    }
+
+    .el-tag__close {
+      color: $--tag-dark-color;
+    }
+
+    .el-tag__close:hover {
+      background-color: $--tag-dark-color;
+      color: $--color-white;
+    }
+  }
+
   @include m(info) {
     background-color: $--tag-info-fill;
     border-color: $--tag-info-border;

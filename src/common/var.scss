@@ -520,7 +520,7 @@ $--pagination-button-width: 35.5px !default;
 $--pagination-button-height: 28px !default;
 $--pagination-button-disabled-color: $--color-text-placeholder !default;
 $--pagination-button-disabled-fill: $--color-white !default;
-$--pagination-hover-fill: $--color-primary !default;
+$--pagination-hover-fill: $--color-dark !default;
 $--pagination-hover-color: $--color-white !default;
 
 /* Popover
@@ -546,30 +546,34 @@ $--tooltip-padding: 10px !default;
 /* Tag
 -------------------------- */
 $--tag-padding: 0 10px !default;
-$--tag-fill: rgba($--color-primary, 0.10) !default;
+$--tag-fill: rgba($--color-primary, 0.05) !default;
 $--tag-color: $--color-primary !default;
-$--tag-border: rgba($--color-primary, 0.20) !default;
+$--tag-border: rgba($--color-primary, 0.50) !default;
 $--tag-font-size: 12px !default;
 $--tag-border-radius: 4px !default;
 
-$--tag-info-fill: rgba($--color-info, 0.10) !default;
-$--tag-info-border: rgba($--color-info, 0.20) !default;
+$--tag-dark-fill: rgba($--color-dark, 0.05) !default;
+$--tag-dark-border: rgba($--color-dark, 0.50) !default;
+$--tag-dark-color: $--color-dark !default;
+
+$--tag-info-fill: rgba($--color-info, 0.05) !default;
+$--tag-info-border: rgba($--color-info, 0.50) !default;
 $--tag-info-color: $--color-info !default;
 
-$--tag-primary-fill: rgba($--color-primary, 0.10) !default;
-$--tag-primary-border: rgba($--color-primary, 0.20) !default;
+$--tag-primary-fill: rgba($--color-primary, 0.05) !default;
+$--tag-primary-border: rgba($--color-primary, 0.50) !default;
 $--tag-primary-color: $--color-primary !default;
 
-$--tag-success-fill: rgba($--color-success, 0.10) !default;
-$--tag-success-border: rgba($--color-success, 0.20) !default;
+$--tag-success-fill: rgba($--color-success, 0.05) !default;
+$--tag-success-border: rgba($--color-success, 0.50) !default;
 $--tag-success-color: $--color-success !default;
 
-$--tag-warning-fill: rgba($--color-warning, 0.10) !default;
-$--tag-warning-border: rgba($--color-warning, 0.20) !default;
+$--tag-warning-fill: rgba($--color-warning, 0.05) !default;
+$--tag-warning-border: rgba($--color-warning, 0.50) !default;
 $--tag-warning-color: $--color-warning !default;
 
-$--tag-danger-fill: rgba($--color-danger, 0.10) !default;
-$--tag-danger-border: rgba($--color-danger, 0.20) !default;
+$--tag-danger-fill: rgba($--color-danger, 0.05) !default;
+$--tag-danger-border: rgba($--color-danger, 0.50) !default;
 $--tag-danger-color: $--color-danger !default;
 
 /* Tree
@@ -623,7 +627,7 @@ $--steps-padding: 20px !default;
 --------------------------*/
 $--menu-item-color: $--color-text-primary !default;
 $--menu-item-fill: $--color-white !default;
-$--menu-item-hover-fill: $--color-primary-light-9 !default;
+$--menu-item-hover-fill: $--color-gray !default;
 
 /* Rate
 --------------------------*/
