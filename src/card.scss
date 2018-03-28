@@ -7,11 +7,11 @@
   background-color: $--color-white;
   overflow: hidden;
   color: $--color-text-primary;
-  transition: 0.5s;
+  transition: 0.3s;
 
   &:hover,
   &:focus {
-    border-color: $--color-black;
+    border-color: $--color-gray;
     box-shadow: $--box-shadow-light;
   }
 

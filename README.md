@@ -8,6 +8,8 @@ Base on [element](https://github.com/ElemeFE/element) & [element-theme-chalk](ht
 
 GitHub: [element-theme-ink](https://github.com/YunYouJun/element-theme-ink)
 
+NPM: [element-theme-ink](https://www.npmjs.com/package/element-theme-ink)
+
 Preview: [element-theme-ink-preview](https://yunyoujun.github.io/element-theme-ink-preview)
 
 ## Installation
