@@ -4,11 +4,11 @@
 </p>
 
 <p align="center">
-  <a href="https://npmcharts.com/compare/element-theme-ink?minimal=true"><img src="https://img.shields.io/npm/dt/element-theme-ink.svg" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/v/element-theme-ink.svg" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/l/element-theme-ink.svg" alt="License"></a>
+  <a href="https://npmcharts.com/compare/element-theme-ink?minimal=true"><img src="https://img.shields.io/npm/dt/element-theme-ink.svg?style=for-the-badge" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/v/element-theme-ink.svg?style=for-the-badge" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/l/element-theme-ink.svg?style=for-the-badge" alt="License"></a>
   <a href="http://img.badgesize.io/https://unpkg.com/element-theme-ink/lib/index.css?compression=gzip&label=gzip%20size:%20CSS">
-    <img src="http://img.badgesize.io/https://unpkg.com/element-theme-ink/lib/index.css?compression=gzip&label=gzip%20size:%20CSS">
+    <img src="http://img.badgesize.io/https://unpkg.com/element-theme-ink/lib/index.css?compression=gzip&label=gzip%20size:%20CSS&style=for-the-badge">
   </a>
 </p>
 
