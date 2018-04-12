@@ -133,23 +133,26 @@
     border-radius: 50%;
     padding: 12px;
   }
+  @include m(light) {
+    @include button-variant($--color-dark, $--button-light-color, $--button-light-fill, $--button-light-border, button-light);
+  }
   @include m(dark) {
-    @include button-variant($--button-dark-color, $--button-dark-fill, $--button-dark-border, button-dark);
+    @include button-variant($--color-white, $--button-dark-color, $--button-dark-fill, $--button-dark-border, button-dark);
   }
   @include m(primary) {
-    @include button-variant($--button-primary-color, $--button-primary-fill, $--button-primary-border, button-primary);
+    @include button-variant($--color-white, $--button-primary-color, $--button-primary-fill, $--button-primary-border, button-primary);
   }
   @include m(success) {
-    @include button-variant($--button-success-color, $--button-success-fill, $--button-success-border, button-success);
+    @include button-variant($--color-white, $--button-success-color, $--button-success-fill, $--button-success-border, button-success);
   }
   @include m(warning) {
-    @include button-variant($--button-warning-color, $--button-warning-fill, $--button-warning-border, button-warning);
+    @include button-variant($--color-white, $--button-warning-color, $--button-warning-fill, $--button-warning-border, button-warning);
   }
   @include m(danger) {
-    @include button-variant($--button-danger-color, $--button-danger-fill, $--button-danger-border, button-danger);
+    @include button-variant($--color-white, $--button-danger-color, $--button-danger-fill, $--button-danger-border, button-danger);
   }
   @include m(info) {
-    @include button-variant($--button-info-color, $--button-info-fill, $--button-info-border, button-info);
+    @include button-variant($--color-white, $--button-info-color, $--button-info-fill, $--button-info-border, button-info);
   }
   @include m(medium) {
     @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);

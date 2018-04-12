@@ -1,6 +1,6 @@
 @import "../common/var";
 
-@mixin button-plain($color) {
+@mixin button-plain($color, $hover-color) {
   color: $color;
   background: transparent;
   border: 1px solid $color;
@@ -10,13 +10,13 @@
   &:focus {
     background: $color;
     border-color: $color;
-    color: $--color-white;
+    color: $hover-color;
   }
 
   &:active {
     background: mix($--color-black, $color, $--button-active-shade-percent);
     border-color: mix($--color-black, $color, $--button-active-shade-percent);
-    color: $--color-white;
+    color: $hover-color;
     outline: none;
   }
 
@@ -49,8 +49,8 @@
   }
 }
 
-@mixin button-variant($color, $background-color, $border-color, $btn-name) {
-  color: $--color-white;
+@mixin button-variant($text-color, $color, $background-color, $border-color, $btn-name) {
+  color: $text-color;
   background-color: $background-color;
   border-color: $border-color;
 
@@ -86,7 +86,7 @@
   }
 
   &.is-plain {
-    @include button-plain($background-color);
+    @include button-plain($background-color, $text-color);
   }
 
   &.is-glow {

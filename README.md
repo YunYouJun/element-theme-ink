@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://ink.yunyoujun.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/YunYouJun/element-theme-ink-preview/master/src/assets/images/element-logo-small.png" alt="Element Theme Ink Logo"></a>
-  <h1 align="center">Element-Theme Ink</h1>
+  <h1 align="center">Element-Theme-Ink</h1>
 </p>
 
 <p align="center">
