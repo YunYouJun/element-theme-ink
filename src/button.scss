@@ -134,7 +134,7 @@
     padding: 12px;
   }
   @include m(light) {
-    @include button-variant($--color-dark, $--button-light-color, $--button-light-fill, $--button-light-border, button-light);
+    @include button-variant($--color-black, $--button-light-color, $--button-light-fill, $--button-light-border, button-light);
   }
   @include m(dark) {
     @include button-variant($--color-white, $--button-dark-color, $--button-dark-fill, $--button-dark-border, button-dark);
