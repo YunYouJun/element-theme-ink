@@ -1,5 +1,6 @@
 .sass-cache/
 *.css.map
 node_modules
+package-lock.json
 
 # src webpack generate
