@@ -9,10 +9,15 @@
   color: $--color-text-primary;
   transition: 0.3s;
 
-  &:hover,
-  &:focus {
-    border-color: $--color-gray;
+  @include when(always-shadow) {
     box-shadow: $--box-shadow-light;
+  }
+
+  @include when(hover-shadow) {
+    &:hover,
+    &:focus {
+      box-shadow: $--box-shadow-light;
+    }
   }
 
   @include e(header) {

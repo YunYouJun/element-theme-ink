@@ -84,6 +84,8 @@ import 'element-theme-ink/src/index.scss'
 ```js
 import Vue from 'vue'
 import ElementUI from 'element-ui'
+// 当您想要切换回 element 默认主题时，只需取消默认主题的注释，并注释 ink 主题的引入即可
+// import 'element-ui/lib/theme-chalk/index.css'
 import 'element-theme-ink'
 import App from './App.vue'
 
