@@ -1,6 +1,6 @@
 {
   "name": "element-theme-ink",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Element component ink theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
