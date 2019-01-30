@@ -16,11 +16,10 @@
 
 > A dead simple element theme.
 
-GitHub: [element-theme-ink](https://github.com/YunYouJun/element-theme-ink)
-
-NPM: [element-theme-ink](https://www.npmjs.com/package/element-theme-ink)
-
-Preview: [element-theme-ink-preview](https://ink.yunyoujun.cn/)
+- Preview: [element-theme-ink-preview](https://ink.yunyoujun.cn/)
+- GitHub: [element-theme-ink](https://github.com/YunYouJun/element-theme-ink)
+- npm: [element-theme-ink](https://www.npmjs.com/package/element-theme-ink)
+- unpkg: [element-theme-ink](https://unpkg.com/element-theme-ink)
 
 Base on [element](https://github.com/ElemeFE/element) & [element-theme-chalk](https://github.com/ElementUI/theme-chalk)
 
@@ -38,29 +37,42 @@ npm install element-ui -S
 
 ```shell
 npm i element-theme-ink -S
+# or
+yarn add element-theme-ink
 ```
 
 ## Usage
 
 ElementUI 使用方法参见[官网](http://element.eleme.io/)，各組件使用方法与 [Element 2.3](http://element.eleme.io/2.3/#/zh-CN/component/installation) 版本一致，本项目仅对主题样式进行定制。
 
+提供多种方式导入
+
 ### Stylesheet
+
+You can use unpkg directly.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/element-theme-ink">
+```
+
+Or use css in node_modules.
 
 ```html
 <link rel="stylesheet" href="path/to/node_modules/element-theme-ink/lib/index.css">
 ```
 
-### Import in Sass 
+### Import in Sass
 
 ```scss
 @import 'element-theme-ink'
 ```
 
-### Import in Javascript  (use webpack)
+### Import in Javascript
 
 #### Fully import
 
 ```javascript
+// main.js
 import 'element-theme-ink'
 ```
 
@@ -78,10 +90,10 @@ import 'element-theme-ink/lib/select.css'
 import 'element-theme-ink/src/index.scss'
 ```
 
-
 ## Example
 
 ```js
+// main.js
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 // 当您想要切换回 element 默认主题时，只需取消默认主题的注释，并注释 ink 主题的引入即可
