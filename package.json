@@ -12,7 +12,9 @@
     "build": "gulp build",
     "prepublish": "yarn build"
   },
-  "pre-commit": ["build"],
+  "pre-commit": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YunYouJun/element-theme-ink.git"
@@ -35,6 +37,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-cssmin": "^0.2.0",
-    "gulp-sass": "^3.2.1"
+    "gulp-sass": "^3.2.1",
+    "pre-commit": "^1.2.2"
   }
 }
