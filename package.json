@@ -1,6 +1,6 @@
 {
   "name": "element-theme-ink",
-  "version": "0.1.5",
+  "version": "1.0.1",
   "description": "Element component ink theme.",
   "main": "lib/index.css",
   "style": "lib/index.css",
@@ -9,8 +9,10 @@
     "src"
   ],
   "scripts": {
-    "build": "gulp build"
+    "build": "gulp build",
+    "prepublish": "yarn build"
   },
+  "pre-commit": ["build"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/YunYouJun/element-theme-ink.git"
