@@ -43,33 +43,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: #{$--font-size-large + 16px};
+  font-size: $--head-font-size-base + 5 * $--head-font-size-step;
+  font-weight: 300;
 }
 
 h2 {
-  font-size: #{$--font-size-large + 8px};
-  font-weight: normal;
+  font-size: $--head-font-size-base + 4 * $--head-font-size-step;
+  font-weight: 300;
 }
 
 h3 {
-  font-size: #{$--font-size-large + 4px};
-  font-weight: normal;
+  font-size: $--head-font-size-base + 3 * $--head-font-size-step;
+  font-weight: 300;
 }
 
 h4 {
-  font-size: #{$--font-size-large + 2px};
+  font-size: $--head-font-size-base + 2 * $--head-font-size-step;
+  font-weight: 300;
 }
 
 h5 {
-  font-size: #{$--font-size-large};
+  font-size: $--head-font-size-base + $--head-font-size-step;
+  font-weight: 300;
 }
 
 h6 {
-  font-size: $--font-size-base;
-}
-
-h4, h5, h6 {
-  font-weight: normal;
+  font-size: $--head-font-size-base;
 }
 
 p {
