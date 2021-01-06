@@ -1,6 +1,12 @@
+yarn.lock
+package-lock.json
+.DS_Store
+
+tmp/
+dist/
+
+*.log
+
 .sass-cache/
 *.css.map
 node_modules
-package-lock.json
-
-# src webpack generate

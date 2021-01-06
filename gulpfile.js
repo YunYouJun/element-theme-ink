@@ -1,29 +1,38 @@
-'use strict'
+"use strict";
 
-var gulp = require('gulp')
-var sass = require('gulp-sass')
-var autoprefixer = require('gulp-autoprefixer')
-var cssmin = require('gulp-cssmin')
+const distFolder = "dist";
 
-gulp.task('compile', function() {
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const autoprefixer = require("gulp-autoprefixer");
+const cleanCSS = require("gulp-clean-css");
+
+/**
+ * 编译 scss
+ */
+function compile() {
   return gulp
-    .src('./src/*.scss')
+    .src("./src/*.scss")
     .pipe(sass.sync())
+    .pipe(autoprefixer())
     .pipe(
-      autoprefixer({
-        browsers: ['ie > 9', 'last 2 versions'],
-        cascade: false
+      cleanCSS(null, (details) => {
+        console.log(`Before: ${details.name}: ${details.stats.originalSize} B`);
+        console.log(`After: ${details.name}: ${details.stats.minifiedSize} B`);
       })
     )
-    .pipe(cssmin())
-    .pipe(gulp.dest('./lib'))
-})
+    .pipe(gulp.dest(distFolder));
+}
 
-gulp.task('copyfont', function() {
-  return gulp
-    .src('./src/fonts/**')
-    .pipe(cssmin())
-    .pipe(gulp.dest('./lib/fonts'))
-})
+/**
+ * 拷贝字体
+ */
+function copyFont() {
+  return gulp.src("./src/fonts/**").pipe(gulp.dest(`${distFolder}/fonts`));
+}
 
-gulp.task('build', ['compile', 'copyfont'])
+const build = gulp.parallel(compile, copyFont);
+
+exports.compile = compile;
+exports.copyFont = copyFont;
+exports.build = build;

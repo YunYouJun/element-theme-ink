@@ -7,8 +7,8 @@
   <a href="https://npmcharts.com/compare/element-theme-ink?minimal=true"><img src="https://img.shields.io/npm/dt/element-theme-ink.svg?style=for-the-badge" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/v/element-theme-ink.svg?style=for-the-badge" alt="Version"></a>
   <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/l/element-theme-ink.svg?style=for-the-badge" alt="License"></a>
-  <a href="https://img.badgesize.io/https://unpkg.com/element-theme-ink/lib/index.css?compression=gzip&label=gzip%20size:%20CSS">
-    <img src="https://img.badgesize.io/https://unpkg.com/element-theme-ink/lib/index.css?compression=gzip&label=gzip%20size:%20CSS&style=for-the-badge">
+  <a href="https://img.badgesize.io/https://unpkg.com/element-theme-ink/dist/index.css?compression=gzip&label=gzip%20size:%20CSS">
+    <img src="https://img.badgesize.io/https://unpkg.com/element-theme-ink/dist/index.css?compression=gzip&label=gzip%20size:%20CSS&style=for-the-badge">
   </a>
 </p>
 
@@ -52,19 +52,22 @@ ElementUI 使用方法参见[官网](http://element.eleme.io/)，各組件使用
 You can use unpkg directly.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/element-theme-ink">
+<link rel="stylesheet" href="https://unpkg.com/element-theme-ink" />
 ```
 
 Or use css in node_modules.
 
 ```html
-<link rel="stylesheet" href="path/to/node_modules/element-theme-ink/lib/index.css">
+<link
+  rel="stylesheet"
+  href="path/to/node_modules/element-theme-ink/dist/index.css"
+/>
 ```
 
 ### Import in Sass
 
 ```scss
-@import 'element-theme-ink'
+@import "element-theme-ink";
 ```
 
 ### Import in Javascript
@@ -73,38 +76,38 @@ Or use css in node_modules.
 
 ```javascript
 // main.js
-import 'element-theme-ink'
+import "element-theme-ink";
 ```
 
 #### Import on demand
 
 ```javascript
-import 'element-theme-ink/lib/input.css'
-import 'element-theme-ink/lib/select.css'
+import "element-theme-ink/dist/input.css";
+import "element-theme-ink/dist/select.css";
 // ...
 ```
 
 #### Import Scss
 
 ```js
-import 'element-theme-ink/src/index.scss'
+import "element-theme-ink/src/index.scss";
 ```
 
 ## Example
 
 ```js
 // main.js
-import Vue from 'vue'
-import ElementUI from 'element-ui'
+import Vue from "vue";
+import ElementUI from "element-ui";
 // 当您想要切换回 element 默认主题时，只需取消默认主题的注释，并注释 ink 主题的引入即可
-// import 'element-ui/lib/theme-chalk/index.css'
-import 'element-theme-ink'
-import App from './App.vue'
+// import 'element-ui/dist/theme-chalk/index.css'
+import "element-theme-ink";
+import App from "./App.vue";
 
-Vue.use(ElementUI)
+Vue.use(ElementUI);
 
 new Vue({
-  el: '#app',
-  render: h => h(App)
-})
+  el: "#app",
+  render: (h) => h(App),
+});
 ```

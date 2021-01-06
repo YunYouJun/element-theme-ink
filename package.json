@@ -1,11 +1,11 @@
 {
   "name": "element-theme-ink",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Element component ink theme.",
-  "main": "lib/index.css",
-  "style": "lib/index.css",
+  "main": "dist/index.css",
+  "style": "dist/index.css",
   "files": [
-    "lib",
+    "dist",
     "src"
   ],
   "scripts": {
@@ -32,12 +32,10 @@
   "homepage": "https://github.com/YunYouJun/element-theme-ink#readme",
   "dependencies": {},
   "devDependencies": {
-    "element-theme": "^2.0.1",
-    "element-theme-chalk": "^2.3.7",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^4.1.0",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-sass": "^3.2.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
     "pre-commit": "^1.2.2"
   }
 }
