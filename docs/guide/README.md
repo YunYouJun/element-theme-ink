@@ -1,3 +1,5 @@
+# 指南
+
 <p align="center">
   <a href="https://ink.yunyoujun.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/YunYouJun/element-theme-ink-preview/master/src/assets/images/element-logo-small.png" alt="Element Theme Ink Logo"></a>
   <h1 align="center">Element-Theme-Ink</h1>
@@ -12,14 +14,12 @@
   </a>
 </p>
 
-# Ink
-
 > A dead simple element theme.
 
-- [Docs](https://ink.yunyoujun.cn/)
-- [New Docs(rewrite with vuepress)](https://ink.elpsy.cn/)
+- Preview: [element-theme-ink-preview](https://ink.yunyoujun.cn/)
 - GitHub: [element-theme-ink](https://github.com/YunYouJun/element-theme-ink)
 - npm: [element-theme-ink](https://www.npmjs.com/package/element-theme-ink)
+- unpkg: [element-theme-ink](https://unpkg.com/element-theme-ink)
 
 Base on [element](https://github.com/ElemeFE/element) & [element-theme-chalk](https://github.com/ElementUI/theme-chalk)
 
@@ -48,8 +48,6 @@ ElementUI 使用方法参见[官网](http://element.eleme.io/)，各組件使用
 提供多种方式导入
 
 ### Stylesheet
-
-- JSDelivr: <https://cdn.jsdelivr.net/npm/element-theme-ink>
 
 You can use unpkg directly.
 

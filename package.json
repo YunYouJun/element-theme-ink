@@ -1,6 +1,6 @@
 {
   "name": "element-theme-ink",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Element component ink theme.",
   "main": "dist/index.css",
   "style": "dist/index.css",
@@ -10,7 +10,10 @@
   ],
   "scripts": {
     "build": "gulp build",
-    "prepublish": "yarn build"
+    "dev": "yarn docs:dev",
+    "prepublishOnly": "yarn build",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "pre-commit": [
     "build"
@@ -32,10 +35,15 @@
   "homepage": "https://github.com/YunYouJun/element-theme-ink#readme",
   "dependencies": {},
   "devDependencies": {
+    "core-js": "2",
+    "element-ui": "^2.15.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^4.1.0",
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "sass": "^1.32.8",
+    "sass-loader": "7",
+    "vuepress": "^1.8.2"
   }
 }

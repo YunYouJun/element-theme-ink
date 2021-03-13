@@ -107,12 +107,14 @@
   }
 
   @include e(button) {
+    display: inline-block;
     width: $--slider-button-size;
     height: $--slider-button-size;
+    vertical-align: middle;
     border: solid 1px $--slider-main-background-color;
     background-color: $--color-white;
     border-radius: 50%;
-    transition: .2s;
+    transition: 0.2s;
     user-select: none;
 
     &:hover,
@@ -175,8 +177,7 @@
           padding-right: 5px;
         }
         .el-input-number__decrease,
-        .el-input-number__increase
-        {
+        .el-input-number__increase {
           top: $--input-small-height;
           margin-top: -1px;
           border: $--input-border;
@@ -199,15 +200,13 @@
         }
         &:hover {
           .el-input-number__decrease,
-          .el-input-number__increase
-          {
+          .el-input-number__increase {
             border-color: $--input-hover-border;
           }
         }
         &:active {
           .el-input-number__decrease,
-          .el-input-number__increase
-          {
+          .el-input-number__increase {
             border-color: $--input-focus-border;
           }
         }

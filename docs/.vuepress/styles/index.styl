@@ -1,0 +1,47 @@
+// scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+// custom
+.theme-container {
+  .navbar {
+    .site-name {
+      font-weight: 300;
+    }
+  }
+
+  .nav-item {
+    .nav-link {
+      font-weight: 400;
+    }
+  }
+
+  .theme-default-content, .page-edit, .page-nav {
+    max-width: 100%;
+  }
+
+  .custom-block.tip {
+    border-color: $accentColor;
+    border-left-width: 4px;
+    padding: 0.5rem 1rem;
+  }
+}

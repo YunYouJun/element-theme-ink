@@ -1,0 +1,5 @@
+# Icon 图标
+
+Element 自身提供了一套常用的[图标集合](http://element.eleme.io/#/zh-CN/component/icon)。也推荐使用 [Font Awesome](https://fontawesome.com/) 提供的更多图标。
+
+同 element 图标。
