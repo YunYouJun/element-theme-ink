@@ -45,6 +45,7 @@
 <template>
   <el-input-number v-model="num2" :disabled="true"></el-input-number>
 </template>
+
 ### 尺寸
 
 `medium`、`small`、`mini` 三种尺寸的数字输入框

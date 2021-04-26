@@ -774,14 +774,20 @@ $--carousel-indicator-out-color: $--border-color-hover !default;
 /* Collapse
 --------------------------*/
 $--collapse-border-color: $--border-color-base !default;
+/// height||Other|4
 $--collapse-header-height: 48px !default;
-$--collapse-header-padding: 20px !default;
-$--collapse-header-fill: $--color-white !default;
-$--collapse-header-color: $--color-text-primary !default;
-$--collapse-header-size: 13px !default;
-$--collapse-content-fill: $--color-white !default;
-$--collapse-content-size: 13px !default;
-$--collapse-content-color: $--color-text-primary !default;
+/// color||Color|0
+$--collapse-header-background-color: $--color-white !default;
+/// color||Color|0
+$--collapse-header-font-color: $--color-text-primary !default;
+/// fontSize||Font|1
+$--collapse-header-font-size: 13px !default;
+/// color||Color|0
+$--collapse-content-background-color: $--color-white !default;
+/// fontSize||Font|1
+$--collapse-content-font-size: 13px !default;
+/// color||Color|0
+$--collapse-content-font-color: $--color-text-primary !default;
 
 /* Transfer
 --------------------------*/
