@@ -13,7 +13,7 @@ const cleanCSS = require("gulp-clean-css");
 function compile() {
   return gulp
     .src("./src/*.scss")
-    .pipe(sass.sync())
+    .pipe(sass.sync({ includePaths: ["node_modules"] }))
     .pipe(autoprefixer())
     .pipe(
       cleanCSS(null, (details) => {

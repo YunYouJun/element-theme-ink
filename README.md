@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://ink.yunyoujun.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/YunYouJun/element-theme-ink-preview/master/src/assets/images/element-logo-small.png" alt="Element Theme Ink Logo"></a>
+  <a href="https://ink.yunyoujun.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/YunYouJun/element-theme-ink/master/docs/.vuepress/public/logo.png" alt="Element Theme Ink Logo"></a>
   <h1 align="center">Element-Theme-Ink</h1>
 </p>
 
@@ -13,6 +13,8 @@
 </p>
 
 # Ink
+
+[![docs](https://github.com/YunYouJun/element-theme-ink/actions/workflows/docs.yml/badge.svg)](https://github.com/YunYouJun/element-theme-ink/actions/workflows/docs.yml)
 
 > A dead simple element theme.
 

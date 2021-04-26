@@ -39,6 +39,10 @@
   .bg-purple {
     background-color: $--color-purple;
   }
+  .bg-gray {
+    color: black;
+    background-color: $--color-gray;
+  }
 
   .bg-text-primary {
     background-color: #303133;
@@ -109,10 +113,10 @@ Element-Theme-Ink 决定以黑白色调为主。
     <div class="demo-color-box bg-light">Light<div class="value">#fafbfc</div></div>
   </el-col>
   <el-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-black">Black<div class="value">#000</div></div>
+    <div class="demo-color-box bg-black">Black<div class="value">#000000</div></div>
   </el-col>
   <el-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-white">White<div class="value">#fff</div></div>
+    <div class="demo-color-box bg-white">White<div class="value">#ffffff</div></div>
   </el-col>
 </el-row>
 </template>
@@ -144,7 +148,7 @@ Element-Theme-Ink 决定以黑白色调为主。
     <div class="demo-color-box bg-purple">Purple<div class="value">#8e71c1</div></div>
   </el-col>
   <el-col :span="6" :xs="{span: 12}">
-    <div class="demo-color-box bg-gray">Gray<div class="value">#eee</div></div>
+    <div class="demo-color-box bg-gray">Gray<div class="value">#eeeeee</div></div>
   </el-col>
 </el-row>
 </template>

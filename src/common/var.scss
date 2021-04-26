@@ -2,12 +2,14 @@
 
 /* Transition
 -------------------------- */
-$--all-transition: all .3s cubic-bezier(.645,.045,.355,1) !default;
+$--all-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !default;
 $--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
 $--fade-linear-transition: opacity 200ms linear !default;
-$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1), opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
-$--border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1) !default;
-$--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1) !default;
+$--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1),
+  opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) !default;
+$--border-transition-base: border-color 0.2s
+  cubic-bezier(0.645, 0.045, 0.355, 1) !default;
+$--color-transition-base: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) !default;
 
 /* Colors
 -------------------------- */
@@ -20,31 +22,103 @@ $--color-black: #000 !default;
 $--color-gray: #eee !default;
 $--color-purple: #8e71c1 !default;
 
-$--color-dark-light-1: mix($--color-white, $--color-dark, 10%) !default; /* 53a8ff */
-$--color-dark-light-2: mix($--color-white, $--color-dark, 20%) !default; /* 66b1ff */
-$--color-dark-light-3: mix($--color-white, $--color-dark, 30%) !default; /* 79bbff */
-$--color-dark-light-4: mix($--color-white, $--color-dark, 40%) !default; /* 8cc5ff */
-$--color-dark-light-5: mix($--color-white, $--color-dark, 50%) !default; /* a0cfff */
-$--color-dark-light-6: mix($--color-white, $--color-dark, 60%) !default; /* b3d8ff */
-$--color-dark-light-7: mix($--color-white, $--color-dark, 70%) !default; /* c6e2ff */
-$--color-dark-light-8: mix($--color-white, $--color-dark, 80%) !default; /* d9ecff */
-$--color-dark-light-9: mix($--color-white, $--color-dark, 90%) !default; /* ecf5ff */
+$--color-dark-light-1: mix(
+  $--color-white,
+  $--color-dark,
+  10%
+) !default; /* 53a8ff */
+$--color-dark-light-2: mix(
+  $--color-white,
+  $--color-dark,
+  20%
+) !default; /* 66b1ff */
+$--color-dark-light-3: mix(
+  $--color-white,
+  $--color-dark,
+  30%
+) !default; /* 79bbff */
+$--color-dark-light-4: mix(
+  $--color-white,
+  $--color-dark,
+  40%
+) !default; /* 8cc5ff */
+$--color-dark-light-5: mix(
+  $--color-white,
+  $--color-dark,
+  50%
+) !default; /* a0cfff */
+$--color-dark-light-6: mix(
+  $--color-white,
+  $--color-dark,
+  60%
+) !default; /* b3d8ff */
+$--color-dark-light-7: mix(
+  $--color-white,
+  $--color-dark,
+  70%
+) !default; /* c6e2ff */
+$--color-dark-light-8: mix(
+  $--color-white,
+  $--color-dark,
+  80%
+) !default; /* d9ecff */
+$--color-dark-light-9: mix(
+  $--color-white,
+  $--color-dark,
+  90%
+) !default; /* ecf5ff */
 
-$--color-primary: #0078E7 !default;
-$--color-primary-light-1: mix($--color-white, $--color-primary, 10%) !default; /* 53a8ff */
-$--color-primary-light-2: mix($--color-white, $--color-primary, 20%) !default; /* 66b1ff */
-$--color-primary-light-3: mix($--color-white, $--color-primary, 30%) !default; /* 79bbff */
-$--color-primary-light-4: mix($--color-white, $--color-primary, 40%) !default; /* 8cc5ff */
-$--color-primary-light-5: mix($--color-white, $--color-primary, 50%) !default; /* a0cfff */
-$--color-primary-light-6: mix($--color-white, $--color-primary, 60%) !default; /* b3d8ff */
-$--color-primary-light-7: mix($--color-white, $--color-primary, 70%) !default; /* c6e2ff */
-$--color-primary-light-8: mix($--color-white, $--color-primary, 80%) !default; /* d9ecff */
-$--color-primary-light-9: mix($--color-white, $--color-primary, 90%) !default; /* ecf5ff */
+$--color-primary: #0078e7 !default;
+$--color-primary-light-1: mix(
+  $--color-white,
+  $--color-primary,
+  10%
+) !default; /* 53a8ff */
+$--color-primary-light-2: mix(
+  $--color-white,
+  $--color-primary,
+  20%
+) !default; /* 66b1ff */
+$--color-primary-light-3: mix(
+  $--color-white,
+  $--color-primary,
+  30%
+) !default; /* 79bbff */
+$--color-primary-light-4: mix(
+  $--color-white,
+  $--color-primary,
+  40%
+) !default; /* 8cc5ff */
+$--color-primary-light-5: mix(
+  $--color-white,
+  $--color-primary,
+  50%
+) !default; /* a0cfff */
+$--color-primary-light-6: mix(
+  $--color-white,
+  $--color-primary,
+  60%
+) !default; /* b3d8ff */
+$--color-primary-light-7: mix(
+  $--color-white,
+  $--color-primary,
+  70%
+) !default; /* c6e2ff */
+$--color-primary-light-8: mix(
+  $--color-white,
+  $--color-primary,
+  80%
+) !default; /* d9ecff */
+$--color-primary-light-9: mix(
+  $--color-white,
+  $--color-primary,
+  90%
+) !default; /* ecf5ff */
 
 $--color-success: #21ba45 !default;
 $--color-warning: #f2711c !default;
 $--color-danger: #db2828 !default;
-$--color-info: #42B8DD !default;
+$--color-info: #42b8dd !default;
 
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
@@ -89,8 +163,8 @@ $--border-radius-circle: 100% !default;
 
 /* Box-shadow
 -------------------------- */
-$--box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04) !default;
-$--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12) !default;
+$--box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04) !default;
+$--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12) !default;
 $--box-shadow-light: 0 4px 12px 0 rgba(0, 0, 0, 0.12) !default;
 
 /* Fill
@@ -100,7 +174,7 @@ $--fill-base: $--color-white !default;
 /* Font
 -------------------------- */
 $--font-family: Lato, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-$--font-path: 'fonts' !default;
+$--font-path: "fonts" !default;
 $--font-size-base: 14px !default;
 $--font-size-small: 13px !default;
 $--font-size-large: 18px !default;
@@ -178,8 +252,6 @@ $--checkbox-button-font-size: $--font-size-base !default;
 $--checkbox-button-checked-fill: $--color-dark !default;
 $--checkbox-button-checked-color: $--color-white !default;
 $--checkbox-button-checked-border-color: $--color-dark-light-7 !default;
-
-
 
 /* Radio
 -------------------------- */
@@ -381,16 +453,21 @@ $--cascader-menu-border-color: $--border-color-base !default;
 $--cascader-menu-border-width: $--border-width-base !default;
 $--cascader-menu-color: $--color-text-regular !default;
 $--cascader-menu-option-color-active: $--color-text-secondary !default;
-$--cascader-menu-option-fill-active: rgba($--color-text-secondary, 0.12) !default;
+$--cascader-menu-option-fill-active: rgba(
+  $--color-text-secondary,
+  0.12
+) !default;
 $--cascader-menu-option-color-hover: $--color-text-regular !default;
 $--cascader-menu-option-fill-hover: rgba($--color-text-primary, 0.06) !default;
 $--cascader-menu-option-color-disabled: #999 !default;
 $--cascader-menu-option-fill-disabled: rgba($--color-black, 0.06) !default;
 $--cascader-menu-option-empty-color: #666 !default;
 $--cascader-menu-group-color: #999 !default;
-$--cascader-menu-shadow: 0 1px 2px rgba($--color-black, 0.14), 0 0 3px rgba($--color-black, 0.14) !default;
+$--cascader-menu-shadow: 0 1px 2px rgba($--color-black, 0.14),
+  0 0 3px rgba($--color-black, 0.14) !default;
 $--cascader-menu-option-pinyin-color: #999 !default;
-$--cascader-menu-submenu-shadow: 1px 1px 2px rgba($--color-black, 0.14), 1px 0 2px rgba($--color-black, 0.14) !default;
+$--cascader-menu-submenu-shadow: 1px 1px 2px rgba($--color-black, 0.14),
+  1px 0 2px rgba($--color-black, 0.14) !default;
 
 /* Group
 -------------------------- */
@@ -476,7 +553,6 @@ $--button-info-fill: $--color-info !default;
 $--button-hover-tint-percent: 20% !default;
 $--button-active-shade-percent: 10% !default;
 
-
 /* cascader
 -------------------------- */
 $--cascader-height: 200px !default;
@@ -506,14 +582,15 @@ $--dialog-padding-primary: 15px !default;
 
 /* Table
 -------------------------- */
-$--table-border:  1px solid $--border-color-lighter !default;
-$--table-text-color: $--color-text-regular !default;
-$--table-header-color: $--color-text-secondary !default;
-$--table-row-hover-background: $--background-color-base !default;
-$--table-current-row-background: $--color-primary-light-9 !default;
-$--table-header-background: $--color-white !default;
-$--table-footer-background: $--color-text-placeholder !default;
-$--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, .12) !default;
+$--table-border-color: $--border-color-lighter !default;
+$--table-border: 1px solid $--border-color-lighter !default;
+$--table-font-color: $--color-text-regular !default;
+$--table-header-font-color: $--color-text-secondary !default;
+$--table-row-hover-background-color: $--background-color-base !default;
+$--table-current-row-background-color: $--color-primary-light-9 !default;
+/// color||Color|0
+$--table-header-background-color: $--color-white !default;
+$--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12) !default;
 
 /* Pagination
 -------------------------- */
@@ -552,7 +629,7 @@ $--tooltip-padding: 10px !default;
 /* Tag
 -------------------------- */
 $--tag-fill-opacity: 0.01;
-$--tag-border-opacity: 1.0;
+$--tag-border-opacity: 1;
 $--tag-padding: 0 10px !default;
 $--tag-fill: rgba($--color-primary, $--tag-fill-opacity) !default;
 $--tag-color: $--color-primary !default;
@@ -564,7 +641,7 @@ $--tag-dark-fill: rgba($--color-dark, $--tag-fill-opacity) !default;
 $--tag-dark-border: rgba($--color-dark, $--tag-border-opacity) !default;
 $--tag-dark-color: $--color-dark !default;
 
-$--tag-info-fill: rgba($--color-info,$--tag-fill-opacity) !default;
+$--tag-info-fill: rgba($--color-info, $--tag-fill-opacity) !default;
 $--tag-info-border: rgba($--color-info, $--tag-border-opacity) !default;
 $--tag-info-color: $--color-info !default;
 
@@ -666,8 +743,11 @@ $--loading-fullscreen-spinner-size: 50px !default;
 
 /* Scrollbar
 --------------------------*/
-$--scrollbar-background-color: rgba($--color-text-secondary, .3) !default;
-$--scrollbar-hover-background-color: rgba($--color-text-secondary, .5) !default;
+$--scrollbar-background-color: rgba($--color-text-secondary, 0.3) !default;
+$--scrollbar-hover-background-color: rgba(
+  $--color-text-secondary,
+  0.5
+) !default;
 
 /* Carousel
 --------------------------*/
@@ -726,23 +806,49 @@ $--lg: 1200px !default;
 $--xl: 1920px !default;
 
 $--breakpoints: (
-  'xs' : (max-width: $--sm),
-  'sm' : (min-width: $--sm),
-  'md' : (min-width: $--md),
-  'lg' : (min-width: $--lg),
-  'xl' : (min-width: $--xl)
+  "xs": (
+    max-width: $--sm,
+  ),
+  "sm": (
+    min-width: $--sm,
+  ),
+  "md": (
+    min-width: $--md,
+  ),
+  "lg": (
+    min-width: $--lg,
+  ),
+  "xl": (
+    min-width: $--xl,
+  ),
 );
 
 $--breakpoints-spec: (
-  'xs-only' : (max-width: $--sm - 1),
-  'sm-and-up' : (min-width: $--sm),
-  'sm-only': "(min-width: #{$--sm}) and (max-width: #{$--md} - 1)",
-  'sm-and-down': (max-width: $--md - 1),
-  'md-and-up' : (min-width: $--md),
-  'md-only': "(min-width: #{$--md}) and (max-width: #{$--lg } - 1)",
-  'md-and-down': (max-width: $--lg - 1),
-  'lg-and-up' : (min-width: $--lg),
-  'lg-only': "(min-width: #{$--lg}) and (max-width: #{$--xl } - 1)",
-  'lg-and-down': (max-width: $--xl - 1),
-  'xl-only' : (min-width: $--xl),
+  "xs-only": (
+    max-width: $--sm - 1,
+  ),
+  "sm-and-up": (
+    min-width: $--sm,
+  ),
+  "sm-only": "(min-width: #{$--sm}) and (max-width: #{$--md} - 1)",
+  "sm-and-down": (
+    max-width: $--md - 1,
+  ),
+  "md-and-up": (
+    min-width: $--md,
+  ),
+  "md-only": "(min-width: #{$--md}) and (max-width: #{$--lg } - 1)",
+  "md-and-down": (
+    max-width: $--lg - 1,
+  ),
+  "lg-and-up": (
+    min-width: $--lg,
+  ),
+  "lg-only": "(min-width: #{$--lg}) and (max-width: #{$--xl } - 1)",
+  "lg-and-down": (
+    max-width: $--xl - 1,
+  ),
+  "xl-only": (
+    min-width: $--xl,
+  ),
 );
