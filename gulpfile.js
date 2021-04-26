@@ -24,11 +24,16 @@ function compile() {
     .pipe(gulp.dest(distFolder));
 }
 
+const themeChalkFolder = "./node_modules/element-ui/packages/theme-chalk";
+
 /**
  * 拷贝字体
  */
 function copyFont() {
-  return gulp.src("./src/fonts/**").pipe(gulp.dest(`${distFolder}/fonts`));
+  return gulp
+    .src(`${themeChalkFolder}/src/fonts/**`)
+    .pipe(gulp.dest(`${distFolder}/fonts`))
+    .pipe(gulp.dest(`src/fonts`));
 }
 
 const build = gulp.parallel(compile, copyFont);

@@ -171,13 +171,23 @@ $--box-shadow-light: 0 4px 12px 0 rgba(0, 0, 0, 0.12) !default;
 -------------------------- */
 $--fill-base: $--color-white !default;
 
-/* Font
+/* Typography
 -------------------------- */
 $--font-family: Lato, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
 $--font-path: "fonts" !default;
-$--font-size-base: 14px !default;
-$--font-size-small: 13px !default;
+$--font-display: "auto" !default;
+/// fontSize|1|Font Size|0
+$--font-size-extra-large: 20px !default;
+/// fontSize|1|Font Size|0
 $--font-size-large: 18px !default;
+/// fontSize|1|Font Size|0
+$--font-size-medium: 16px !default;
+/// fontSize|1|Font Size|0
+$--font-size-base: 14px !default;
+/// fontSize|1|Font Size|0
+$--font-size-small: 13px !default;
+/// fontSize|1|Font Size|0
+$--font-size-extra-small: 12px !default;
 $--font-color-disabled-base: #bbb !default;
 $--font-weight-primary: 300 !default;
 $--font-line-height-primary: 24px !default;
