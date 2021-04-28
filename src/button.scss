@@ -1,32 +1,14 @@
 @charset "UTF-8";
-@import "common/var";
-@import "mixins/button";
-@import "mixins/mixins";
-@import "mixins/utils";
+@import "../node_modules/element-ui/packages/theme-chalk/src/button.scss";
+@import "mixins/button.scss";
+@import "common/var.scss";
 
 @include b(button) {
-  display: inline-block;
-  white-space: nowrap;
-  cursor: pointer;
-  background: $--button-default-fill;
   border: $--border-base;
-  border-color: $--button-default-border;
-  color: $--button-default-color;
+  border-color: $--button-default-border-color;
+  color: $--button-default-font-color;
   text-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
-  -webkit-appearance: none;
-  text-align: center;
-  box-sizing: border-box;
-  outline: none;
-  margin: 0;
-  transition: .2s;
-  font-weight: $--button-font-weight;
-  line-height: 1;
-  @include utils-user-select(none);
-  & + .el-button {
-    margin-left: 10px;
-  }
-
-  @include button-size($--button-padding-vertical, $--button-padding-horizontal, $--button-font-size, $--button-border-radius);
+  transition: 0.2s;
 
   &:hover,
   &:focus {
@@ -37,33 +19,28 @@
 
   &:active {
     color: mix($--color-black, $--color-dark, $--button-active-shade-percent);
-    border-color: mix($--color-black, $--color-dark, $--button-active-shade-percent);
-    outline: none;
-  }
-
-  &::-moz-focus-inner {
-    border: 0;
-  }
-
-  & [class*="el-icon-"] {
-    & + span {
-      margin-left: 5px;
-    }
+    border-color: mix(
+      $--color-black,
+      $--color-dark,
+      $--button-active-shade-percent
+    );
   }
 
   @include when(plain) {
     &:hover,
     &:focus {
-      background: $--color-white;
       border-color: $--color-black;
       color: $--color-black;
     }
 
     &:active {
-      background: mix($--color-black, $--color-white, $--button-active-shade-percent);
+      background: mix(
+        $--color-black,
+        $--color-white,
+        $--button-active-shade-percent
+      );
       border-color: $--color-black;
       color: $--color-black;
-      outline: none;
     }
   }
 
@@ -72,101 +49,85 @@
   }
 
   @keyframes glowing {
-    from { box-shadow: 0 0 0 rgba($--button-default-border, 0.3);}
-    50% { box-shadow: 0 0 20px rgba($--button-default-border, 0.6);}
-    to { box-shadow: 0 0 0 rgba($--button-default-border, 0.3);}
-  }
-
-  @include when(active) {
-    color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-    border-color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-  }
-
-  @include when(disabled) {
-    &,
-    &:hover,
-    &:focus {
-      color: $--button-disabled-color;
-      cursor: not-allowed;
-      background-image: none;
-      background-color: $--button-disabled-fill;
-      border-color: $--button-disabled-border;
+    from {
+      box-shadow: 0 0 0 rgba($--button-default-border-color, 0.3);
     }
-
-    &.el-button--text {
-      background-color: transparent;
+    50% {
+      box-shadow: 0 0 20px rgba($--button-default-border-color, 0.6);
     }
-
-    &.is-plain {
-      &,
-      &:hover,
-      &:focus {
-        background-color: $--color-white;
-        border-color: $--button-disabled-border;
-        color: $--button-disabled-color;
-      }
+    to {
+      box-shadow: 0 0 0 rgba($--button-default-border-color, 0.3);
     }
   }
 
   @include when(loading) {
-    position: relative;
-    pointer-events: none;
-    border: 1px dashed ;
-
-    &:before {
-      pointer-events: none;
-      content: '';
-      position: absolute;
-      left: -1px;
-      top: -1px;
-      right: -1px;
-      bottom: -1px;
-      border-radius: inherit;
-      background-color: rgba(255,255,255,.35);
-    }
-  }
-  @include when(round) {
-    border-radius: 20px;
-    padding: 12px 23px;
-  }
-  @include when(circle) {
-    border-radius: 50%;
-    padding: 12px;
+    border: 1px dashed;
   }
   @include m(light) {
-    @include button-variant($--color-black, $--button-light-color, $--button-light-fill, $--button-light-border, button-light);
+    @include button-variant(
+      $--color-black,
+      $--button-light-color,
+      $--button-light-fill,
+      $--button-light-border,
+      button-light
+    );
   }
   @include m(dark) {
-    @include button-variant($--color-white, $--button-dark-color, $--button-dark-fill, $--button-dark-border, button-dark);
+    @include button-variant(
+      $--color-white,
+      $--button-dark-color,
+      $--button-dark-fill,
+      $--button-dark-border,
+      button-dark
+    );
   }
   @include m(primary) {
-    @include button-variant($--color-white, $--button-primary-color, $--button-primary-fill, $--button-primary-border, button-primary);
+    @include button-variant(
+      $--color-white,
+      $--button-primary-color,
+      $--button-primary-fill,
+      $--button-primary-border,
+      button-primary
+    );
   }
   @include m(success) {
-    @include button-variant($--color-white, $--button-success-color, $--button-success-fill, $--button-success-border, button-success);
+    @include button-variant(
+      $--color-white,
+      $--button-success-color,
+      $--button-success-fill,
+      $--button-success-border,
+      button-success
+    );
   }
   @include m(warning) {
-    @include button-variant($--color-white, $--button-warning-color, $--button-warning-fill, $--button-warning-border, button-warning);
+    @include button-variant(
+      $--color-white,
+      $--button-warning-color,
+      $--button-warning-fill,
+      $--button-warning-border,
+      button-warning
+    );
   }
   @include m(danger) {
-    @include button-variant($--color-white, $--button-danger-color, $--button-danger-fill, $--button-danger-border, button-danger);
+    @include button-variant(
+      $--color-white,
+      $--button-danger-color,
+      $--button-danger-fill,
+      $--button-danger-border-color,
+      button-danger
+    );
   }
   @include m(info) {
-    @include button-variant($--color-white, $--button-info-color, $--button-info-fill, $--button-info-border, button-info);
-  }
-  @include m(medium) {
-    @include button-size($--button-medium-padding-vertical, $--button-medium-padding-horizontal, $--button-medium-font-size, $--button-medium-border-radius);
-  }
-  @include m(small) {
-    @include button-size($--button-small-padding-vertical, $--button-small-padding-horizontal, $--button-small-font-size, $--button-small-border-radius);
-  }
-  @include m(mini) {
-    @include button-size($--button-mini-padding-vertical, $--button-mini-padding-horizontal, $--button-mini-font-size, $--button-mini-border-radius);
+    @include button-variant(
+      $--color-white,
+      $--button-info-color,
+      $--button-info-fill,
+      $--button-info-border,
+      button-info
+    );
   }
   @include m(text) {
-    border-color: transparent;
     color: $--color-dark;
-    background: transparent;
     padding: 5px;
     border-bottom: dashed $--color-dark 1px;
 
@@ -174,80 +135,13 @@
     &:focus {
       color: $--color-dark;
       background-color: $--color-gray;
-      border-color: transparent;
       border-bottom: dashed $--color-black 1px;
-    }
-    &:active {
-      color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
-      border-color: transparent;
-      background-color: transparent;
     }
 
     &.is-disabled,
     &.is-disabled:hover,
     &.is-disabled:focus {
-      border-color: transparent;
       border-bottom: dashed $--border-color-base 1px;
-    }
-  }
-}
-
-@include b(button-group) {
-  @include utils-clearfix;
-  display: inline-block;
-  vertical-align: middle;
-
-  & .el-button {
-    float: left;
-    position: relative;
-    & + .el-button {
-      margin-left: 0;
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-    &:last-child {
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-    &:first-child:last-child {
-      border-top-right-radius: $--button-border-radius;
-      border-bottom-right-radius: $--button-border-radius;
-      border-top-left-radius: $--button-border-radius;
-      border-bottom-left-radius: $--button-border-radius;
-    }
-    &:not(:first-child):not(:last-child) {
-      border-radius: 0;
-    }
-    &:not(:last-child) {
-      margin-right: -1px;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-      z-index: 1;
-    }
-
-    @include when(active) {
-      z-index: 1;
-    }
-  }
-
-  @each $type in (primary, success, warning, danger, info) {
-    .el-button--#{$type} {
-      &:first-child {
-        border-right-color: rgba($--color-white, 0.5);
-      }
-      &:last-child {
-        border-left-color: rgba($--color-white, 0.5);
-      }
-      &:not(:first-child):not(:last-child) {
-        border-left-color: rgba($--color-white, 0.5);
-        border-right-color: rgba($--color-white, 0.5);
-      }
     }
   }
 }

@@ -236,9 +236,9 @@ $--checkbox-disabled-checked-input-fill: $--border-color-extra-light !default;
 $--checkbox-disabled-checked-input-border-color: $--border-color-base !default;
 $--checkbox-disabled-checked-icon-color: $--color-text-placeholder !default;
 
-$--checkbox-checked-text-color: $--color-dark !default;
+$--checkbox-checked-font-color: $--color-dark !default;
 $--checkbox-checked-input-border-color: $--color-black !default;
-$--checkbox-checked-input-fill: $--color-white !default;
+$--checkbox-checked-background-color: $--color-white !default;
 $--checkbox-checked-icon-color: $--color-black !default;
 
 $--checkbox-input-border-color-hover: $--color-dark-light-7 !default;
@@ -307,8 +307,8 @@ $--radio-bordered-mini-input-width: 12px !default;
 $--radio-bordered-mini-height: 28px !default;
 
 $--radio-button-font-size: $--font-size-base !default;
-$--radio-button-checked-fill: $--color-dark !default;
-$--radio-button-checked-color: $--color-white !default;
+$--radio-button-checked-background-color: $--color-dark !default;
+$--radio-button-checked-font-color: $--color-white !default;
 $--radio-button-checked-border-color: $--color-dark !default;
 $--radio-button-disabled-checked-fill: $--color-dark-light-3 !default;
 
@@ -524,13 +524,16 @@ $--button-mini-border-radius: #{$--border-radius-base - 1} !default;
 $--button-mini-padding-vertical: 6px !default;
 $--button-mini-padding-horizontal: 12px !default;
 
-$--button-default-color: $--color-text-primary !default;
-$--button-default-fill: transparent !default;
-$--button-default-border: $--border-color-base !default;
+/// color||Color|0
+$--button-default-font-color: $--color-text-primary !default;
+/// color||Color|0
+$--button-default-background-color: transparent !default;
+/// color||Color|0
+$--button-default-border-color: $--border-color-base !default;
 
-$--button-disabled-color: $--color-text-placeholder !default;
-$--button-disabled-fill: transparent !default;
-$--button-disabled-border: $--border-color-base !default;
+$--button-disabled-font-color: $--color-text-placeholder !default;
+$--button-disabled-background-color: transparent !default;
+$--button-disabled-border-color: $--border-color-base !default;
 
 $--button-light-border: $--color-light !default;
 $--button-light-color: $--color-light !default;
@@ -685,7 +688,7 @@ $--dropdown-menuItem-hover-color: $--link-color !default;
 
 /* Badge
 -------------------------- */
-$--badge-fill: $--color-danger !default;
+$--badge-background-color: $--color-danger !default;
 $--badge-radius: 10px !default;
 $--badge-font-size: 12px !default;
 $--badge-padding: 6px !default;
