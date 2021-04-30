@@ -1,3 +1,7 @@
+---
+title: 评分
+---
+
 <script>
   export default {
     data() {
@@ -9,14 +13,9 @@
         value5: 3.7
       };
     },
-    mounted() {
-      this.$nextTick(() => {
-        let firstDemo = document.querySelector('.source');
-        firstDemo.style.padding = '0';
-      });
-    }
   }
 </script>
+
 <style lang="scss" scoped>
   .block {
     padding: 30px 0;
@@ -37,8 +36,6 @@
     margin-bottom: 20px;
   }
 </style>
-
-## Rate 评分
 
 评分组件
 
@@ -66,9 +63,11 @@
 
 为组件设置 `show-text` 属性会在右侧显示辅助文字。通过设置 `texts` 可以为每一个分值指定对应的辅助文字。`texts` 为一个数组，长度应等于最大值 `max`。
 
+<template>
 <el-card shadow="hover">
 <el-rate
   v-model="value3"
   show-text>
 </el-rate>
 </el-card>
+</template>

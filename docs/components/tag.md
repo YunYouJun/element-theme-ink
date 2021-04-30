@@ -1,3 +1,7 @@
+---
+title: 标签
+---
+
 <script>
   export default {
     data() {
@@ -57,10 +61,6 @@
   }
 </style>
 
-## Tag 标签
-
-[Tag](http://element.eleme.io/#/zh-CN/component/tag)
-
 用于标记和选择。
 
 ### 基础用法
@@ -80,6 +80,7 @@
 
 设置`closable`属性可以定义一个标签是否可移除。默认的标签移除时会附带渐变动画，如果不想使用，可以设置`disable-transitions`属性，它接受一个`Boolean`，true 为关闭。
 
+<template>
 <el-card shadow="hover">
   <el-tag
     v-for="tag in tags"
@@ -89,11 +90,13 @@
     {{tag.name}}
   </el-tag>
 </el-card>
+</template>
 
 ### 动态编辑标签
 
 动态编辑标签可以通过点击标签关闭按钮后触发的 `close` 事件来实现
 
+<template>
 <el-card shadow="hover">
   <el-tag
     :key="tag"
@@ -115,6 +118,7 @@
   </el-input>
   <el-button v-else class="button-new-tag" size="small" @click="showInput">+ New Tag</el-button>
 </el-card>
+</template>
 
 ### 不同尺寸
 

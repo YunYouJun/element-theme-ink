@@ -1,3 +1,9 @@
+---
+title: 单选框
+---
+
+在一组备选项中进行单选
+
 <script>
   module.exports = {
     data() {
@@ -18,28 +24,14 @@
   };
 </script>
 
-## Radio 单选框
-
-在一组备选项中进行单选
-
 ### 基础用法
 
-[Radio](http://element.eleme.io/#/zh-CN/component/radio) 
+[Radio](http://element.eleme.io/#/zh-CN/component/radio)
 
 <template>
   <el-radio v-model="radio" label="1">备选项</el-radio>
   <el-radio v-model="radio" label="2">备选项</el-radio>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        radio: '1'
-      };
-    }
-  }
-</script>
 
 ### 禁用状态
 
@@ -49,16 +41,6 @@
   <el-radio disabled v-model="radio1" label="禁用">备选项</el-radio>
   <el-radio disabled v-model="radio1" label="选中且禁用">备选项</el-radio>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        radio1: '选中且禁用'
-      };
-    }
-  }
-</script>
 
 ### 按钮样式
 
@@ -101,19 +83,6 @@
   </div>
 </template>
 
-<script>
-  export default {
-    data () {
-      return {
-        radio3: '上海',
-        radio4: '上海',
-        radio5: '上海',
-        radio6: '上海'
-      };
-    }
-  }
-</script>
-
 ### 带有边框
 
 设置`border`属性可以渲染为带有边框的单选框。
@@ -144,16 +113,3 @@
     </el-radio-group>
   </div>
 </template>
-
-<script>
-  export default {
-    data () {
-      return {
-        radio7: '1',
-        radio8: '1',
-        radio9: '1',
-        radio10: '1'
-      };
-    }
-  }
-</script>

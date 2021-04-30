@@ -222,8 +222,8 @@ $--checkbox-font-weight: $--font-weight-primary !default;
 $--checkbox-color: $--color-text-regular !default;
 $--checkbox-input-height: 14px !default;
 $--checkbox-input-width: 14px !default;
-$--checkbox-input-border-radius: $--border-radius-small !default;
-$--checkbox-input-fill: $--color-white !default;
+$--checkbox-border-radius: $--border-radius-small !default;
+$--checkbox-background-color: $--color-white !default;
 $--checkbox-input-border: $--border-base !default;
 $--checkbox-input-border-color: $--border-color-base !default;
 $--checkbox-icon-color: $--color-white !default;
@@ -259,8 +259,8 @@ $--checkbox-bordered-mini-input-width: 12px !default;
 $--checkbox-bordered-mini-height: 28px !default;
 
 $--checkbox-button-font-size: $--font-size-base !default;
-$--checkbox-button-checked-fill: $--color-dark !default;
-$--checkbox-button-checked-color: $--color-white !default;
+$--checkbox-button-checked-background-color: $--color-dark !default;
+$--checkbox-button-checked-font-color: $--color-white !default;
 $--checkbox-button-checked-border-color: $--color-dark-light-7 !default;
 
 /* Radio

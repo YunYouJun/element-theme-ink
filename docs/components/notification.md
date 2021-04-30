@@ -1,3 +1,7 @@
+---
+title: 通知
+---
+
 <script>
   module.exports = {
     methods: {
@@ -86,16 +90,13 @@
   };
 </script>
 
-## Notification 通知
-
-[Notification](http://element.eleme.io/#/zh-CN/component/notification)
-
 悬浮出现在页面角落，显示全局的通知提醒消息。
 
 ### 基本用法
 
 适用性广泛的通知栏
 
+<template>
 <el-card shadow="hover">
   <el-button
     plain
@@ -108,6 +109,7 @@
     不会自动关闭
     </el-button>
 </el-card>
+</template>
 
 ### 带有倾向性
 
@@ -115,6 +117,7 @@
 
 :::demo Element 为 Notification 组件准备了四种通知类型：`success`, `warning`, `info`, `error`。通过`type`字段来设置，除此以外的值将被忽略。同时，我们也为 Notification 的各种 type 注册了方法，可以在不传入`type`字段的情况下像`open5`和`open6`那样直接调用。
 
+<template>
 <el-card shadow="hover">
   <el-button
     plain
@@ -137,6 +140,7 @@
     错误
   </el-button>
 </el-card>
+</template>
 
 ### 自定义弹出位置
 
@@ -144,6 +148,7 @@
 
 使用`position`属性定义 Notification 的弹出位置，支持四个选项：`top-right`、`top-left`、`bottom-right`、`bottom-left`，默认为`top-right`。
 
+<template>
 <el-card shadow="hover">
   <el-button
     plain
@@ -166,3 +171,4 @@
     左上角
   </el-button>
 </el-card>
+</template>

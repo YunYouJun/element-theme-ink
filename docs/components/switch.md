@@ -1,3 +1,7 @@
+---
+title: 开关
+---
+
 <style>
   .demo-box.demo-switch {
     .el-switch {
@@ -22,8 +26,6 @@
   };
 </script>
 
-## Switch 开关
-
 表示两种相互对立的状态间的切换，多用于触发「开/关」。
 
 ### 基本用法
@@ -35,17 +37,6 @@
   active-color="#13ce66"
   inactive-color="#ff4949">
 </el-switch>
-
-<script>
-  export default {
-    data() {
-      return {
-        value1: true,
-        value2: true
-      }
-    }
-  };
-</script>
 
 ### 文字描述
 

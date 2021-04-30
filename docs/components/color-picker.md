@@ -1,3 +1,7 @@
+---
+title: 颜色选择器
+---
+
 <script>
   export default {
     data() {
@@ -7,12 +11,6 @@
         color3: 'rgba(19, 206, 102, 0.8)',
         color4: '#409EFF'
       };
-    },
-    mounted() {
-      this.$nextTick(() => {
-        const demos = document.querySelectorAll('.source');
-        demos[0].style.padding = '0';
-      });
     },
   }
 </script>
@@ -28,8 +26,6 @@
   }
 </style>
 
-## ColorPicker 颜色选择器
-
 用于颜色选择，支持多种格式。
 
 ### 基础用法
@@ -38,6 +34,7 @@
 
 使用 v-model 与 Vue 实例中的一个变量进行双向绑定，绑定的变量需要是字符串类型。
 
+<template>
 <el-card shadow="hover">
   <el-col :span="12" class="block">
     <span class="demonstration">有默认值</span>
@@ -48,22 +45,13 @@
     <el-color-picker v-model="color2"></el-color-picker>
   </el-col>
 </el-card>
+</template>
 
 ### 选择透明度
 
 ColorPicker 支持普通颜色，也支持带 Alpha 通道的颜色，通过`show-alpha`属性即可控制是否支持透明度的选择。
 
 <el-color-picker v-model="color3" show-alpha></el-color-picker>
-
-<script>
-  export default {
-    data() {
-      return {
-        color3: 'rgba(19, 206, 102, 0.8)'
-      }
-    }
-  };
-</script>
 
 ### 不同尺寸
 

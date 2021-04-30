@@ -6,6 +6,7 @@ title: 对话框
   export default {
     data() {
       return {
+        dialogVisible: false,
         gridData: [{
           date: '2016-05-02',
           name: '王小虎',
