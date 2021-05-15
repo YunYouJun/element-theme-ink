@@ -1,13 +1,20 @@
+import { defineUserConfig } from "vuepress";
+// import { defineUserConfig } from "vuepress-vite";
+import type { DefaultThemeOptions } from "vuepress";
+// import type { DefaultThemeOptions, ViteBundlerOptions } from "vuepress-vite";
+import * as pkg from "../../package.json";
 const nav = require("../nav.config.json");
 
-module.exports = {
-  title: "Ink",
+export default defineUserConfig<DefaultThemeOptions>({
+  // bundler: "@vuepress/vite",
+  title: pkg.name,
+  description: pkg.description,
   themeConfig: {
     repo: "YunYouJun/element-theme-ink",
     editLinks: true,
 
     logo: "/logo.png",
-    nav: [
+    navbar: [
       { text: "指南", link: "/guide/" },
       { text: "组件", link: "/components/color/" },
     ],
@@ -19,7 +26,7 @@ module.exports = {
       "/guide/": getGuideSidebar(),
     },
   },
-};
+});
 
 function getComponentsSidebar() {
   let componentsSidebar = [];

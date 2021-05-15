@@ -1,3 +1,7 @@
+---
+title: 输入框
+---
+
 <script>
   export default {
     data() {
@@ -35,8 +39,6 @@
   }
 </style>
 
-## Input 输入框
-
 通过鼠标或键盘输入字符
 
 ### 基础用法
@@ -49,11 +51,13 @@
 
 通过 `disabled` 属性指定是否禁用 input 组件
 
+<template>
 <el-input
   placeholder="请输入内容"
   v-model="input1"
   :disabled="true">
 </el-input>
+</template>
 
 ### 带 icon 的输入框
 

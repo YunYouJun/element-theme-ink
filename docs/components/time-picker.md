@@ -1,3 +1,7 @@
+---
+title: 时间选择器
+---
+
 <style lang="scss" scoped>
   .el-date-editor + .el-date-editor {
     margin-left: 10px;
@@ -10,15 +14,18 @@
       return {
         value1: '',
         value2: new Date(2016, 9, 10, 18, 40),
-        value3: new Date(2016, 9, 10, 18, 40)
+        value3: new Date(2016, 9, 10, 18, 40),
+        pickerOptions: {
+          start: '08:30',
+          step: '00:15',
+          end: '18:30'
+        }
       };
     }
   }
 </script>
 
-## TimePicker 时间选择器
-
- 用于选择或输入日期
+用于选择或输入日期
 
 [Time Picker](http://element.eleme.io/#/zh-CN/component/time-picker)
 
@@ -26,14 +33,7 @@
 
 提供几个固定的时间点供用户选择
 
-<el-time-select
-  v-model="value1"
-  :picker-options="{
-    start: '08:30',
-    step: '00:15',
-    end: '18:30'
-  }"
-  placeholder="选择时间">
+<el-time-select v-model="value1" :picker-options="pickerOptions" placeholder="选择时间">
 </el-time-select>
 
 ### 任意时间点

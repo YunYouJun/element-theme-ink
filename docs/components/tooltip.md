@@ -1,3 +1,7 @@
+---
+title: 文字提示
+---
+
 <script>
   export default {
     data() {
@@ -7,8 +11,6 @@
     }
   };
 </script>
-
-## Tooltip 文字提示
 
 常用于展示鼠标 hover 时的提示信息。
 
@@ -70,6 +72,7 @@ Ink 主题推荐优先使用 light 模式。
     </div>
   </div>
 </el-card>
+
 <style lang="scss">
   .box {
     width: 400px;
@@ -97,7 +100,6 @@ Ink 主题推荐优先使用 light 模式。
 ### 主题
 
 Tooltip 组件提供了两个不同的主题：`dark`和`light`。
-
 
 通过设置`effect`属性来改变主题，默认为`dark`。
 

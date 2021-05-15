@@ -24,7 +24,7 @@ function compile() {
     .pipe(gulp.dest(distFolder));
 }
 
-const themeChalkFolder = "./node_modules/element-ui/packages/theme-chalk";
+const themeChalkFolder = "./node_modules/element-plus/packages/theme-chalk";
 
 /**
  * 拷贝字体

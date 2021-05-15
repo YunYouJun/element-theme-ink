@@ -1,3 +1,7 @@
+---
+title: 分页
+---
+
 <style lang="scss" scoped>
   .block {
     padding: 30px 0;
@@ -26,10 +30,6 @@
     margin: 20px;
   }
 </style>
-
-## Pagination 分页
-
-[Pagination](http://element.eleme.io/#/zh-CN/component/pagination)
 
 当数据量过多时，使用分页分解数据。
 
@@ -136,7 +136,6 @@
 </el-card>
 
 <script>
-  import { addClass } from 'element-ui/src/utils/dom';
   export default {
     methods: {
       handleSizeChange(val) {
@@ -154,14 +153,5 @@
         currentPage4: 4
       };
     },
-    mounted() {
-      this.$nextTick(() => {
-        let demos = document.querySelectorAll('.source');
-        let firstDemo = demos[0];
-        let lastDemo = demos[demos.length - 1];
-        addClass(firstDemo, 'first');
-        addClass(lastDemo, 'last');
-      });
-    }
   }
 </script>

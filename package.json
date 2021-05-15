@@ -35,16 +35,14 @@
   "homepage": "https://github.com/YunYouJun/element-theme-ink#readme",
   "dependencies": {},
   "devDependencies": {
-    "core-js": "2",
-    "element-ui": "^2.15.1",
+    "element-plus": "^1.0.2-beta.44",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-sass": "^4.1.0",
     "pre-commit": "^1.2.2",
-    "sass": "^1.32.11",
-    "sass-loader": "7",
-    "vue": "^2.6.12",
-    "vuepress": "^1.8.2"
+    "sass": "^1.32.13",
+    "sass-loader": "^11.1.1",
+    "vuepress": "^2.0.0-beta.14"
   }
 }

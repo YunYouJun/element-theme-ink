@@ -2,7 +2,7 @@
 @import "common/var";
 @import "input";
 
-@import "../node_modules/element-ui/packages/theme-chalk/src/input-number.scss";
+@import "../node_modules/element-plus/packages/theme-chalk/src/input-number.scss";
 
 @include b(input-number) {
   @include e((increase, decrease)) {

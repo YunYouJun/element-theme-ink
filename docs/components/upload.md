@@ -1,3 +1,7 @@
+---
+title: 上传
+---
+
 <script>
   export default {
     data() {
@@ -71,12 +75,11 @@
   }
 </script>
 
-## Upload 上传
-
 通过点击或者拖拽上传文件
 
 ### 点击上传
 
+<template>
 <el-upload
   class="upload-demo"
   action="https://jsonplaceholder.typicode.com/posts/"
@@ -87,28 +90,30 @@
   :limit="3"
   :on-exceed="handleExceed"
   :file-list="fileList">
-<el-button size="small" type="dark" plain>点击上传</el-button>
-
+  <el-button size="small" type="dark" plain>点击上传</el-button>
   <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
 </el-upload>
+</template>
 
 ### 照片墙
 
 使用 `list-type` 属性来设置文件列表的样式。
 
+<template>
 <el-upload
   action="https://jsonplaceholder.typicode.com/posts/"
   list-type="picture-card"
   :on-preview="handlePictureCardPreview"
   :on-remove="handleRemove"><i class="el-icon-plus"></i>
 </el-upload>
-
 <el-dialog :visible.sync="dialogVisible">
   <img width="100%" :src="dialogImageUrl" alt="">
 </el-dialog>
+</template>
 
 ### 图片列表缩略图
 
+<template>
 <el-upload
   class="upload-demo"
   action="https://jsonplaceholder.typicode.com/posts/"
@@ -117,15 +122,20 @@
   :file-list="fileList2"
   list-type="picture">
 <el-button size="small" type="dark" plain>点击上传</el-button>
-
   <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
 </el-upload>
+</template>
 
 ### 拖拽上传
 
+<template>
 <el-upload
   class="upload-demo"
   drag
   action="https://jsonplaceholder.typicode.com/posts/"
-  multiple><i class="el-icon-upload"></i><div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div><div class="el-upload__tip" slot="tip">只能上传 jpg/png 文件，且不超过 500kb</div>
+  multiple>
+  <i class="el-icon-upload"></i>
+  <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
+  <div class="el-upload__tip" slot="tip">只能上传 jpg/png 文件，且不超过500kb</div>
 </el-upload>
+</template>

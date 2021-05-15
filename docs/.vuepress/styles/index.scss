@@ -1,3 +1,6 @@
+// base colors
+$accentColor: #303133 !default;
+
 // scrollbar
 ::-webkit-scrollbar {
   width: 6px;
@@ -35,7 +38,9 @@
     }
   }
 
-  .theme-default-content, .page-edit, .page-nav {
+  .theme-default-content,
+  .page-edit,
+  .page-nav {
     max-width: 100%;
   }
 

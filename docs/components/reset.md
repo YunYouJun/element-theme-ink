@@ -1,8 +1,10 @@
-<style lang="scss">
-@import "../../src/reset.scss";
-</style>
+---
+title: 重置
+---
 
-# Reset 重置
+<!-- <style lang="scss">
+@import "../../src/reset.scss";
+</style> -->
 
 <template>
 

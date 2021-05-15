@@ -3,8 +3,10 @@ home: true
 heroImage: /logo.png
 heroText: Element-Theme-Ink
 tagline: Dead simple css theme about element.
-actionText: Get Started →
-actionLink: /guide/
+actions:
+  - text: Get Started →
+    link: /guide/
+    type: primary
 features:
   - title: Element
     details: 基于 Element UI 框架

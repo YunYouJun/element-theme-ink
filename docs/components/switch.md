@@ -2,7 +2,7 @@
 title: 开关
 ---
 
-<style>
+<style lang="scss">
   .demo-box.demo-switch {
     .el-switch {
       margin: 20px 20px 20px 0;
@@ -32,26 +32,21 @@ title: 开关
 
 绑定`v-model`到一个`Boolean`类型的变量。可以使用`active-color`属性与`inactive-color`属性来设置开关的背景色。
 
-<el-switch
-  v-model="value2"
-  active-color="#13ce66"
-  inactive-color="#ff4949">
+<el-switch v-model="value2" active-color="#13ce66" inactive-color="#ff4949">
 </el-switch>
 
 ### 文字描述
 
 使用`active-text`属性与`inactive-text`属性来设置开关的文字描述。
 
-<el-switch
-  v-model="value3"
-  active-text="按月付费"
-  inactive-text="按年付费">
+<el-switch v-model="value3" active-text="按月付费" inactive-text="按年付费">
 </el-switch>
 
 ### 禁用状态
 
 设置`disabled`属性，接受一个`Boolean`，设置`true`即可禁用。
 
+<template>
 <el-switch
   v-model="value6"
   disabled>
@@ -60,3 +55,4 @@ title: 开关
   v-model="value7"
   disabled>
 </el-switch>
+</template>
