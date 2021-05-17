@@ -3,7 +3,7 @@ import { defineUserConfig } from "vuepress";
 import type { DefaultThemeOptions } from "vuepress";
 // import type { DefaultThemeOptions, ViteBundlerOptions } from "vuepress-vite";
 import * as pkg from "../../package.json";
-const nav = require("../nav.config.json");
+import nav from "../nav.config.json";
 
 export default defineUserConfig<DefaultThemeOptions>({
   // bundler: "@vuepress/vite",
@@ -16,7 +16,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     logo: "/logo.png",
     navbar: [
       { text: "指南", link: "/guide/" },
-      { text: "组件", link: "/components/color/" },
+      { text: "组件", link: "/components/color.md" },
     ],
 
     smoothScroll: true,
@@ -34,14 +34,12 @@ function getComponentsSidebar() {
     const children = [];
     group.list.forEach((child) => {
       children.push({
-        title: child.title,
-        path: `/components/${child.path}`,
+        text: child.title,
+        link: `/components/${child.path}.md`,
       });
     });
     componentsSidebar.push({
-      title: group.groupName,
-      collapsable: false,
-      sidebarDepth: 0,
+      text: group.groupName,
       children,
     });
   });
@@ -49,5 +47,5 @@ function getComponentsSidebar() {
 }
 
 function getGuideSidebar() {
-  return ["", "design"];
+  return ["README.md", "design.md"];
 }

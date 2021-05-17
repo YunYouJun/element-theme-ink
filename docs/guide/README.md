@@ -1,7 +1,7 @@
 # 指南
 
 <p align="center">
-  <a href="https://ink.yunyoujun.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/YunYouJun/element-theme-ink/master/docs/.vuepress/public/logo.png" alt="Element Theme Ink Logo"></a>
+  <a href="https://ink.elpsy.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://cdn.jsdelivr.net/gh/YunYouJun/element-theme-ink/docs/.vuepress/public/logo.png" alt="Element Theme Ink Logo"></a>
   <h1 align="center">Element-Theme-Ink</h1>
 </p>
 
@@ -9,8 +9,8 @@
   <a href="https://npmcharts.com/compare/element-theme-ink?minimal=true"><img src="https://img.shields.io/npm/dt/element-theme-ink.svg?style=for-the-badge" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/v/element-theme-ink.svg?style=for-the-badge" alt="Version"></a>
   <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/l/element-theme-ink.svg?style=for-the-badge" alt="License"></a>
-  <a href="https://unpkg.com/element-theme-ink">
-    <img src="https://img.badgesize.io/https://unpkg.com/element-theme-ink@latest/dist/index.css?compression=gzip&label=gzip%20size:%20CSS&style=for-the-badge">
+  <a href="https://cdn.jsdelivr.net/npm/element-theme-ink">
+    <img src="https://img.shields.io/bundlephobia/minzip/element-theme-ink?style=for-the-badge" alt="npm bundle size">
   </a>
 </p>
 
@@ -20,6 +20,7 @@
 - GitHub: [element-theme-ink](https://github.com/YunYouJun/element-theme-ink)
 - npm: [element-theme-ink](https://www.npmjs.com/package/element-theme-ink)
 - unpkg: [element-theme-ink](https://unpkg.com/element-theme-ink)
+- jsdelivr: <https://cdn.jsdelivr.net/npm/element-theme-ink>
 
 Base on [element](https://github.com/ElemeFE/element) & [element-theme-chalk](https://github.com/ElementUI/theme-chalk)
 
@@ -95,6 +96,12 @@ import "element-theme-ink/src/index.scss";
 
 ## Example
 
+### element-ui for Vue2
+
+```bash
+yarn add element
+```
+
 ```js
 // main.js
 import Vue from "vue";
@@ -111,3 +118,29 @@ new Vue({
   render: (h) => h(App),
 });
 ```
+
+### element-plus for Vue3
+
+```bash
+yarn add element-plus
+```
+
+<CodeGroup>
+  <CodeGroupItem title="TypeScript" active>
+
+```ts
+import { createApp } from "vue";
+import App from "./App.vue";
+import "element-theme-ink";
+```
+
+  </CodeGroupItem>
+
+  <CodeGroupItem title="JavaScript">
+
+```js
+import "element-theme-ink";
+```
+
+  </CodeGroupItem>
+</CodeGroup>

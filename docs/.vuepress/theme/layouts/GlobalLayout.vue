@@ -11,11 +11,12 @@
   </Layout>
 </template>
 
-<script>
-import Layout from "@parent-theme/layouts/Layout.vue";
+<script lang="ts">
+import { defineComponent } from "vue";
+import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 import { capitalize } from "../utils.js";
 
-export default {
+export default defineComponent({
   components: { Layout },
   mounted() {
     const defaultContainer = document.getElementsByClassName(
@@ -45,7 +46,7 @@ export default {
       return `${componentsUrl}${name}`;
     },
   },
-};
+});
 </script>
 
 <style>
