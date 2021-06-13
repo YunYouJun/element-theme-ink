@@ -7,6 +7,8 @@ const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 
+sass.compiler = require("sass");
+
 /**
  * 编译 scss
  */

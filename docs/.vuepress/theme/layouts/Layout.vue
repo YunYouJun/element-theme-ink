@@ -1,4 +1,3 @@
-<!-- .vuepress/theme/layouts/GlobalLayout.vue -->
 <template>
   <Layout>
     <template #page-bottom>
@@ -17,8 +16,11 @@ import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
 import { capitalize } from "../utils.js";
 
 export default defineComponent({
-  components: { Layout },
+  components: {
+    Layout,
+  },
   mounted() {
+    console.log("yes");
     const defaultContainer = document.getElementsByClassName(
       "theme-default-content"
     )[0];

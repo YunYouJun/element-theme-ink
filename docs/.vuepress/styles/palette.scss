@@ -1,2 +1,9 @@
-// base colors
-$accentColor: #303133 !default;
+:root {
+  --c-brand: #303133;
+  --c-brand-light: #3f3f3f;
+}
+
+html.dark {
+  --c-brand: #eee;
+  --c-brand-light: #fff;
+}

@@ -6,8 +6,6 @@ title: 重置
 @import "../../src/reset.scss";
 </style> -->
 
-<template>
-
 # h1 Heading 标题一
 
 ## h2 Heading 标题二
@@ -19,8 +17,6 @@ title: 重置
 ##### h5 Heading 标题五
 
 ###### h6 Heading 标题六
-
-</template>
 
 ### 段落
 

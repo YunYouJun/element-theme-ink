@@ -1,4 +1,5 @@
 @import "../../../src/common/var.scss";
+
 .demo-color-box {
   border-radius: 4px;
   padding: 20px;
@@ -8,6 +9,7 @@
   font-size: 14px;
   margin: 5px;
 }
+
 .demo-color-box-group {
   .demo-color-box {
     border-radius: 0;
@@ -20,6 +22,7 @@
     border-radius: 0 0 4px 4px;
   }
 }
+
 .bg-blue {
   background-color: $--color-primary;
 }

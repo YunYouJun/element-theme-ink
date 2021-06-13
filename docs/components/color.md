@@ -12,7 +12,6 @@ Element-Theme-Ink 决定以黑白色调为主。
 
 暗亮
 
-<template>
 <el-row>
   <el-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box bg-dark">Dark<div class="value">#303133</div></div>
@@ -27,7 +26,6 @@ Element-Theme-Ink 决定以黑白色调为主。
     <div class="demo-color-box bg-white">White<div class="value">#ffffff</div></div>
   </el-col>
 </el-row>
-</template>
 
 ## 辅助色
 
@@ -35,7 +33,6 @@ Element-Theme-Ink 决定以黑白色调为主。
 
 参考 [Semantic-UI](https://semantic-ui.com) 使用更为鲜艳的颜色。
 
-<template>
 <el-row>
   <el-col :span="6" :xs="{span: 12}">
     <div class="demo-color-box bg-blue">Blue<div class="value">#0078E7</div></div>
@@ -59,13 +56,11 @@ Element-Theme-Ink 决定以黑白色调为主。
     <div class="demo-color-box bg-gray">Gray<div class="value">#eeeeee</div></div>
   </el-col>
 </el-row>
-</template>
 
 ## 中性色
 
 中性色用于文本、背景和边框颜色。通过运用不同的中性色，来表现层次结构。
 
-<template>
 <el-row>
   <el-col :span="12">
     <div class="demo-color-box-group">
@@ -84,4 +79,3 @@ Element-Theme-Ink 决定以黑白色调为主。
     </div>
   </el-col>
 </el-row>
-</template>

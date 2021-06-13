@@ -1,25 +1,30 @@
-@import 'common/var';
+@import "common/var";
+
+:root {
+  --font-color: #{$--color-text-primary};
+}
+
+html.dark {
+  --font-color: #eee;
+}
 
 body {
   font-family: Lato, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
   font-weight: $--font-weight-primary;
   font-size: $--font-size-base;
-  color: $--color-black;
+  color: var(--font-color);
   margin: 0px;
 }
 
-::selection
-{
+::selection {
   color: #fff;
   background: $--color-dark;
 }
 
-::placeholder
-{
+::placeholder {
   font-weight: $--font-weight-primary;
 }
-::-webkit-input-placeholder
-{
+::-webkit-input-placeholder {
   font-weight: $--font-weight-primary;
 }
 
@@ -33,12 +38,21 @@ a {
   }
 
   &:active {
-    color: mix($--color-black, $--color-primary, $--button-active-shade-percent);
+    color: mix(
+      $--color-black,
+      $--color-primary,
+      $--button-active-shade-percent
+    );
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: $--color-text-primary;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--font-color);
   font-weight: inherit;
 }
 
@@ -85,7 +99,8 @@ p {
   }
 }
 
-sup, sub {
+sup,
+sub {
   font-size: #{$--font-size-base - 1px};
 }
 

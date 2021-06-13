@@ -1,4 +1,7 @@
 /* Element Chalk Variables */
+@use 'sass:math';
+
+@import "../../node_modules/element-plus/packages/theme-chalk/src/common/var.scss";
 
 /* Transition
 -------------------------- */
@@ -481,7 +484,7 @@ $--cascader-menu-submenu-shadow: 1px 1px 2px rgba($--color-black, 0.14),
 
 /* Group
 -------------------------- */
-$--group-option-flex: 0 0 (1/5) * 100% !default;
+$--group-option-flex: 0 0 (math.div(1, 5) * 100%) !default;
 $--group-option-offset-bottom: 12px !default;
 $--group-option-fill-hover: rgba($--color-black, 0.06) !default;
 $--group-title-color: $--color-black !default;
@@ -621,23 +624,7 @@ $--pagination-hover-color: $--color-white !default;
 
 /* Popover
 -------------------------- */
-$--popover-fill: $--color-white !default;
-$--popover-font-size: $--font-size-base !default;
 $--popover-border-color: $--border-color-dark !default;
-$--popover-arrow-size: 6px !default;
-$--popover-padding: 12px !default;
-$--popover-padding-large: 18px 20px !default;
-$--popover-title-font-size: 16px !default;
-$--popover-title-color: $--color-text-primary !default;
-
-/* Tooltip
--------------------------- */
-$--tooltip-fill: $--color-text-primary !default;
-$--tooltip-color: $--color-white !default;
-$--tooltip-font-size: 12px !default;
-$--tooltip-border-color: $--color-text-primary !default;
-$--tooltip-arrow-size: 6px !default;
-$--tooltip-padding: 10px !default;
 
 /* Tag
 -------------------------- */
@@ -804,70 +791,3 @@ $--transfer-panel-body-height: 246px !default;
 $--transfer-item-height: 30px !default;
 $--transfer-item-hover-background: $--color-text-secondary !default;
 $--transfer-filter-height: 32px !default;
-
-/* Header
-  --------------------------*/
-$--header-padding: 0 20px !default;
-
-/* Footer
---------------------------*/
-$--footer-padding: 0 20px !default;
-
-/* Main
---------------------------*/
-$--main-padding: 20px !default;
-
-/* Break-point
---------------------------*/
-$--sm: 768px !default;
-$--md: 992px !default;
-$--lg: 1200px !default;
-$--xl: 1920px !default;
-
-$--breakpoints: (
-  "xs": (
-    max-width: $--sm,
-  ),
-  "sm": (
-    min-width: $--sm,
-  ),
-  "md": (
-    min-width: $--md,
-  ),
-  "lg": (
-    min-width: $--lg,
-  ),
-  "xl": (
-    min-width: $--xl,
-  ),
-);
-
-$--breakpoints-spec: (
-  "xs-only": (
-    max-width: $--sm - 1,
-  ),
-  "sm-and-up": (
-    min-width: $--sm,
-  ),
-  "sm-only": "(min-width: #{$--sm}) and (max-width: #{$--md} - 1)",
-  "sm-and-down": (
-    max-width: $--md - 1,
-  ),
-  "md-and-up": (
-    min-width: $--md,
-  ),
-  "md-only": "(min-width: #{$--md}) and (max-width: #{$--lg } - 1)",
-  "md-and-down": (
-    max-width: $--lg - 1,
-  ),
-  "lg-and-up": (
-    min-width: $--lg,
-  ),
-  "lg-only": "(min-width: #{$--lg}) and (max-width: #{$--xl } - 1)",
-  "lg-and-down": (
-    max-width: $--xl - 1,
-  ),
-  "xl-only": (
-    min-width: $--xl,
-  ),
-);

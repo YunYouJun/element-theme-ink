@@ -1,5 +1,5 @@
-// base colors
-$accentColor: #303133 !default;
+// demo
+@import "color";
 
 // scrollbar
 ::-webkit-scrollbar {
@@ -45,7 +45,7 @@ $accentColor: #303133 !default;
   }
 
   .custom-block.tip {
-    border-color: $accentColor;
+    border-color: var(--c-brand);
     border-left-width: 4px;
     padding: 0.5rem 1rem;
   }
