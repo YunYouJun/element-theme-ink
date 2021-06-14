@@ -11,9 +11,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, capitalize } from "vue";
 import Layout from "@vuepress/theme-default/lib/client/layouts/Layout.vue";
-import { capitalize } from "../utils.js";
 
 export default defineComponent({
   components: {

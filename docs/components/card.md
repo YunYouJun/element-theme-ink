@@ -1,4 +1,6 @@
-## Card 卡片
+---
+title: 卡片
+---
 
 将信息聚合在卡片容器中展示。
 
@@ -35,7 +37,6 @@ Card 组件包括`header`和`body`部分，`header`部分需要有显式具名 s
 
 配置`body-style`属性来自定义`body`部分的`style`。
 
-<template>
   <el-row>
     <el-col :sm="{span:8}" :xs="{span:24}" >
       <el-card shadow="always" :body-style="{ padding: '20px' }">
@@ -50,7 +51,6 @@ Card 组件包括`header`和`body`部分，`header`部分需要有显式具名 s
       </el-card>
     </el-col>
   </el-row>
-</template>
 
 ### 卡片阴影
 
@@ -58,7 +58,6 @@ Card 组件包括`header`和`body`部分，`header`部分需要有显式具名 s
 
 `always`、`hover`、`never`，通过设置`shadow`属性来配置卡片阴影。
 
-<template>
   <el-row :gutter="12">
     <el-col :span="8">
       <el-card shadow="always">
@@ -76,7 +75,6 @@ Card 组件包括`header`和`body`部分，`header`部分需要有显式具名 s
       </el-card>
     </el-col>
   </el-row>
-</template>
 
 <style>
   .description {

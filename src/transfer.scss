@@ -8,15 +8,9 @@
 @import "checkbox";
 @import "checkbox-group";
 
+@import "../node_modules/element-plus/packages/theme-chalk/src/transfer.scss";
+
 @include b(transfer) {
-  font-size: $--font-size-base;
-
-  @include e(buttons) {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 30px;
-  }
-
   @include e(button) {
     display: block;
     margin: 0 auto;

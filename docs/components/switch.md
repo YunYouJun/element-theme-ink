@@ -3,11 +3,9 @@ title: 开关
 ---
 
 <style lang="scss">
-  .demo-box.demo-switch {
-    .el-switch {
-      margin: 20px 20px 20px 0;
-    }
-  }
+.el-switch {
+  margin: 0 20px;
+}
 </style>
 
 <script>
@@ -46,13 +44,13 @@ title: 开关
 
 设置`disabled`属性，接受一个`Boolean`，设置`true`即可禁用。
 
-<template>
-<el-switch
-  v-model="value6"
-  disabled>
-</el-switch>
-<el-switch
-  v-model="value7"
-  disabled>
-</el-switch>
-</template>
+<el-card shadow="hover">
+  <el-switch
+    v-model="value6"
+    disabled>
+  </el-switch>
+  <el-switch
+    v-model="value7"
+    disabled>
+  </el-switch>
+</el-card>

@@ -1,8 +1,6 @@
 /* Element Chalk Variables */
 @use 'sass:math';
 
-@import "../../node_modules/element-plus/packages/theme-chalk/src/common/var.scss";
-
 /* Transition
 -------------------------- */
 $--all-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !default;
@@ -246,21 +244,6 @@ $--checkbox-checked-icon-color: $--color-black !default;
 
 $--checkbox-input-border-color-hover: $--color-dark-light-7 !default;
 
-$--checkbox-bordered-height: 40px !default;
-$--checkbox-bordered-padding: 9px 20px 9px 10px !default;
-$--checkbox-bordered-medium-padding: 7px 20px 7px 10px !default;
-$--checkbox-bordered-small-padding: 5px 15px 5px 10px !default;
-$--checkbox-bordered-mini-padding: 3px 15px 3px 10px !default;
-$--checkbox-bordered-medium-input-height: 14px !default;
-$--checkbox-bordered-medium-input-width: 14px !default;
-$--checkbox-bordered-medium-height: 36px !default;
-$--checkbox-bordered-small-input-height: 12px !default;
-$--checkbox-bordered-small-input-width: 12px !default;
-$--checkbox-bordered-small-height: 32px !default;
-$--checkbox-bordered-mini-input-height: 12px !default;
-$--checkbox-bordered-mini-input-width: 12px !default;
-$--checkbox-bordered-mini-height: 28px !default;
-
 $--checkbox-button-font-size: $--font-size-base !default;
 $--checkbox-button-checked-background-color: $--color-dark !default;
 $--checkbox-button-checked-font-color: $--color-white !default;
@@ -268,21 +251,6 @@ $--checkbox-button-checked-border-color: $--color-dark-light-7 !default;
 
 /* Radio
 -------------------------- */
-$--radio-font-size: 14px !default;
-$--radio-font-weight: $--font-weight-primary !default;
-$--radio-color: $--color-text-regular !default;
-$--radio-input-height: 14px !default;
-$--radio-input-width: 14px !default;
-$--radio-input-border-radius: $--border-radius-circle !default;
-$--radio-input-fill: $--color-white !default;
-$--radio-input-border: $--border-base !default;
-$--radio-input-border-color: $--border-color-base !default;
-$--radio-icon-color: $--color-white !default;
-
-$--radio-disabled-input-border-color: $--disabled-border-base !default;
-$--radio-disabled-input-fill: $--disabled-fill-base !default;
-$--radio-disabled-icon-color: $--disabled-fill-base !default;
-
 $--radio-disabled-checked-input-border-color: $--disabled-border-base !default;
 $--radio-disabled-checked-input-fill: $--disabled-fill-base !default;
 $--radio-disabled-checked-icon-color: $--color-text-placeholder !default;
@@ -294,21 +262,6 @@ $--radio-checked-icon-color: $--color-white !default;
 
 $--radio-input-border-color-hover: $--color-dark !default;
 
-$--radio-bordered-height: 40px !default;
-$--radio-bordered-padding: 12px 20px 0 10px !default;
-$--radio-bordered-medium-padding: 10px 20px 0 10px !default;
-$--radio-bordered-small-padding: 8px 15px 0 10px !default;
-$--radio-bordered-mini-padding: 6px 15px 0 10px !default;
-$--radio-bordered-medium-input-height: 14px !default;
-$--radio-bordered-medium-input-width: 14px !default;
-$--radio-bordered-medium-height: 36px !default;
-$--radio-bordered-small-input-height: 12px !default;
-$--radio-bordered-small-input-width: 12px !default;
-$--radio-bordered-small-height: 32px !default;
-$--radio-bordered-mini-input-height: 12px !default;
-$--radio-bordered-mini-input-width: 12px !default;
-$--radio-bordered-mini-height: 28px !default;
-
 $--radio-button-font-size: $--font-size-base !default;
 $--radio-button-checked-background-color: $--color-dark !default;
 $--radio-button-checked-font-color: $--color-white !default;
@@ -317,34 +270,16 @@ $--radio-button-disabled-checked-fill: $--color-dark-light-3 !default;
 
 /* Select
 -------------------------- */
-$--select-border-color-hover: $--border-color-hover !default;
-$--select-disabled-border: $--disabled-border-base !default;
-$--select-font-size: $--font-size-base !default;
-$--select-close-hover-color: $--color-text-secondary !default;
-
 $--select-input-color: $--color-dark !default;
 $--select-multiple-input-color: #666 !default;
 $--select-input-focus-background: $--color-black !default;
 $--select-input-font-size: 14px !default;
 
-$--select-option-color: $--color-text-regular !default;
-$--select-option-disabled-color: $--color-text-placeholder !default;
 $--select-option-disabled-background: $--color-white !default;
-$--select-option-height: 34px !default;
-$--select-option-hover-background: $--background-color-base !default;
 $--select-option-selected: $--color-black !default;
 $--select-option-selected-hover: $--background-color-base !default;
 
 $--select-group-color: $--color-black !default;
-$--select-group-height: 30px !default;
-$--select-group-font-size: 12px !default;
-
-$--select-dropdown-background: $--color-white !default;
-$--select-dropdown-shadow: $--box-shadow-light !default;
-$--select-dropdown-empty-color: #999 !default;
-$--select-dropdown-max-height: 274px !default;
-$--select-dropdown-padding: 6px 0 !default;
-$--select-dropdown-empty-padding: 10px 0 !default;
 $--select-dropdown-border: solid 1px $--border-color-dark !default;
 
 /* Alert
@@ -364,97 +299,23 @@ $--alert-danger-color: $--color-danger-lighter !default;
 $--alert-icon-size: 16px !default;
 $--alert-icon-large-size: 28px !default;
 
-/* Message Box
--------------------------- */
-$--msgbox-width: 420px !default;
-$--msgbox-border-radius: 4px !default;
-$--msgbox-font-size: $--font-size-large !default;
-$--msgbox-content-font-size: $--font-size-base !default;
-$--msgbox-content-color: $--color-text-regular !default;
-$--msgbox-error-font-size: 12px !default;
-$--msgbox-padding-primary: 15px !default;
-
-$--msgbox-success-color: $--color-success !default;
-$--msgbox-info-color: $--color-info !default;
-$--msgbox-warning-color: $--color-warning !default;
-$--msgbox-danger-color: $--color-danger !default;
-
 /* Message
 -------------------------- */
 $--message-shadow: $--box-shadow-base !default;
-$--message-min-width: 380px !default;
-$--message-background-color: #edf2fc !default;
-$--message-padding: 15px 15px 15px 20px !default;
-$--message-content-color: $--color-text-regular !default;
-$--message-close-color: $--color-text-placeholder !default;
-$--message-close-size: 16px !default;
-$--message-close-hover-color: $--color-text-secondary !default;
-
-$--message-success-color: $--color-success !default;
-$--message-info-color: $--color-info !default;
-$--message-warning-color: $--color-warning !default;
-$--message-danger-color: $--color-danger !default;
-
-/* Notification
--------------------------- */
-$--notification-width: 330px !default;
-$--notification-padding: 14px 26px 14px 13px !default;
-$--notification-radius: 8px !default;
-$--notification-shadow: $--box-shadow-light !default;
-$--notification-border-color: $--border-color-lighter !default;
-$--notification-icon-size: 24px !default;
-$--notification-close-font-size: $--message-close-size !default;
-$--notification-group-margin: 13px !default;
-$--notification-font-size: $--font-size-base !default;
-$--notification-color: $--color-text-regular !default;
-$--notification-title-font-size: 16px !default;
-$--notification-title-color: $--color-text-primary !default;
-
-$--notification-close-color: $--color-text-secondary !default;
-$--notification-close-hover-color: $--color-text-regular !default;
-
-$--notification-success-color: $--color-success !default;
-$--notification-info-color: $--color-info !default;
-$--notification-warning-color: $--color-warning !default;
-$--notification-danger-color: $--color-danger !default;
 
 /* Input
 -------------------------- */
-$--input-font-size: $--font-size-base !default;
-$--input-color: $--color-text-primary !default;
+$--input-font-color: $--color-text-primary !default;
 $--input-width: 140px !default;
-$--input-height: 40px !default;
-$--input-border: $--border-base !default;
-$--input-border-color: $--border-color-base !default;
-$--input-border-radius: $--border-radius-base !default;
 $--input-border-color-hover: $--border-color-hover !default;
-$--input-fill: $--color-white !default;
 $--input-fill-disabled: $--disabled-fill-base !default;
 $--input-color-disabled: $--font-color-disabled-base !default;
 $--input-icon-color: $--color-dark !default;
-$--input-icon-hover-color: $--color-black !default;
 $--input-placeholder-color: $--color-text-placeholder !default;
 $--input-max-width: 314px !default;
 
-$--input-hover-border: $--border-color-hover !default;
-$--input-clear-hover-color: $--color-text-secondary !default;
-
 $--input-focus-border: $--color-black !default;
 $--input-focus-fill: $--color-white !default;
-
-$--input-disabled-fill: $--disabled-fill-base !default;
-$--input-disabled-border: $--disabled-border-base !default;
-$--input-disabled-color: $--disabled-color-base !default;
-$--input-disabled-placeholder-color: $--color-text-placeholder !default;
-
-$--input-medium-font-size: 14px !default;
-$--input-medium-height: 36px !default;
-
-$--input-small-font-size: 13px !default;
-$--input-small-height: 32px !default;
-
-$--input-mini-font-size: 12px !default;
-$--input-mini-height: 28px !default;
 
 /* Cascader
 -------------------------- */
@@ -588,11 +449,9 @@ $--switch-button-size: 16px !default;
 
 /* Dialog
 -------------------------- */
-$--dialog-background-color: $--color-primary-light-4 !default;
+$--dialog-background-color: rgba(255, 255, 255, 0.8) !default;
 $--dialog-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3) !default;
 $--dialog-close-hover-color: $--color-black !default;
-$--dialog-title-font-size: $--font-size-large !default;
-$--dialog-font-size: 14px !default;
 $--dialog-line-height: $--font-line-height-primary !default;
 $--dialog-padding-primary: 15px !default;
 
@@ -610,15 +469,6 @@ $--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, 0.12) !default;
 
 /* Pagination
 -------------------------- */
-$--pagination-font-size: 13px !default;
-$--pagination-fill: $--color-white !default;
-$--pagination-color: $--color-text-primary !default;
-$--pagination-border-radius: 3px !default;
-$--pagination-button-color: $--color-text-primary !default;
-$--pagination-button-width: 35.5px !default;
-$--pagination-button-height: 28px !default;
-$--pagination-button-disabled-color: $--color-text-placeholder !default;
-$--pagination-button-disabled-fill: $--color-white !default;
 $--pagination-hover-fill: $--color-dark !default;
 $--pagination-hover-color: $--color-white !default;
 
@@ -684,8 +534,6 @@ $--badge-size: 18px !default;
 /* Card
 --------------------------*/
 $--card-border-color: $--border-color-light !default;
-$--card-border-radius: 4px !default;
-$--card-padding: 20px !default;
 
 /* Slider
 --------------------------*/
@@ -710,8 +558,6 @@ $--steps-padding: 20px !default;
 
 /* Menu
 --------------------------*/
-$--menu-item-color: $--color-text-primary !default;
-$--menu-item-fill: $--color-white !default;
 $--menu-item-hover-fill: $--color-gray !default;
 
 /* Rate
@@ -791,3 +637,6 @@ $--transfer-panel-body-height: 246px !default;
 $--transfer-item-height: 30px !default;
 $--transfer-item-hover-background: $--color-text-secondary !default;
 $--transfer-filter-height: 32px !default;
+
+// 前面的 !default 会覆盖后者
+@import "../../node_modules/element-plus/packages/theme-chalk/src/common/var.scss";

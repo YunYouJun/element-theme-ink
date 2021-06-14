@@ -115,3 +115,12 @@ new Vue({
   render: (h) => h(App),
 });
 ```
+
+## Dev
+
+### Cache
+
+```bash
+gulp combine
+# gulp build
+```

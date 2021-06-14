@@ -4,6 +4,7 @@ import type { DefaultThemeOptions } from "@vuepress/theme-default";
 // import type { DefaultThemeOptions, ViteBundlerOptions } from "vuepress-vite";
 import * as pkg from "../../package.json";
 import nav from "../nav.config.json";
+import path from "path";
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -33,7 +34,21 @@ export default defineUserConfig<DefaultThemeOptions>({
       "/components/": getComponentsSidebar(),
       "/guide/": getGuideSidebar(),
     },
+
+    themePlugins: {
+      // only enable git plugin in production mode
+      git: isProd,
+    },
   },
+
+  plugins: [
+    [
+      "@vuepress/plugin-register-components",
+      {
+        componentsDir: path.resolve(__dirname, "./components"),
+      },
+    ],
+  ],
 });
 
 function getComponentsSidebar() {

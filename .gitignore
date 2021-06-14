@@ -15,3 +15,6 @@ node_modules
 # vuepress
 .temp
 .cache
+
+# element-theme-ink
+.ink-cache/
