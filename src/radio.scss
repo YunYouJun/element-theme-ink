@@ -1,16 +1,9 @@
-@import "mixins/mixins";
-@import "mixins/utils";
-@import "mixins/button";
 @import "common/var";
 @import "../node_modules/element-plus/packages/theme-chalk/src/radio.scss";
 
 @include b(radio) {
   @include when(bordered) {
     border: $--border-dark;
-
-    &.is-checked {
-      border-color: $--color-dark;
-    }
   }
 
   @include e(inner) {

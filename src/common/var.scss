@@ -1,6 +1,7 @@
-/* Element Chalk Variables */
+@use 'sass:map';
 @use 'sass:math';
 
+// old
 /* Transition
 -------------------------- */
 $--all-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) !default;
@@ -22,6 +23,34 @@ $--color-black: #000 !default;
 
 $--color-gray: #eee !default;
 $--color-purple: #8e71c1 !default;
+
+$--colors: (
+  "primary": (
+    "base": #409eff,
+  ),
+  "success": (
+    "base": #21ba45,
+  ),
+  "warning": (
+    "base": #f2711c,
+  ),
+  "danger": (
+    "base": #db2828,
+  ),
+  "error": (
+    "base": #db2828,
+  ),
+  "info": (
+    "base": #42b8dd,
+  ),
+);
+
+$--color-primary: map.get($--colors, "primary", "base");
+$--color-success: map.get($--colors, "success", "base");
+$--color-warning: map.get($--colors, "warning", "base");
+$--color-danger: map.get($--colors, "danger", "base");
+$--color-error: map.get($--colors, "error", "base");
+$--color-info: map.get($--colors, "info", "base");
 
 $--color-dark-light-1: mix(
   $--color-white,
@@ -116,11 +145,6 @@ $--color-primary-light-9: mix(
   90%
 ) !default; /* ecf5ff */
 
-$--color-success: #21ba45 !default;
-$--color-warning: #f2711c !default;
-$--color-danger: #db2828 !default;
-$--color-info: #42b8dd !default;
-
 $--color-success-light: mix($--color-white, $--color-success, 80%) !default;
 $--color-warning-light: mix($--color-white, $--color-warning, 80%) !default;
 $--color-danger-light: mix($--color-white, $--color-danger, 80%) !default;
@@ -158,9 +182,13 @@ $--border-color-extra-light: #f2f6fc !default;
 $--border-color-hover: $--color-dark !default;
 $--border-base: $--border-width-base $--border-style-base $--border-color-base !default;
 $--border-dark: $--border-width-base $--border-style-base $--border-color-dark !default;
-$--border-radius-base: 2px !default;
-$--border-radius-small: 2px !default;
-$--border-radius-circle: 100% !default;
+
+$--border-radius: (
+  "base": 2px,
+  "small": 2px,
+  "round": 20px,
+  "circle": 100%,
+);
 
 /* Box-shadow
 -------------------------- */
@@ -223,7 +251,7 @@ $--checkbox-font-weight: $--font-weight-primary !default;
 $--checkbox-color: $--color-text-regular !default;
 $--checkbox-input-height: 14px !default;
 $--checkbox-input-width: 14px !default;
-$--checkbox-border-radius: $--border-radius-small !default;
+$--checkbox-border-radius: var(--el-border-radius-small) !default;
 $--checkbox-background-color: $--color-white !default;
 $--checkbox-input-border: $--border-base !default;
 $--checkbox-input-border-color: $--border-color-base !default;
@@ -285,7 +313,7 @@ $--select-dropdown-border: solid 1px $--border-color-dark !default;
 /* Alert
 -------------------------- */
 $--alert-padding: 8px 16px !default;
-$--alert-border-radius: $--border-radius-base !default;
+$--alert-border-radius: map.get($--border-radius, "base") !default;
 $--alert-title-font-size: 13px !default;
 $--alert-description-font-size: 12px !default;
 $--alert-close-font-size: 12px !default;
@@ -321,7 +349,7 @@ $--input-focus-fill: $--color-white !default;
 -------------------------- */
 $--cascader-menu-fill: $--fill-base !default;
 $--cascader-menu-font-size: $--font-size-base !default;
-$--cascader-menu-radius: $--border-radius-base !default;
+$--cascader-menu-radius: map.get($--border-radius, "base") !default;
 $--cascader-menu-border: $--border-base !default;
 $--cascader-menu-border-color: $--border-color-base !default;
 $--cascader-menu-border-width: $--border-width-base !default;
@@ -367,34 +395,7 @@ $--tab-vertical-header-count-fill: $--color-text-secondary !default;
 
 /* Button
 -------------------------- */
-$--button-font-size: 14px !default;
-$--button-font-weight: $--font-weight-primary !default;
-$--button-border-radius: $--border-radius-base !default;
-$--button-padding-vertical: 12px !default;
-$--button-padding-horizontal: 20px !default;
-
-$--button-medium-font-size: 14px !default;
-$--button-medium-border-radius: $--border-radius-base !default;
-$--button-medium-padding-vertical: 10px !default;
-$--button-medium-padding-horizontal: 20px !default;
-
-$--button-small-font-size: 12px !default;
-$--button-small-border-radius: #{$--border-radius-base - 1} !default;
-$--button-small-padding-vertical: 9px !default;
-$--button-small-padding-horizontal: 15px !default;
-
-$--button-mini-font-size: 12px !default;
-$--button-mini-border-radius: #{$--border-radius-base - 1} !default;
-$--button-mini-padding-vertical: 6px !default;
-$--button-mini-padding-horizontal: 12px !default;
-
-/// color||Color|0
-$--button-default-font-color: $--color-text-primary !default;
-/// color||Color|0
-$--button-default-background-color: transparent !default;
-/// color||Color|0
-$--button-default-border-color: $--border-color-base !default;
-
+// old
 $--button-disabled-font-color: $--color-text-placeholder !default;
 $--button-disabled-background-color: transparent !default;
 $--button-disabled-border-color: $--border-color-base !default;
@@ -482,34 +483,27 @@ $--tag-fill-opacity: 0.01;
 $--tag-border-opacity: 1;
 $--tag-padding: 0 10px !default;
 $--tag-fill: rgba($--color-primary, $--tag-fill-opacity) !default;
-$--tag-color: $--color-primary !default;
 $--tag-border: rgba($--color-primary, $--tag-border-opacity) !default;
 $--tag-font-size: 12px !default;
 $--tag-border-radius: 1px !default;
 
 $--tag-dark-fill: rgba($--color-dark, $--tag-fill-opacity) !default;
 $--tag-dark-border: rgba($--color-dark, $--tag-border-opacity) !default;
-$--tag-dark-color: $--color-dark !default;
 
 $--tag-info-fill: rgba($--color-info, $--tag-fill-opacity) !default;
 $--tag-info-border: rgba($--color-info, $--tag-border-opacity) !default;
-$--tag-info-color: $--color-info !default;
 
 $--tag-primary-fill: rgba($--color-primary, $--tag-fill-opacity) !default;
 $--tag-primary-border: rgba($--color-primary, $--tag-border-opacity) !default;
-$--tag-primary-color: $--color-primary !default;
 
 $--tag-success-fill: rgba($--color-success, $--tag-fill-opacity) !default;
 $--tag-success-border: rgba($--color-success, $--tag-border-opacity) !default;
-$--tag-success-color: $--color-success !default;
 
 $--tag-warning-fill: rgba($--color-warning, $--tag-fill-opacity) !default;
 $--tag-warning-border: rgba($--color-warning, $--tag-border-opacity) !default;
-$--tag-warning-color: $--color-warning !default;
 
 $--tag-danger-fill: rgba($--color-danger, $--tag-fill-opacity) !default;
 $--tag-danger-border: rgba($--color-danger, $--tag-border-opacity) !default;
-$--tag-danger-color: $--color-danger !default;
 
 /* Tree
 -------------------------- */
@@ -628,7 +622,7 @@ $--collapse-content-font-color: $--color-text-primary !default;
 /* Transfer
 --------------------------*/
 $--transfer-border-color: $--border-color-base !default;
-$--transfer-border-radius: $--border-radius-base !default;
+$--transfer-border-radius: map.get($--border-radius, "base") !default;
 $--transfer-panel-width: 200px !default;
 $--transfer-panel-header-height: 40px !default;
 $--transfer-panel-header-background: $--background-color-base !default;
@@ -639,4 +633,5 @@ $--transfer-item-hover-background: $--color-text-secondary !default;
 $--transfer-filter-height: 32px !default;
 
 // 前面的 !default 会覆盖后者
+/* Element Chalk Variables */
 @import "../../node_modules/element-plus/packages/theme-chalk/src/common/var.scss";

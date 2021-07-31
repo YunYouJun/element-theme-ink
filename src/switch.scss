@@ -18,18 +18,4 @@
       outline: 1px solid $--color-primary;
     }
   }
-
-  @include e(core) {
-    &:after {
-      content: "";
-      position: absolute;
-      top: 1px;
-      left: 1px;
-      border-radius: $--border-radius-base;
-      transition: all 0.3s;
-      width: $--switch-button-size;
-      height: $--switch-button-size;
-      background-color: $--color-white;
-    }
-  }
 }

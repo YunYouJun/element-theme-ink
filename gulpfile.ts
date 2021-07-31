@@ -1,6 +1,7 @@
 import fs from "fs";
+import sassCompiler from "sass";
 import gulp from "gulp";
-import sass from "gulp-sass";
+import gulpSass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import del from "del";
@@ -8,7 +9,7 @@ import { Logger } from "@yunyoujun/logger";
 import { cyan } from "chalk";
 const logger = new Logger();
 
-(sass as any).compiler = require("sass");
+const sass = gulpSass(sassCompiler);
 
 export const distFolder = "dist";
 export const cacheFolder = `.ink-cache`;
@@ -22,7 +23,9 @@ export const themeInkFolder = "./src";
 export function compile() {
   return gulp
     .src(`${cacheFolder}/*.scss`)
-    .pipe(sass.sync({ includePaths: ["node_modules"] }))
+    .pipe(
+      sass.sync({ includePaths: ["node_modules"] }).on("error", sass.logError)
+    )
     .pipe(autoprefixer())
     .pipe(
       cleanCSS({}, (details) => {

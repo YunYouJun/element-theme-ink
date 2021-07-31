@@ -1,21 +1,12 @@
-@charset "UTF-8";
+@use "sass:map";
+
 @import "../node_modules/element-plus/packages/theme-chalk/src/button.scss";
-@import "mixins/button.scss";
+@import "mixins/button";
 @import "common/var.scss";
 
 @include b(button) {
-  border: $--border-base;
-  border-color: $--button-default-border-color;
-  color: $--button-default-font-color;
   text-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
   transition: 0.2s;
-
-  &:hover,
-  &:focus {
-    color: $--color-black;
-    border-color: $--color-dark-light-7;
-    background-color: $--color-dark-light-9;
-  }
 
   &:active {
     color: mix($--color-black, $--color-dark, $--button-active-shade-percent);
@@ -24,24 +15,6 @@
       $--color-dark,
       $--button-active-shade-percent
     );
-  }
-
-  @include when(plain) {
-    &:hover,
-    &:focus {
-      border-color: $--color-black;
-      color: $--color-black;
-    }
-
-    &:active {
-      background: mix(
-        $--color-black,
-        $--color-white,
-        $--button-active-shade-percent
-      );
-      border-color: $--color-black;
-      color: $--color-black;
-    }
   }
 
   @include when(glow) {
@@ -63,69 +36,33 @@
   @include when(loading) {
     border: 1px dashed;
   }
+
   @include m(light) {
     @include button-variant(
       $--color-black,
-      $--button-light-color,
       $--button-light-fill,
-      $--button-light-border,
-      button-light
+      $--button-light-border
     );
+
+    color: $--color-black;
   }
+
   @include m(dark) {
     @include button-variant(
       $--color-white,
-      $--button-dark-color,
       $--button-dark-fill,
-      $--button-dark-border,
-      button-dark
+      $--button-dark-border
     );
   }
-  @include m(primary) {
-    @include button-variant(
-      $--color-white,
-      $--button-primary-color,
-      $--button-primary-fill,
-      $--button-primary-border,
-      button-primary
-    );
+
+  @each $type in (primary, success, warning, danger, info) {
+    @include m($type) {
+      &.is-glow {
+        @include button-glow(map.get($--button, "border-color", $type), $type);
+      }
+    }
   }
-  @include m(success) {
-    @include button-variant(
-      $--color-white,
-      $--button-success-color,
-      $--button-success-fill,
-      $--button-success-border,
-      button-success
-    );
-  }
-  @include m(warning) {
-    @include button-variant(
-      $--color-white,
-      $--button-warning-color,
-      $--button-warning-fill,
-      $--button-warning-border,
-      button-warning
-    );
-  }
-  @include m(danger) {
-    @include button-variant(
-      $--color-white,
-      $--button-danger-color,
-      $--button-danger-fill,
-      $--button-danger-border-color,
-      button-danger
-    );
-  }
-  @include m(info) {
-    @include button-variant(
-      $--color-white,
-      $--button-info-color,
-      $--button-info-fill,
-      $--button-info-border,
-      button-info
-    );
-  }
+
   @include m(text) {
     color: $--color-dark;
     padding: 5px;

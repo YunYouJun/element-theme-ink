@@ -1,167 +1,167 @@
-@import "mixins/mixins";
-@import "common/var";
+// @import "mixins/mixins";
+// @import "common/var";
 
-@include b(tag) {
-  background-color: $--tag-fill;
-  display: inline-block;
-  padding: $--tag-padding;
-  height: 32px;
-  line-height: 30px;
-  font-size: $--tag-font-size;
-  color: $--tag-color;
-  border-radius: $--tag-border-radius;
-  box-sizing: border-box;
-  border: 1px solid $--tag-border;
-  white-space: nowrap;
+// @include b(tag) {
+//   background-color: $--tag-fill;
+//   display: inline-block;
+//   padding: $--tag-padding;
+//   height: 32px;
+//   line-height: 30px;
+//   font-size: $--tag-font-size;
+//   color: $--tag-color;
+//   border-radius: $--tag-border-radius;
+//   box-sizing: border-box;
+//   border: 1px solid $--tag-border;
+//   white-space: nowrap;
 
-  font-weight: 400;
+//   font-weight: 400;
 
-  .el-icon-close {
-    border-radius: 50%;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-    font-size: 12px;
-    height: 16px;
-    width: 16px;
-    line-height: 16px;
-    vertical-align: middle;
-    top: -1px;
-    right: -5px;
-    color: $--tag-color;
+//   .el-icon-close {
+//     border-radius: 50%;
+//     text-align: center;
+//     position: relative;
+//     cursor: pointer;
+//     font-size: 12px;
+//     height: 16px;
+//     width: 16px;
+//     line-height: 16px;
+//     vertical-align: middle;
+//     top: -1px;
+//     right: -5px;
+//     color: $--tag-color;
 
-    &::before {
-      display: block;
-    }
+//     &::before {
+//       display: block;
+//     }
 
-    &:hover {
-      background-color: $--tag-color;
-      color: $--color-white;
-    }
-  }
+//     &:hover {
+//       background-color: $--tag-color;
+//       color: $--color-white;
+//     }
+//   }
 
-  @include m(dark) {
-    background-color: $--tag-dark-fill;
-    border-color: $--tag-dark-border;
-    color: $--tag-dark-color;
+//   @include m(dark) {
+//     background-color: $--tag-dark-fill;
+//     border-color: $--tag-dark-border;
+//     color: $--tag-dark-color;
 
-    @include when(hit) {
-      border-color: $--tag-dark-color;
-    }
+//     @include when(hit) {
+//       border-color: $--tag-dark-color;
+//     }
 
-    .el-tag__close {
-      color: $--tag-dark-color;
-    }
+//     .el-tag__close {
+//       color: $--tag-dark-color;
+//     }
 
-    .el-tag__close:hover {
-      background-color: $--tag-dark-color;
-      color: $--color-white;
-    }
-  }
+//     .el-tag__close:hover {
+//       background-color: $--tag-dark-color;
+//       color: $--color-white;
+//     }
+//   }
 
-  @include m(info) {
-    background-color: $--tag-info-fill;
-    border-color: $--tag-info-border;
-    color: $--tag-info-color;
+//   @include m(info) {
+//     background-color: $--tag-info-fill;
+//     border-color: $--tag-info-border;
+//     color: $--tag-info-color;
 
-    @include when(hit) {
-      border-color: $--tag-info-color;
-    }
+//     @include when(hit) {
+//       border-color: $--tag-info-color;
+//     }
 
-    .el-tag__close {
-      color: $--tag-info-color;
-    }
+//     .el-tag__close {
+//       color: $--tag-info-color;
+//     }
 
-    .el-tag__close:hover {
-      background-color: $--tag-info-color;
-      color: $--color-white;
-    }
-  }
+//     .el-tag__close:hover {
+//       background-color: $--tag-info-color;
+//       color: $--color-white;
+//     }
+//   }
 
-  @include m(success) {
-    background-color: $--tag-success-fill;
-    border-color: $--tag-success-border;
-    color: $--tag-success-color;
+//   @include m(success) {
+//     background-color: $--tag-success-fill;
+//     border-color: $--tag-success-border;
+//     color: $--tag-success-color;
 
-    @include when(hit) {
-      border-color: $--tag-success-color;
-    }
+//     @include when(hit) {
+//       border-color: $--tag-success-color;
+//     }
 
-    .el-tag__close {
-      color: $--tag-success-color;
-    }
+//     .el-tag__close {
+//       color: $--tag-success-color;
+//     }
 
-    .el-tag__close:hover {
-      background-color: $--tag-success-color;
-      color: $--color-white;
-    }
-  }
+//     .el-tag__close:hover {
+//       background-color: $--tag-success-color;
+//       color: $--color-white;
+//     }
+//   }
 
-  @include m(warning) {
-    background-color: $--tag-warning-fill;
-    border-color: $--tag-warning-border;
-    color: $--tag-warning-color;
+//   @include m(warning) {
+//     background-color: $--tag-warning-fill;
+//     border-color: $--tag-warning-border;
+//     color: $--tag-warning-color;
 
-    @include when(hit) {
-      border-color: $--tag-warning-color;
-    }
+//     @include when(hit) {
+//       border-color: $--tag-warning-color;
+//     }
 
-    .el-tag__close {
-      color: $--tag-warning-color;
-    }
+//     .el-tag__close {
+//       color: $--tag-warning-color;
+//     }
 
-    .el-tag__close:hover {
-      background-color: $--tag-warning-color;
-      color: $--color-white;
-    }
-  }
+//     .el-tag__close:hover {
+//       background-color: $--tag-warning-color;
+//       color: $--color-white;
+//     }
+//   }
 
-  @include m(danger) {
-    background-color: $--tag-danger-fill;
-    border-color: $--tag-danger-border;
-    color: $--tag-danger-color;
+//   @include m(danger) {
+//     background-color: $--tag-danger-fill;
+//     border-color: $--tag-danger-border;
+//     color: $--tag-danger-color;
 
-    @include when(hit) {
-      border-color: $--tag-danger-color;
-    }
+//     @include when(hit) {
+//       border-color: $--tag-danger-color;
+//     }
 
-    .el-tag__close {
-      color: $--tag-danger-color;
-    }
+//     .el-tag__close {
+//       color: $--tag-danger-color;
+//     }
 
-    .el-tag__close:hover {
-      background-color: $--tag-danger-color;
-      color: $--color-white;
-    }
-  }
+//     .el-tag__close:hover {
+//       background-color: $--tag-danger-color;
+//       color: $--color-white;
+//     }
+//   }
 
-  @include m(medium) {
-    height: 28px;
-    line-height: 26px;
+//   @include m(medium) {
+//     height: 28px;
+//     line-height: 26px;
 
-    .el-icon-close {
-      transform: scale(.8);
-    }
-  }
+//     .el-icon-close {
+//       transform: scale(.8);
+//     }
+//   }
 
-  @include m(small) {
-    height: 24px;
-    padding: 0 8px;
-    line-height: 22px;
+//   @include m(small) {
+//     height: 24px;
+//     padding: 0 8px;
+//     line-height: 22px;
 
-    .el-icon-close {
-      transform: scale(.8);
-    }
-  }
+//     .el-icon-close {
+//       transform: scale(.8);
+//     }
+//   }
 
-  @include m(mini) {
-    height: 20px;
-    padding: 0 5px;
-    line-height: 19px;
+//   @include m(mini) {
+//     height: 20px;
+//     padding: 0 5px;
+//     line-height: 19px;
 
-    .el-icon-close {
-      margin-left: -3px;
-      transform: scale(.7);
-    }
-  }
-}
+//     .el-icon-close {
+//       margin-left: -3px;
+//       transform: scale(.7);
+//     }
+//   }
+// }

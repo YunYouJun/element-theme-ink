@@ -1,51 +1,16 @@
+@use "sass:map";
 @import "../node_modules/element-plus/packages/theme-chalk/src/alert.scss";
 
 @include b(alert) {
   font-weight: normal;
 
-  @include m(success) {
-    background-color: rgba($--alert-success-color, 0.5);
-    color: $--color-success;
-    border: 1px solid $--color-success;
-
-    .el-alert__description {
-      color: $--color-success;
+  @each $type in (success, info, warning, error) {
+    @include m($type) {
+      &.is-light {
+        background-color: rgba(map.get($--colors, $type, "lighter"), 0.5);
+        color: var(--el-color-#{$type});
+        border: var(--el-color-#{$type});
+      }
     }
-  }
-
-  @include m(info) {
-    background-color: rgba($--alert-info-color, 0.5);
-    color: $--color-info;
-    border: 1px solid $--color-info;
-  }
-
-  @include m(warning) {
-    background-color: rgba($--alert-warning-color, 0.5);
-    color: $--color-warning;
-    border: 1px solid $--color-warning;
-
-    .el-alert__description {
-      color: $--color-warning;
-    }
-  }
-
-  @include m(error) {
-    background-color: rgba($--alert-danger-color, 0.5);
-    color: $--color-danger;
-    border: 1px solid $--color-danger;
-
-    .el-alert__description {
-      color: $--color-danger;
-    }
-  }
-
-  @include e(content) {
-    display: table-cell;
-    padding: 0 10px;
-    padding-left: 15px;
-  }
-
-  @include e(closebtn) {
-    color: $--color-text-placeholder;
   }
 }

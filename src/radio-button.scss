@@ -1,5 +1,5 @@
-@import "../node_modules/element-plus/packages/theme-chalk/src/radio-button.scss";
 @import "common/var.scss";
+@import "../node_modules/element-plus/packages/theme-chalk/src/radio-button.scss";
 
 @include b(radio-button) {
   @include e(inner) {
@@ -10,15 +10,9 @@
     }
   }
 
-  @include e(orig-radio) {
-    left: -999px;
-  }
-
   &:first-child {
     .el-radio-button__inner {
       border-left: $--border-dark;
-      border-radius: $--border-radius-base 0 0 $--border-radius-base;
-      box-shadow: none !important;
     }
   }
 

@@ -91,73 +91,14 @@
     }
   }
 
-  @include m(medium) {
-    &.el-input__inner {
-      height: $--input-medium-height;
-    }
-
-    .el-range-separator {
-      line-height: 28px;
-      font-size: $--input-medium-font-size;
-    }
-
-    .el-range-input {
-      font-size: $--input-medium-font-size;
-    }
-
-    .el-range__icon,
-    .el-range__close-icon {
-      line-height: 28px;
-    }
-  }
-
-  @include m(small) {
-    &.el-input__inner {
-      height: $--input-small-height;
-    }
-
-    .el-range-separator {
-      line-height: 24px;
-      font-size: $--input-small-font-size;
-    }
-
-    .el-range-input {
-      font-size: $--input-small-font-size;
-    }
-
-    .el-range__icon,
-    .el-range__close-icon {
-      line-height: 24px;
-    }
-  }
-
-  @include m(mini) {
-    &.el-input__inner {
-      height: $--input-mini-height;
-    }
-
-    .el-range-separator {
-      line-height: 20px;
-      font-size: $--input-mini-font-size;
-    }
-
-    .el-range-input {
-      font-size: $--input-mini-font-size;
-    }
-
-    .el-range__icon,
-    .el-range__close-icon {
-      line-height: 20px;
-    }
-  }
-
   @include when(disabled) {
     background-color: $--input-disabled-fill;
     border-color: $--input-disabled-border;
     color: $--input-disabled-color;
     cursor: not-allowed;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       border-color: $--input-disabled-border;
     }
 

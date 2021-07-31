@@ -1,36 +1,5 @@
 @import "../common/var";
-
-@mixin button-plain($color, $hover-color) {
-  color: $color;
-  background: transparent;
-  border: 1px solid $color;
-  transition: .2s;
-
-  &:hover,
-  &:focus {
-    background: $color;
-    border-color: $color;
-    color: $hover-color;
-  }
-
-  &:active {
-    background: mix($--color-black, $color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $color, $--button-active-shade-percent);
-    color: $hover-color;
-    outline: none;
-  }
-
-  &.is-disabled {
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      color: mix($--color-white, $color, 40%);
-      background-color: transparent;
-      border-color: mix($--color-white, $color, 80%);
-    }
-  }
-}
+@import "../../node_modules/element-plus/packages/theme-chalk/src/mixins/button";
 
 @mixin glow($animation-name) {
   animation-duration: 3s;
@@ -43,62 +12,14 @@
   animation-iteration-count: infinite;
   animation-name: glowing-#{$btn-name};
   @keyframes glowing-#{$btn-name} {
-    from { box-shadow: 0 0 0 rgba($color, 0.3);}
-    50% { box-shadow: 0 0 20px rgba($color, 0.6);}
-    to { box-shadow: 0 0 0 rgba($color, 0.3);}
-  }
-}
-
-@mixin button-variant($text-color, $color, $background-color, $border-color, $btn-name) {
-  color: $text-color;
-  background-color: $background-color;
-  border-color: $border-color;
-
-  &:hover,
-  &:focus {
-    background: transparent;
-    border-color: mix($--color-white, $border-color, $--button-hover-tint-percent);
-    color: $color;
-  }
-  
-  &:active {
-    background: mix($--color-black, $background-color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
-    color: $--color-white;
-    outline: none;
-  }
-
-  &.is-active {
-    background: mix($--color-black, $background-color, $--button-active-shade-percent);
-    border-color: mix($--color-black, $border-color, $--button-active-shade-percent);
-    color: $color;
-  }
-
-  &.is-disabled {
-    &,
-    &:hover,
-    &:focus,
-    &:active {
-      color: $--color-white;
-      background-color: mix($background-color, $--color-white);
-      border-color: mix($border-color, $--color-white);
+    from {
+      box-shadow: 0 0 0 rgba($color, 0.3);
     }
-  }
-
-  &.is-plain {
-    @include button-plain($background-color, $text-color);
-  }
-
-  &.is-glow {
-    @include button-glow($border-color, $btn-name);
-  }
-}
-
-@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
-  padding: $padding-vertical $padding-horizontal;
-  font-size: $font-size;
-  border-radius: $border-radius;
-  &.is-round {
-    padding: $padding-vertical $padding-horizontal;
+    50% {
+      box-shadow: 0 0 20px rgba($color, 0.6);
+    }
+    to {
+      box-shadow: 0 0 0 rgba($color, 0.3);
+    }
   }
 }

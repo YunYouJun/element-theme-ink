@@ -31,9 +31,9 @@
 
   @include e(content) {
     position: relative;
-    padding: 20px $--msgbox-padding-primary;
     background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3) inset, 0px -20px 20px -20px rgba(0, 0, 0, 0.3) inset;
+    box-shadow: 0px 20px 20px -20px rgba(0, 0, 0, 0.3) inset,
+      0px -20px 20px -20px rgba(0, 0, 0, 0.3) inset;
   }
 
   @include e(btns) {
@@ -43,7 +43,6 @@
 
   // centerAlign 布局
   @include m(center) {
-
     @include e(header) {
       padding: 10px;
     }

@@ -5,11 +5,7 @@
     @include e(inner) {
       &,
       & a {
-        transition: $--color-transition-base;
-        color: $--color-text-primary;
-
         &:hover {
-          color: $--color-black;
           border-bottom: 1px dashed #999;
         }
       }
