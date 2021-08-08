@@ -1,3 +1,7 @@
+---
+title: 日期选择器
+---
+
 <script>
   export default {
     data() {
@@ -97,8 +101,6 @@
     margin-bottom: 20px;
   }
 </style>
-
-## DatePicker 日期选择器
 
 用于选择或输入日期
 

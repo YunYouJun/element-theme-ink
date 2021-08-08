@@ -1,3 +1,7 @@
+---
+title: 加载
+---
+
 <script>
   export default {
     data() {
@@ -42,8 +46,6 @@
     }
   }
 </script>
-
-## Loading 加载
 
 加载数据时显示动效。
 
@@ -112,7 +114,6 @@ Element 提供了两种调用 Loading 的方法：指令和服务。对于自定
 
 当使用指令方式时，全屏遮罩需要添加`fullscreen`修饰符（遮罩会插入至 body 上），此时若需要锁定屏幕的滚动，可以使用`lock`修饰符；当使用服务方式时，遮罩默认即为全屏，无需额外设置。
 
-<template>
 <demo-block>
   <el-button
     type="primary"
@@ -126,4 +127,3 @@ Element 提供了两种调用 Loading 的方法：指令和服务。对于自定
     服务方式
   </el-button>
 </demo-block>
-</template>

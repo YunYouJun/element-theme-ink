@@ -1,13 +1,13 @@
-import { path } from '@vuepress/utils'
+import { path } from "@vuepress/utils";
+import { ThemeObject } from "@vuepress/core";
 
-const localTheme = {
+const localTheme: ThemeObject = {
   // theme: path.resolve(__dirname, "../../../docs/.vuepress/theme"),
   // theme: "local",
   name: "vuepress-theme-local",
-  extend: "@vuepress/theme-default",
+  extends: "@vuepress/theme-default",
   layouts: {
     Layout: path.resolve(__dirname, "layouts/Layout.vue"),
-    // Layout: path.resolve(__dirname, "layouts/NewLayout.vue"),
     // clientAppEnhanceFiles: path.resolve(__dirname, "../clientAppEnhance.ts"),
   },
 };

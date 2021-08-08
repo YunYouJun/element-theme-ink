@@ -1,3 +1,7 @@
+---
+title: 按钮
+---
+
 <style lang="scss" scoped>
   .el-button {
     margin: 5px;
@@ -6,8 +10,6 @@
     margin: 5px;
   }
 </style>
-
-## Button 按钮
 
 常用的操作按钮。优先推荐使用与本主题风格统一的 `plain` 样式。
 
@@ -126,8 +128,10 @@
 
 没有边框和背景色的按钮。
 
+<demo-block>
 <el-button type="text">文字按钮</el-button>
 <el-button type="text" disabled>文字按钮</el-button>
+</demo-block>
 
 ### 按钮组
 
@@ -135,6 +139,7 @@
 
 使用`<el-button-group>`标签来嵌套你的按钮。
 
+<demo-block>
 <el-button-group>
   <el-button type="dark" icon="el-icon-arrow-left">上一页</el-button>
   <el-button type="dark">下一页<i class="el-icon-arrow-right el-icon--right"></i></el-button>
@@ -144,11 +149,13 @@
   <el-button type="dark" icon="el-icon-share"></el-button>
   <el-button type="dark" icon="el-icon-delete"></el-button>
 </el-button-group>
+</demo-block>
 
 ### 加载中
 
+<demo-block>
 <el-button plain :loading="true">加载中</el-button>
-
+</demo-block>
 ### 不同尺寸
 
 Button 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。

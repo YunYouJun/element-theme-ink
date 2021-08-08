@@ -1,3 +1,7 @@
+---
+title: 警告
+---
+
 <script>
   export default {
     methods: {
@@ -16,8 +20,6 @@
     margin: 0;
   }
 </style>
-
-## Alert 警告
 
 [Alert](http://element.eleme.io/#/zh-CN/component/alert)
 

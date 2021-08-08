@@ -72,8 +72,6 @@ title: 对话框
   }
 </style>
 
-## Dialog 对话框
-
 在保留当前页面状态的情况下，告知用户并承载相关操作。
 
 [Dialog](http://element.eleme.io/#/zh-CN/component/dialog)

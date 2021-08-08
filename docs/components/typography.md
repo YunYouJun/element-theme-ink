@@ -1,5 +1,5 @@
 ---
-title: Typography 字体
+title: 字体
 ---
 
 <style lang="scss">
