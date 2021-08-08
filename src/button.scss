@@ -23,13 +23,13 @@
 
   @keyframes glowing {
     from {
-      box-shadow: 0 0 0 rgba($--button-default-border-color, 0.3);
+      box-shadow: 0 0 0 rgba($--border-color-base, 0.3);
     }
     50% {
-      box-shadow: 0 0 20px rgba($--button-default-border-color, 0.6);
+      box-shadow: 0 0 20px rgba($--border-color-base, 0.6);
     }
     to {
-      box-shadow: 0 0 0 rgba($--button-default-border-color, 0.3);
+      box-shadow: 0 0 0 rgba($--border-color-base, 0.3);
     }
   }
 
@@ -58,7 +58,7 @@
   @each $type in (primary, success, warning, danger, info) {
     @include m($type) {
       &.is-glow {
-        @include button-glow(map.get($--button, "border-color", $type), $type);
+        @include button-glow(map.get($--colors, $type, "base"), $type);
       }
     }
   }

@@ -159,9 +159,9 @@
 
 基础的树形结构展示。
 
-<el-card shadow="hover">
+<demo-block>
 <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
-</el-card>
+</demo-block>
 
 ### 可选择
 
@@ -169,7 +169,7 @@
 
 本例还展示了动态加载节点数据的方法。
 
-<el-card shadow="hover">
+<demo-block>
 <el-tree
   :props="props"
   :load="loadNode"
@@ -177,14 +177,15 @@
   show-checkbox
   @check-change="handleCheckChange">
 </el-tree>
-</el-card>
+</demo-block>
 
 ### 禁用状态
+
 可将 Tree 的某些节点设置为禁用状态
 
 通过`disabled`设置禁用状态。
 
-<el-card shadow="hover">
+<demo-block>
 <el-tree
   :data="data3"
   show-checkbox
@@ -192,4 +193,4 @@
   :default-expanded-keys="[2, 3]"
   :default-checked-keys="[5]">
 </el-tree>
-</el-card>
+</demo-block>

@@ -103,14 +103,14 @@ title: 标签页
 Tabs 组件提供了选项卡功能，默认选中第一个标签页，你也可以通过 `value` 属性来指定当前选中的标签页。
 
 <template>
-<el-card shadow="hover">
+<demo-block>
   <el-tabs v-model="activeName" @tab-click="handleClick">
     <el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
     <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
     <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
     <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
   </el-tabs>
-</el-card>
+</demo-block>
 </template>
 
 ### 选项卡样式
@@ -120,14 +120,14 @@ Tabs 组件提供了选项卡功能，默认选中第一个标签页，你也可
 只需要设置 `type` 属性为 `card` 就可以使选项卡改变为标签风格。
 
 <template>
-<el-card shadow="hover">
+<demo-block>
   <el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
     <el-tab-pane label="用户管理" name="first">用户管理</el-tab-pane>
     <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
     <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
     <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
   </el-tabs>
-</el-card>
+</demo-block>
 </template>
 
 ### 卡片化
@@ -137,14 +137,14 @@ Tabs 组件提供了选项卡功能，默认选中第一个标签页，你也可
 将`type`设置为`border-card`。
 
 <template>
-<el-card shadow="hover">
+<demo-block>
   <el-tabs type="border-card">
     <el-tab-pane label="用户管理">用户管理</el-tab-pane>
     <el-tab-pane label="配置管理">配置管理</el-tab-pane>
     <el-tab-pane label="角色管理">角色管理</el-tab-pane>
     <el-tab-pane label="定时任务补偿">定时任务补偿</el-tab-pane>
   </el-tabs>
-</el-card>
+</demo-block>
 </template>
 
 ### 位置
@@ -154,7 +154,7 @@ Tabs 组件提供了选项卡功能，默认选中第一个标签页，你也可
 标签一共有四个方向的设置 `tabPosition="left|right|top|bottom"`
 
 <template>
-  <el-card shadow="hover">
+  <demo-block>
     <el-radio-group v-model="tabPosition" style="margin-bottom: 30px;">
       <el-radio-button label="top">top</el-radio-button>
       <el-radio-button label="right">right</el-radio-button>
@@ -167,7 +167,7 @@ Tabs 组件提供了选项卡功能，默认选中第一个标签页，你也可
       <el-tab-pane label="角色管理">角色管理</el-tab-pane>
       <el-tab-pane label="定时任务补偿">定时任务补偿</el-tab-pane>
     </el-tabs>
-  </el-card>
+  </demo-block>
 </template>
 
 ### 动态增减标签页
@@ -175,7 +175,7 @@ Tabs 组件提供了选项卡功能，默认选中第一个标签页，你也可
 增减标签页按钮只能在选项卡样式的标签页下使用
 
 <template>
-  <el-card shadow="hover">
+  <demo-block>
     <el-tabs v-model="editableTabsValue" type="card" editable @edit="handleTabsEdit">
       <el-tab-pane
         :key="item.name"
@@ -186,5 +186,5 @@ Tabs 组件提供了选项卡功能，默认选中第一个标签页，你也可
         {{item.content}}
       </el-tab-pane>
     </el-tabs>
-  </el-card>
+  </demo-block>
 </template>

@@ -1,3 +1,7 @@
+---
+title: Typography 字体
+---
+
 <style lang="scss">
   .demo-typo-box {
     height: 200px;
@@ -50,8 +54,6 @@
     font-weight: 300;
   }
 </style>
-
-## Typography 字体
 
 考虑兼容性
 

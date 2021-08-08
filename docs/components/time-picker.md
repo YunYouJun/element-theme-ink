@@ -33,8 +33,10 @@ title: 时间选择器
 
 提供几个固定的时间点供用户选择
 
-<el-time-select v-model="value1" :picker-options="pickerOptions" placeholder="选择时间">
-</el-time-select>
+<demo-block>
+  <el-time-select v-model="value1" :picker-options="pickerOptions" placeholder="选择时间">
+  </el-time-select>
+</demo-block>
 
 ### 任意时间点
 
@@ -42,7 +44,7 @@ title: 时间选择器
 
 使用 `el-time-picker` 标签，通过`selectableRange`限制可选时间范围。提供了两种交互方式：默认情况下通过鼠标滚轮进行选择，打开`arrow-control`属性则通过界面上的箭头进行选择。
 
-<el-card shadow="hover">
+<demo-block>
   <el-time-picker
     v-model="value2"
     :picker-options="{
@@ -58,4 +60,4 @@ title: 时间选择器
     }"
     placeholder="任意时间点">
   </el-time-picker>
-</el-card>
+</demo-block>

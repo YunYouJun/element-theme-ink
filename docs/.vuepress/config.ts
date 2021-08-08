@@ -9,6 +9,8 @@ import path from "path";
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineUserConfig<DefaultThemeOptions>({
+  theme: path.resolve(__dirname, './theme/index.ts'),
+
   bundler:
     // specify bundler via environment variable
     process.env.DOCS_BUNDLER ??

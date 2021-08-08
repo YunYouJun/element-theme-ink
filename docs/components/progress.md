@@ -25,13 +25,13 @@ Progress 组件设置`percentage`属性即可，表示进度条对应的百分�
 ```
 
 <template>
-<el-card shadow="hover">
+<demo-block>
 <el-progress :percentage="0"></el-progress>
 <el-progress :percentage="30" color="dark"></el-progress>
 <el-progress :percentage="70"></el-progress>
 <el-progress :percentage="100" status="success"></el-progress>
 <el-progress :percentage="50" status="exception"></el-progress>
-</el-card>
+</demo-block>
 </template>
 
 ### 线形进度条 — 百分比内显
@@ -41,23 +41,23 @@ Progress 组件设置`percentage`属性即可，表示进度条对应的百分�
 Progress 组件可通过 `stroke-width` 属性更改进度条的高度，并可通过 `text-inside` 属性来将进度条描述置于进度条内部。
 
 <template>
-<el-card shadow="hover">
+<demo-block>
 <el-progress :text-inside="true" :stroke-width="18" :percentage="0"></el-progress>
 <el-progress :text-inside="true" :stroke-width="18" :percentage="30" color="dark"></el-progress>
 <el-progress :text-inside="true" :stroke-width="18" :percentage="70"></el-progress>
 <el-progress :text-inside="true" :stroke-width="18" :percentage="100" status="success"></el-progress>
 <el-progress :text-inside="true" :stroke-width="18" :percentage="50" status="exception"></el-progress>
-</el-card>
+</demo-block>
 </template>
 
 ### 环形进度条
 
 Progress 组件可通过 `type` 属性来指定使用环形进度条，在环形进度条中，还可以通过 `width` 属性来设置其大小。
 
-<el-card shadow="hover">
+<demo-block>
 <el-progress type="circle" :percentage="0"></el-progress>
 <el-progress type="circle" :percentage="25"></el-progress>
 <el-progress type="circle" :percentage="25" color="#000"></el-progress>
 <el-progress type="circle" :percentage="100" status="success"></el-progress>
 <el-progress type="circle" :percentage="50" status="exception"></el-progress>
-</el-card>
+</demo-block>

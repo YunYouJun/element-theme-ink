@@ -7,18 +7,9 @@
 @include b(menu) {
   @include m(horizontal) {
     & > .#{$namespace}-submenu {
-
       &.is-active {
         .el-submenu__title {
           border-bottom: 2px solid $--color-dark;
-        }
-      }
-    }
-    & .el-menu {
-      & .el-menu-item,
-      & .el-submenu__title {
-        &.is-active {
-          color: $--color-text-primary;
         }
       }
     }

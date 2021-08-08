@@ -100,7 +100,7 @@ DateTimePicker 由 DatePicker 和 TimePicker 派生，`Picker Options` 或者其
 
 通过设置`type`属性为`datetime`，即可在同一个选择器里同时进行日期和时间的选择。快捷选项的使用方法与 Date Picker 相同。
 
-<el-card shadow="hover">
+<demo-block>
   <div class="block">
     <span class="demonstration">默认</span>
     <el-date-picker
@@ -119,13 +119,13 @@ DateTimePicker 由 DatePicker 和 TimePicker 派生，`Picker Options` 或者其
       :picker-options="pickerOptions1">
     </el-date-picker>
   </div>
-</el-card>
+</demo-block>
 
 ### 日期和时间范围
 
 设置`type`为`datetimerange`即可选择日期和时间范围
 
-<el-card shadow="hover">
+<demo-block>
   <div class="block">
     <span class="demonstration">默认</span>
     <el-date-picker
@@ -148,13 +148,13 @@ DateTimePicker 由 DatePicker 和 TimePicker 派生，`Picker Options` 或者其
       align="right">
     </el-date-picker>
   </div>
-</el-card>
+</demo-block>
 
 ### 默认的起始与结束时刻
 
 使用`datetimerange`进行范围选择时，在日期选择面板中选定起始与结束的日期，默认会使用该日期的`00:00:00`作为起始与结束的时刻；通过选项`default-time`可以控制选中起始与结束日期时所使用的具体时刻。`default-time`接受一个数组，数组每项值为字符串，形如`12:00:00`，其中第一项控制起始日期的具体时刻，第二项控制结束日期的具体时刻。
 
-<el-card shadow="hover">
+<demo-block>
   <div class="block">
     <span class="demonstration">起始日期时刻为 12:00:00</span>
     <el-date-picker
@@ -176,4 +176,4 @@ DateTimePicker 由 DatePicker 和 TimePicker 派生，`Picker Options` 或者其
       :default-time="['12:00:00', '08:00:00']">
     </el-date-picker>
   </div>
-</el-card>
+</demo-block>

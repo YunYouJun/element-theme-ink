@@ -143,7 +143,7 @@ title: 选择器
 
 适用广泛的基础单选
 
-<template>
+<demo-block>
   <el-select v-model="value" placeholder="请选择">
     <el-option
       v-for="item in options"
@@ -152,13 +152,13 @@ title: 选择器
       :value="item.value">
     </el-option>
   </el-select>
-</template>
+</demo-block>
 
 ### 有禁用选项
 
 在`el-option`中，设定`disabled`值为 true，即可禁用该选项
 
-<template>
+<demo-block>
   <el-select v-model="value2" placeholder="请选择">
     <el-option
       v-for="item in options2"
@@ -168,7 +168,7 @@ title: 选择器
       :disabled="item.disabled">
     </el-option>
   </el-select>
-</template>
+</demo-block>
 
 ### 禁用状态
 
@@ -176,7 +176,7 @@ title: 选择器
 
 为`el-select`设置`disabled`属性，则整个选择器不可用
 
-<template>
+<demo-block>
   <el-select v-model="value3" disabled placeholder="请选择">
     <el-option
       v-for="item in options"
@@ -185,7 +185,7 @@ title: 选择器
       :value="item.value">
     </el-option>
   </el-select>
-</template>
+</demo-block>
 
 ### 可清空单选
 
@@ -193,7 +193,7 @@ title: 选择器
 
 为`el-select`设置`clearable`属性，则可将选择器清空。需要注意的是，`clearable`属性仅适用于单选。
 
-<template>
+<demo-block>
   <el-select v-model="value4" clearable placeholder="请选择">
     <el-option
       v-for="item in options"
@@ -202,7 +202,7 @@ title: 选择器
       :value="item.value">
     </el-option>
   </el-select>
-</template>
+</demo-block>
 
 ### 基础多选
 
@@ -210,7 +210,7 @@ title: 选择器
 
 为`el-select`设置`multiple`属性即可启用多选，此时`v-model`的值为当前选中值所组成的数组。默认情况下选中值会以 Tag 的形式展现，你也可以设置`collapse-tags`属性将它们合并为一段文字。
 
-<template>
+<demo-block>
   <el-select v-model="value5" multiple placeholder="请选择">
     <el-option
       v-for="item in options"
@@ -219,7 +219,7 @@ title: 选择器
       :value="item.value">
     </el-option>
   </el-select>
-</template>
+</demo-block>
 
 ### 分组
 
@@ -227,7 +227,7 @@ title: 选择器
 
 使用`el-option-group`对备选项进行分组，它的`label`属性为分组名
 
-<template>
+<demo-block>
   <el-select v-model="value7" placeholder="请选择">
     <el-option-group
       v-for="group in options3"
@@ -241,7 +241,7 @@ title: 选择器
       </el-option>
     </el-option-group>
   </el-select>
-</template>
+</demo-block>
 
 ### 创建条目
 
@@ -249,7 +249,7 @@ title: 选择器
 
 使用`allow-create`属性即可通过在输入框中输入文字来创建新的条目。注意此时`filterable`必须为真。本例还使用了`default-first-option`属性，在该属性打开的情况下，按下回车就可以选中当前选项列表中的第一个选项，无需使用鼠标或键盘方向键进行定位。
 
-<template>
+<demo-block>
   <el-select
     v-model="value10"
     multiple
@@ -264,4 +264,4 @@ title: 选择器
       :value="item.value">
     </el-option>
   </el-select>
-</template>
+</demo-block>

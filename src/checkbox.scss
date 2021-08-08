@@ -19,10 +19,4 @@
       color: $--color-black;
     }
   }
-
-  &.is-checked {
-    & .el-checkbox-button__inner {
-      box-shadow: -1px 0 0 0 $--color-dark-light-4;
-    }
-  }
 }

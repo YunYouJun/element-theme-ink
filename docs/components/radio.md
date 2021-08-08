@@ -28,19 +28,19 @@ export default {
 
 [Radio](http://element.eleme.io/#/zh-CN/component/radio)
 
-<el-card shadow="hover">
+<demo-block>
   <el-radio v-model="radio" label="1">备选项</el-radio>
   <el-radio v-model="radio" label="2">备选项</el-radio>
-</el-card>
+</demo-block>
 
 ### 禁用状态
 
 单选框不可用的状态。
 
-<el-card shadow="hover">
+<demo-block>
   <el-radio disabled v-model="radio1" label="禁用">备选项</el-radio>
   <el-radio disabled v-model="radio1" label="选中且禁用">备选项</el-radio>
-</el-card>
+</demo-block>
 
 ### 按钮样式
 
@@ -48,7 +48,7 @@ export default {
 
 只需要把`el-radio`元素换成`el-radio-button`元素即可
 
-<el-card shadow="hover">
+<demo-block>
   <div>
     <el-radio-group v-model="radio3">
       <el-radio-button label="上海"></el-radio-button>
@@ -81,13 +81,13 @@ export default {
       <el-radio-button label="深圳"></el-radio-button>
     </el-radio-group>
   </div>
-</el-card>
+</demo-block>
 
 ### 带有边框
 
 设置`border`属性可以渲染为带有边框的单选框。
 
-<el-card shadow="hover">
+<demo-block>
   <div>
     <el-radio v-model="radio7" label="1" border>备选项1</el-radio>
     <el-radio v-model="radio7" label="2" border>备选项2</el-radio>
@@ -108,4 +108,4 @@ export default {
       <el-radio label="2" border>备选项2</el-radio>
     </el-radio-group>
   </div>
-</el-card>
+</demo-block>

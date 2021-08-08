@@ -34,12 +34,10 @@
     @include when(disabled) {
       border: $--border-base;
       background-color: $--background-color-base;
-      color: $--color-text-placeholder;
 
       &:hover {
         border: $--border-base;
         background-color: $--background-color-base;
-        color: $--color-text-placeholder;
       }
     }
 
@@ -106,10 +104,6 @@
       margin-left: 0;
     }
 
-    &.el-checkbox {
-      color: $--color-text-regular;
-    }
-
     &:hover {
       color: $--color-black;
     }
@@ -172,13 +166,11 @@
 
       .el-checkbox__label {
         font-size: 16px;
-        color: $--color-text-primary;
         font-weight: normal;
 
         span {
           position: absolute;
           right: 15px;
-          color: $--color-text-secondary;
           font-size: 12px;
           font-weight: normal;
         }
@@ -201,7 +193,6 @@
 
     .el-checkbox {
       padding-left: 20px;
-      color: $--color-text-regular;
     }
   }
 
@@ -210,7 +201,6 @@
     height: $--transfer-item-height;
     line-height: $--transfer-item-height;
     padding: 6px 15px 0;
-    color: $--color-text-secondary;
     text-align: center;
   }
 

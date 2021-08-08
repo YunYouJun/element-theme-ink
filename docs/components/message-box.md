@@ -136,9 +136,9 @@
 
 :::demo 调用`$alert`方法即可打开消息提示，它模拟了系统的 `alert`，无法通过按下 ESC 或点击框外关闭。此例中接收了两个参数，`message`和`title`。值得一提的是，窗口被关闭后，它默认会返回一个`Promise`对象便于进行后续操作的处理。若不确定浏览器是否支持`Promise`，可自行引入第三方 polyfill 或像本例一样使用回调进行后续处理。
 
-<el-card shadow="hover">
+<demo-block>
   <el-button type="text" @click="open">点击打开 Message Box</el-button>
-</el-card>
+</demo-block>
 
 ### 确认消息
 
@@ -146,9 +146,9 @@
 
 调用`$confirm`方法即可打开消息提示，它模拟了系统的 `confirm`。Message Box 组件也拥有极高的定制性，我们可以传入`options`作为第三个参数，它是一个字面量对象。`type`字段表明消息类型，可以为`success`，`error`，`info`和`warning`，无效的设置将会被忽略。注意，第二个参数`title`必须定义为`String`类型，如果是`Object`，会被理解为`options`。在这里我们用了 Promise 来处理后续响应。
 
-<el-card shadow="hover">
+<demo-block>
   <el-button type="text" @click="open2">点击打开 Message Box</el-button>
-</el-card>
+</demo-block>
 
 ### 提交内容
 
@@ -156,14 +156,14 @@
 
 :::demo 调用`$prompt`方法即可打开消息提示，它模拟了系统的 `prompt`。可以用`inputPattern`字段自己规定匹配模式，或者用`inputValidator`规定校验函数，可以返回`Boolean`或`String`，返回`false`或字符串时均表示校验未通过，同时返回的字符串相当于定义了`inputErrorMessage`字段。此外，可以用`inputPlaceholder`字段来定义输入框的占位符。
 
-<el-card shadow="hover">
+<demo-block>
   <el-button type="text" @click="open3">点击打开 Message Box</el-button>
-</el-card>
+</demo-block>
 
 ### 居中布局
 
 将 `center` 设置为 `true` 即可开启居中布局
 
-<el-card shadow="hover">
+<demo-block>
   <el-button type="text" @click="open6">点击打开 Message Box</el-button>
-</el-card>
+</demo-block>

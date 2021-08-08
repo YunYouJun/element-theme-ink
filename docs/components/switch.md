@@ -44,7 +44,7 @@ title: 开关
 
 设置`disabled`属性，接受一个`Boolean`，设置`true`即可禁用。
 
-<el-card shadow="hover">
+<demo-block>
   <el-switch
     v-model="value6"
     disabled>
@@ -53,4 +53,4 @@ title: 开关
     v-model="value7"
     disabled>
   </el-switch>
-</el-card>
+</demo-block>

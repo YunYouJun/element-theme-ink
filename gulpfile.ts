@@ -1,20 +1,32 @@
 import fs from "fs";
-import sassCompiler from "sass";
 import gulp from "gulp";
 import gulpSass from "gulp-sass";
+import dartSass from "sass";
 import autoprefixer from "gulp-autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import del from "del";
+import chalk from "chalk";
 import { Logger } from "@yunyoujun/logger";
-import { cyan } from "chalk";
 const logger = new Logger();
 
-const sass = gulpSass(sassCompiler);
+const sass = gulpSass(dartSass);
 
-export const distFolder = "dist";
+/**
+ * 构建目录
+ */
+export const distFolder = "./dist";
+/**
+ * 缓存目录
+ */
 export const cacheFolder = `.ink-cache`;
+/**
+ * 默认 chalk 主题所在目录
+ */
 export const themeChalkFolder =
   "./node_modules/element-plus/packages/theme-chalk";
+/**
+ * ink 主题源文件目录
+ */
 export const themeInkFolder = "./src";
 
 /**
@@ -29,8 +41,11 @@ export function compile() {
     .pipe(autoprefixer())
     .pipe(
       cleanCSS({}, (details) => {
-        console.log(`Before: ${details.name}: ${details.stats.originalSize} B`);
-        console.log(`After: ${details.name}: ${details.stats.minifiedSize} B`);
+        logger.info(
+          `${chalk.cyan(details.name)}: [${chalk.yellow(
+            details.stats.originalSize / 1000
+          )} KB] -> [${chalk.green(details.stats.minifiedSize / 1000)} KB]`
+        );
       })
     )
     .pipe(gulp.dest(distFolder));
@@ -81,7 +96,9 @@ export async function copyThemeInk() {
           await del(targetFile);
           // fs.linkSync(existFile, targetFile);
           fs.linkSync(existFile, targetFile);
-          logger.info(`Link '${cyan(existFile)}' to '${cyan(targetFile)}'`);
+          logger.info(
+            `Link '${chalk.cyan(existFile)}' to '${chalk.cyan(targetFile)}'`
+          );
         } else {
           await delAndlinkScssFile(existFile, targetFile);
         }

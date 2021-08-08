@@ -53,7 +53,7 @@
 
 Element 提供了两种调用 Loading 的方法：指令和服务。对于自定义指令`v-loading`，只需要绑定`Boolean`即可。默认状况下，Loading 遮罩会插入到绑定元素的子节点，通过添加`body`修饰符，可以使遮罩插入至 DOM 中的 body 上。
 
-<el-card shadow="hover">
+<demo-block>
   <el-table
     v-loading="loading"
     :data="tableData"
@@ -73,7 +73,7 @@ Element 提供了两种调用 Loading 的方法：指令和服务。对于自定
       label="地址">
     </el-table-column>
   </el-table>
-</el-card>
+</demo-block>
 
 ### 自定义
 
@@ -81,7 +81,7 @@ Element 提供了两种调用 Loading 的方法：指令和服务。对于自定
 
 在绑定了`v-loading`指令的元素上添加`element-loading-text`属性，其值会被渲染为加载文案，并显示在加载图标的下方。类似地，`element-loading-spinner`和`element-loading-background`属性分别用来设定图标类名和背景色值。
 
-<el-card shadow="hover">
+<demo-block>
   <el-table
     v-loading="loading2"
     element-loading-text="拼命加载中"
@@ -104,7 +104,7 @@ Element 提供了两种调用 Loading 的方法：指令和服务。对于自定
       label="地址">
     </el-table-column>
   </el-table>
-</el-card>
+</demo-block>
 
 ### 整页加载
 
@@ -113,7 +113,7 @@ Element 提供了两种调用 Loading 的方法：指令和服务。对于自定
 当使用指令方式时，全屏遮罩需要添加`fullscreen`修饰符（遮罩会插入至 body 上），此时若需要锁定屏幕的滚动，可以使用`lock`修饰符；当使用服务方式时，遮罩默认即为全屏，无需额外设置。
 
 <template>
-<el-card shadow="hover">
+<demo-block>
   <el-button
     type="primary"
     @click="openFullScreen"
@@ -125,5 +125,5 @@ Element 提供了两种调用 Loading 的方法：指令和服务。对于自定
     @click="openFullScreen2">
     服务方式
   </el-button>
-</el-card>
+</demo-block>
 </template>

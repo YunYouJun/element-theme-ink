@@ -1,7 +1,9 @@
+@use "sass:map";
+
 @import "common/var";
 
 :root {
-  --font-color: #{$--color-text-primary};
+  --font-color: #{map.get($--text-color, 'primary')};
 }
 
 html.dark {

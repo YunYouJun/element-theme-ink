@@ -3,11 +3,3 @@
 @import "./popper";
 
 @import "../node_modules/element-plus/packages/theme-chalk/src/select-dropdown.scss";
-
-@include b(select-dropdown) {
-  position: absolute;
-  border: $--select-dropdown-border;
-  background-color: $--select-dropdown-background;
-  box-shadow: $--select-dropdown-shadow;
-  margin: 5px 0;
-}

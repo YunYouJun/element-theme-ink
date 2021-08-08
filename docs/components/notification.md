@@ -97,7 +97,7 @@ title: 通知
 适用性广泛的通知栏
 
 <template>
-<el-card shadow="hover">
+<demo-block>
   <el-button
     plain
     @click="open">
@@ -108,7 +108,7 @@ title: 通知
     @click="open2">
     不会自动关闭
     </el-button>
-</el-card>
+</demo-block>
 </template>
 
 ### 带有倾向性
@@ -118,7 +118,7 @@ title: 通知
 :::demo Element 为 Notification 组件准备了四种通知类型：`success`, `warning`, `info`, `error`。通过`type`字段来设置，除此以外的值将被忽略。同时，我们也为 Notification 的各种 type 注册了方法，可以在不传入`type`字段的情况下像`open5`和`open6`那样直接调用。
 
 <template>
-<el-card shadow="hover">
+<demo-block>
   <el-button
     plain
     @click="open3">
@@ -139,7 +139,7 @@ title: 通知
     @click="open6">
     错误
   </el-button>
-</el-card>
+</demo-block>
 </template>
 
 ### 自定义弹出位置
@@ -149,7 +149,7 @@ title: 通知
 使用`position`属性定义 Notification 的弹出位置，支持四个选项：`top-right`、`top-left`、`bottom-right`、`bottom-left`，默认为`top-right`。
 
 <template>
-<el-card shadow="hover">
+<demo-block>
   <el-button
     plain
     @click="open7">
@@ -170,5 +170,5 @@ title: 通知
     @click="open10">
     左上角
   </el-button>
-</el-card>
+</demo-block>
 </template>

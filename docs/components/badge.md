@@ -25,7 +25,7 @@
 定义`value`属性，它接受`Number`或者`String`。
 
 <template>
-  <el-card shadow="hover">
+  <demo-block>
     <el-badge :value="12" class="item">
       <el-button size="small">评论</el-button>
     </el-badge>
@@ -47,7 +47,7 @@
         </el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
-  </el-card>
+  </demo-block>
 </template>
 
 ### 小红点
@@ -57,9 +57,9 @@
 除了数字外，设置`is-dot`属性，它接受一个`Boolean`。
 
 <template>
-  <el-card shadow="hover">
+  <demo-block>
     <el-badge is-dot class="item">
       <el-button class="share-button" icon="el-icon-share" type="dark"></el-button>
     </el-badge>
-  </el-card>
+  </demo-block>
 </template>

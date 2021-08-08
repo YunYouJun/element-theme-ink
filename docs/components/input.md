@@ -45,19 +45,21 @@ title: 输入框
 
 [Input](http://element.eleme.io/#/zh-CN/component/input)
 
-<el-input v-model="input" placeholder="请输入内容"></el-input>
+<demo-block>
+  <el-input v-model="input" placeholder="请输入内容"></el-input>
+</demo-block>
 
 ### 禁用状态
 
 通过 `disabled` 属性指定是否禁用 input 组件
 
-<template>
-<el-input
-  placeholder="请输入内容"
-  v-model="input1"
-  :disabled="true">
-</el-input>
-</template>
+<demo-block>
+  <el-input
+    placeholder="请输入内容"
+    v-model="input1"
+    :disabled="true">
+  </el-input>
+</demo-block>
 
 ### 带 icon 的输入框
 
@@ -65,7 +67,7 @@ title: 输入框
 
 可以通过 `prefix-icon` 和 `suffix-icon` 属性在 input 组件首部和尾部增加显示图标，也可以通过 slot 来放置图标。
 
-<el-card shadow="hover">
+<demo-block>
   <el-input
     placeholder="请选择日期"
     suffix-icon="el-icon-date"
@@ -76,38 +78,38 @@ title: 输入框
     prefix-icon="el-icon-search"
     v-model="input1">
   </el-input>
-</el-card>
+</demo-block>
 
 ### 文本域
 
-<el-card shadow="hover">
+<demo-block>
   <el-input
     type="textarea"
     :rows="2"
     placeholder="请输入内容"
     v-model="textarea">
   </el-input>
-</el-card>
+</demo-block>
 
 ### 可自适应文本高度的文本域
 
 通过设置 `autosize` 属性可以使得文本域的高度能够根据文本内容自动进行调整，并且 `autosize` 还可以设定为一个对象，指定最小行数和最大行数。
 
-<el-card shadow="hover">
-<el-input
-  type="textarea"
-  autosize
-  placeholder="请输入内容"
-  v-model="textarea2">
-</el-input>
-<div style="margin: 20px 0;"></div>
-<el-input
-  type="textarea"
-  :autosize="{ minRows: 2, maxRows: 4}"
-  placeholder="请输入内容"
-  v-model="textarea3">
-</el-input>
-</el-card>
+<demo-block>
+  <el-input
+    type="textarea"
+    autosize
+    placeholder="请输入内容"
+    v-model="textarea2">
+  </el-input>
+  <div style="margin: 20px 0;"></div>
+  <el-input
+    type="textarea"
+    :autosize="{ minRows: 2, maxRows: 4}"
+    placeholder="请输入内容"
+    v-model="textarea3">
+  </el-input>
+</demo-block>
 
 ### 复合型输入框
 
@@ -115,32 +117,32 @@ title: 输入框
 
 可通过 slot 来指定在 input 中前置或者后置内容。
 
-<el-card shadow="hover">
-<div>
-  <el-input placeholder="请输入内容" v-model="input3">
-    <template slot="prepend">http://</template>
-  </el-input>
-</div>
-<div style="margin-top: 15px;">
-  <el-input placeholder="请输入内容" v-model="input4">
-    <template slot="append">.com</template>
-  </el-input>
-</div>
-<div style="margin-top: 15px;">
-  <el-input placeholder="请输入内容" v-model="input5" class="input-with-select">
-    <el-select v-model="select" slot="prepend" placeholder="请选择">
-      <el-option label="餐厅名" value="1"></el-option>
-      <el-option label="订单号" value="2"></el-option>
-      <el-option label="用户电话" value="3"></el-option>
-    </el-select>
-    <el-button slot="append" icon="el-icon-search"></el-button>
-  </el-input>
-</div>
-</el-card>
+<demo-block>
+  <div>
+    <el-input placeholder="请输入内容" v-model="input3">
+      <template slot="prepend">http://</template>
+    </el-input>
+  </div>
+  <div style="margin-top: 15px;">
+    <el-input placeholder="请输入内容" v-model="input4">
+      <template slot="append">.com</template>
+    </el-input>
+  </div>
+  <div style="margin-top: 15px;">
+    <el-input placeholder="请输入内容" v-model="input5" class="input-with-select">
+      <el-select v-model="select" slot="prepend" placeholder="请选择">
+        <el-option label="餐厅名" value="1"></el-option>
+        <el-option label="订单号" value="2"></el-option>
+        <el-option label="用户电话" value="3"></el-option>
+      </el-select>
+      <el-button slot="append" icon="el-icon-search"></el-button>
+    </el-input>
+  </div>
+</demo-block>
 
 ### 尺寸
 
-<el-card shadow="hover">
+<demo-block>
   <el-input
     placeholder="请输入内容"
     suffix-icon="el-icon-date"
@@ -167,7 +169,7 @@ title: 输入框
     suffix-icon="el-icon-date"
     v-model="input9">
   </el-input>
-</el-card>
+</demo-block>
 
 <style>
 .el-select .el-input {

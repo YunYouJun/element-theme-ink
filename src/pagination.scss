@@ -12,13 +12,11 @@ $--pagination-line-height-extra-small: $--pagination-height-extra-small !default
   @include e(total) {
     margin-right: 10px;
     font-weight: normal;
-    color: $--color-text-regular;
   }
 
   @include e(jump) {
     margin-left: 24px;
     font-weight: normal;
-    color: $--color-text-regular;
 
     .el-input__inner {
       padding: 0 3px;

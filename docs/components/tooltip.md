@@ -24,7 +24,7 @@ Ink 主题推荐优先使用 light 模式。
 使用`content`属性来决定`hover`时的提示信息。由`placement`属性决定展示效果：`placement`属性值为：`方向-对齐位置`；四个方向：`top`、`left`、`right`、`bottom`；三种对齐位置：`start`, `end`，默认为空。如`placement="left-end"`，则提示信息出现在目标元素的左侧，且提示信息的底部与目标元素的底部对齐。
 :::
 
-<el-card shadow="hover">
+<demo-block>
   <div class="box">
     <div class="top">
       <el-tooltip class="item" effect="light" content="Top Left 提示文字" placement="top-start">
@@ -71,7 +71,7 @@ Ink 主题推荐优先使用 light 模式。
       </el-tooltip>
     </div>
   </div>
-</el-card>
+</demo-block>
 
 <style lang="scss">
   .box {

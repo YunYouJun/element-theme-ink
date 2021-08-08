@@ -2,7 +2,7 @@
   .el-button {
     margin: 5px;
   }
-  .el-card {
+  .demo-block {
     margin: 5px;
   }
 </style>
@@ -22,7 +22,7 @@
 <el-button type="dark" plain>深色按钮</el-button>
 ```
 
-<el-card shadow="hover">
+<demo-block>
 <el-row style="background-color: #333;">
   <el-button type="light">浅色按鈕</el-button>
   <el-button type="light" plain>浅色按鈕</el-button>
@@ -66,7 +66,7 @@
   <el-button type="warning" icon="el-icon-star-off" circle></el-button>
   <el-button type="danger" icon="el-icon-delete" circle></el-button>
 </el-row>
-</el-card>
+</demo-block>
 
 ### Glow 效果
 
@@ -76,7 +76,7 @@
 <el-button class="is-glow">Glow 按钮</el-button>
 ```
 
-<el-card shadow="hover">
+<demo-block>
   <el-button class="is-glow" glow>朴素按钮</el-button>
   <el-button class="is-glow" type="dark" glow>深色按钮</el-button>
   <el-button class="is-glow" type="primary" glow>主要按钮</el-button>
@@ -84,9 +84,9 @@
   <el-button class="is-glow" type="info" glow>信息按钮</el-button>
   <el-button class="is-glow" type="warning" glow>警告按钮</el-button>
   <el-button class="is-glow" type="danger" glow>危险按钮</el-button>
-</el-card>
+</demo-block>
 
-<el-card shadow="hover">
+<demo-block>
   <el-button class="is-glow" plain glow>朴素按钮</el-button>
   <el-button class="is-glow" type="dark" plain glow>深色按钮</el-button>
   <el-button class="is-glow" type="primary" plain glow>主要按钮</el-button>
@@ -94,7 +94,7 @@
   <el-button class="is-glow" type="info" plain glow>信息按钮</el-button>
   <el-button class="is-glow" type="warning" plain glow>警告按钮</el-button>
   <el-button class="is-glow" type="danger" plain glow>危险按钮</el-button>
-</el-card>
+</demo-block>
 
 ### 禁用状态
 
@@ -102,7 +102,7 @@
 
 你可以使用`disabled`属性来定义按钮是否可用，它接受一个`Boolean`值。
 
-<el-card shadow="hover">
+<demo-block>
   <el-button disabled>默认按钮</el-button>
   <el-button type="dark" disabled>深色按钮</el-button>
   <el-button type="primary" disabled>主要按钮</el-button>
@@ -110,9 +110,9 @@
   <el-button type="info" disabled>信息按钮</el-button>
   <el-button type="warning" disabled>警告按钮</el-button>
   <el-button type="danger" disabled>危险按钮</el-button>
-</el-card>
+</demo-block>
 
-<el-card shadow="hover">
+<demo-block>
   <el-button plain disabled>朴素按钮</el-button>
   <el-button type="dark" plain disabled>深色按钮</el-button>
   <el-button type="primary" plain disabled>主要按钮</el-button>
@@ -120,7 +120,7 @@
   <el-button type="info" plain disabled>信息按钮</el-button>
   <el-button type="warning" plain disabled>警告按钮</el-button>
   <el-button type="danger" plain disabled>危险按钮</el-button>
-</el-card>
+</demo-block>
 
 ### 文字按钮
 
@@ -155,7 +155,7 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
 
 额外的尺寸：`medium`、`small`、`mini`，通过设置`size`属性来配置它们。
 
-<el-card shadow="hover">
+<demo-block>
 <div>
   <el-button>默认按钮</el-button>
   <el-button size="medium">中等按钮</el-button>
@@ -168,4 +168,4 @@ Button 组件提供除了默认值以外的三种尺寸，可以在不同场景�
   <el-button size="small" round>小型按钮</el-button>
   <el-button size="mini" round>超小按钮</el-button>
 </div>
-</el-card>
+</demo-block>

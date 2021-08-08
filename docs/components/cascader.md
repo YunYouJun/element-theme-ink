@@ -1,3 +1,7 @@
+---
+title: 级联选择器
+---
+
 <script>
   export default {
     data() {
@@ -240,18 +244,16 @@
   };
 </script>
 
-## Cascader 级联选择器
-
 当一个数据集合有清晰的层级结构时，可通过级联选择器逐级查看并选择。
 
 ### 基础用法
 
 [Cascader](http://element.eleme.io/#/zh-CN/component/cascader)
 
-<div class="block">
+<demo-block>
   <el-cascader
     :options="options"
     v-model="selectedOptions"
     @change="handleChange">
   </el-cascader>
-</div>
+</demo-block>

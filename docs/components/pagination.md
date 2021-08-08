@@ -37,7 +37,7 @@ title: 分页
 
 设置`layout`，表示需要显示的内容，用逗号分隔，布局元素会依次显示。`prev`表示上一页，`next`为下一页，`pager`表示页码列表，除此以外还提供了`jumper`和`total`，`size`和特殊的布局符号`->`，`->`后的元素会靠右显示，`jumper`表示跳页元素，`total`表示显示页码总数，`size`用于设置每页显示的页码数量。
 
-<el-card shadow="hover">
+<demo-block>
 <div class="block">
   <span class="demonstration">页数较少时的效果</span>
   <el-pagination
@@ -52,19 +52,19 @@ title: 分页
     :total="1000">
   </el-pagination>
 </div>
-</el-card>
+</demo-block>
 
 ### 带有背景色的分页
 
 设置`background`属性可以为分页按钮添加背景色。
 
-<el-card shadow="hover">
+<demo-block>
 <el-pagination
   background
   layout="prev, pager, next"
   :total="1000">
 </el-pagination>
-</el-card>
+</demo-block>
 
 ### 小型分页
 
@@ -72,13 +72,13 @@ title: 分页
 
 只需要一个`small`属性，它接受一个`Boolean`，默认为`false`，设为`true`即可启用。
 
-<el-card shadow="hover">
+<demo-block>
 <el-pagination
   small
   layout="prev, pager, next"
   :total="50">
 </el-pagination>
-</el-card>
+</demo-block>
 
 ### 附加功能
 
@@ -86,7 +86,7 @@ title: 分页
 
 此例是一个完整的用例，使用了`size-change`和`current-change`事件来处理页码大小和当前页变动时候触发的事件。`page-sizes`接受一个整型数组，数组元素为展示的选择每页显示个数的选项，`[100, 200, 300, 400]`表示四个选项，每页显示 100 个，200 个，300 个或者 400 个。
 
-<el-card shadow="hover">
+<demo-block>
   <div class="large-block">
     <span class="demonstration">显示总数</span>
     <el-pagination
@@ -133,7 +133,7 @@ title: 分页
       :total="400">
     </el-pagination>
   </div>
-</el-card>
+</demo-block>
 
 <script>
   export default {
