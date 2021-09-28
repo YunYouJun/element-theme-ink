@@ -1,14 +1,14 @@
 # 指南
 
 <p align="center">
-  <a href="https://ink.elpsy.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://cdn.jsdelivr.net/gh/YunYouJun/element-theme-ink/docs/.vuepress/public/logo.png" alt="Element Theme Ink Logo"></a>
+  <a href="https://ink.elpsy.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="/assets/logo.svg" alt="Element Theme Ink Logo"></a>
   <h1 align="center">Element-Theme-Ink</h1>
 </p>
 
 <p align="center">
-  <a href="https://npmcharts.com/compare/element-theme-ink?minimal=true"><img src="https://img.shields.io/npm/dt/element-theme-ink.svg?style=for-the-badge" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/v/element-theme-ink.svg?style=for-the-badge" alt="Version"></a>
-  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/l/element-theme-ink.svg?style=for-the-badge" alt="License"></a>
+  <a href="https://npmcharts.com/compare/element-theme-ink?minimal=true"><img src="https://img.shields.io/npm/dt/element-theme-ink.svg?style=for-the-badge" alt="Downloads"></a>&nbsp;
+  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/v/element-theme-ink.svg?style=for-the-badge" alt="Version"></a>&nbsp;
+  <a href="https://www.npmjs.com/package/element-theme-ink"><img src="https://img.shields.io/npm/l/element-theme-ink.svg?style=for-the-badge" alt="License"></a>&nbsp;
   <a href="https://cdn.jsdelivr.net/npm/element-theme-ink">
     <img src="https://img.shields.io/bundlephobia/minzip/element-theme-ink?style=for-the-badge" alt="npm bundle size">
   </a>
@@ -30,7 +30,7 @@ Base on [element](https://github.com/ElemeFE/element) & [element-theme-chalk](ht
 
 可参见 Element 官方文档 [安装](http://element-cn.eleme.io/#/zh-CN/component/installation)
 
-```sh
+```bash
 npm install element-ui -S
 ```
 

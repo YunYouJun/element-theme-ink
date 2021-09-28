@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://ink.yunyoujun.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/YunYouJun/element-theme-ink/master/docs/.vuepress/public/logo.png" alt="Element Theme Ink Logo"></a>
+  <a href="https://ink.yunyoujun.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/YunYouJun/element-theme-ink/master/docs/.vitepress/public/assets/logo.svg" alt="Element Theme Ink Logo"></a>
   <h1 align="center">Element-Theme-Ink</h1>
 </p>
 
@@ -19,7 +19,7 @@
 > A dead simple element theme.
 
 - [Docs](https://ink.yunyoujun.cn/)
-- [New Docs(rewrite with vuepress)](https://ink.elpsy.cn/)
+- [New Docs(rewrite with vitepress)](https://ink.elpsy.cn/)
 - GitHub: [element-theme-ink](https://github.com/YunYouJun/element-theme-ink)
 - npm: [element-theme-ink](https://www.npmjs.com/package/element-theme-ink)
 

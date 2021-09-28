@@ -21,8 +21,6 @@ title: 警告
   }
 </style>
 
-[Alert](http://element.eleme.io/#/zh-CN/component/alert)
-
 用于页面中展示重要的提示信息。
 
 ### 基本用法
@@ -60,19 +58,19 @@ Alert 组件提供四种主题，由`type`属性指定，默认值为`info`。
 
 除了必填的`title`属性外，你可以设置`description`属性来帮助你更好地介绍，我们称之为辅助性文字。辅助性文字只能存放单行文本，会自动换行显示。
 
-<template>
+<demo-block>
   <el-alert
     title="带辅助性文字介绍"
     type="success"
     description="这是一句绕口令：黑灰化肥会挥发发灰黑化肥挥发；灰黑化肥会挥发发黑灰化肥发挥。 黑灰化肥会挥发发灰黑化肥黑灰挥发化为灰……">
   </el-alert>
-</template>
+</demo-block>
 
 ### 带有 icon 和辅助性文字介绍
 
 最后，这是一个同时具有 icon 和辅助性文字的样例。
 
-<template>
+<demo-block>
   <el-alert
     title="成功提示的文案"
     type="success"
@@ -97,4 +95,4 @@ Alert 组件提供四种主题，由`type`属性指定，默认值为`info`。
     description="文字说明文字说明文字说明文字说明文字说明文字说明"
     show-icon>
   </el-alert>
-</template>
+</demo-block>

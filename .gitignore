@@ -12,7 +12,7 @@ dist/
 *.css.map
 node_modules
 
-# vuepress
+# vitepress/vuepress
 .temp
 .cache
 

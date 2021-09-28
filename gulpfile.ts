@@ -94,10 +94,11 @@ export async function copyThemeInk() {
         const targetFile = `${targetFolder}/${item}`;
         if (item.endsWith(".scss")) {
           await del(targetFile);
-          // fs.linkSync(existFile, targetFile);
           fs.linkSync(existFile, targetFile);
           logger.info(
-            `Link '${chalk.cyan(existFile)}' to '${chalk.cyan(targetFile)}'`
+            `Delete ${chalk.red(targetFile)}, Link '${chalk.cyan(
+              existFile
+            )}' to '${chalk.cyan(targetFile)}'`
           );
         } else {
           await delAndlinkScssFile(existFile, targetFile);

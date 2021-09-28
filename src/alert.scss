@@ -8,7 +8,6 @@
     @include m($type) {
       &.is-light {
         background-color: rgba(map.get($--colors, $type, "lighter"), 0.5);
-        color: var(--el-color-#{$type});
         border: var(--el-color-#{$type});
       }
     }

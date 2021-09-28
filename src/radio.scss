@@ -3,7 +3,7 @@
 
 @include b(radio) {
   @include when(bordered) {
-    border: $--border-dark;
+    --el-border-base: $--border-dark;
   }
 
   @include e(inner) {
