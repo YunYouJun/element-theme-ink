@@ -19,20 +19,24 @@ export function getComponentsSidebar() {
   return componentsSidebar;
 }
 
-function getGuideSidebar() {
+function getGuideSidebar(): DefaultTheme.SideBarItem[] {
   return [
     {
-      text: "指南",
-      link: "/guide/index",
+      text: "📖 指南",
+      link: "/guide/",
     },
     {
-      text: "设计",
+      text: "🎨 设计",
       link: "/guide/design",
+    },
+    {
+      text: "🙌 关于",
+      link: "/guide/about",
     },
   ];
 }
 
 export const sidebar: DefaultTheme.Config["sidebar"] = {
-  "/components": getComponentsSidebar(),
   "/guide": getGuideSidebar(),
+  "/components": getComponentsSidebar(),
 };

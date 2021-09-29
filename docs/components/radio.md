@@ -46,8 +46,6 @@ export default {
 
 按钮样式的单选组合。
 
-只需要把`el-radio`元素换成`el-radio-button`元素即可
-
 <demo-block>
   <div>
     <el-radio-group v-model="radio3">
@@ -85,7 +83,7 @@ export default {
 
 ### 带有边框
 
-设置`border`属性可以渲染为带有边框的单选框。
+设置 `border` 属性可以渲染为带有边框的单选框。
 
 <demo-block>
   <div>

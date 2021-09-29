@@ -1,4 +1,6 @@
-# 指南
+---
+title: 指南
+---
 
 <p align="center">
   <a href="https://ink.elpsy.cn" target="_blank" rel="noopener noreferrer"><img width="100" src="/assets/logo.svg" alt="Element Theme Ink Logo"></a>

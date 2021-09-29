@@ -2,7 +2,7 @@
 title: 上传
 ---
 
-<script>
+<script setup lang="ts">
   export default {
     data() {
       return {
@@ -80,19 +80,19 @@ title: 上传
 ### 点击上传
 
 <demo-block>
-<el-upload
-  class="upload-demo"
-  action="https://jsonplaceholder.typicode.com/posts/"
-  :on-preview="handlePreview"
-  :on-remove="handleRemove"
-  :before-remove="beforeRemove"
-  multiple
-  :limit="3"
-  :on-exceed="handleExceed"
-  :file-list="fileList">
-  <el-button size="small" type="dark" plain>点击上传</el-button>
-  <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
-</el-upload>
+  <el-upload
+    class="upload-demo"
+    action="https://jsonplaceholder.typicode.com/posts/"
+    :on-preview="handlePreview"
+    :on-remove="handleRemove"
+    :before-remove="beforeRemove"
+    multiple
+    :limit="3"
+    :on-exceed="handleExceed"
+    :file-list="fileList">
+    <el-button size="small" type="dark" plain>点击上传</el-button>
+    <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+  </el-upload>
 </demo-block>
 
 ### 照片墙
@@ -114,16 +114,16 @@ title: 上传
 ### 图片列表缩略图
 
 <demo-block>
-<el-upload
-  class="upload-demo"
-  action="https://jsonplaceholder.typicode.com/posts/"
-  :on-preview="handlePreview"
-  :on-remove="handleRemove"
-  :file-list="fileList2"
-  list-type="picture">
-<el-button size="small" type="dark" plain>点击上传</el-button>
-  <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
-</el-upload>
+  <el-upload
+    class="upload-demo"
+    action="https://jsonplaceholder.typicode.com/posts/"
+    :on-preview="handlePreview"
+    :on-remove="handleRemove"
+    :file-list="fileList2"
+    list-type="picture">
+    <el-button size="small" type="dark" plain>点击上传</el-button>
+    <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+  </el-upload>
 </demo-block>
 
 ### 拖拽上传

@@ -12,7 +12,7 @@ const themeConfig: DefaultTheme.Config = {
   logo: "/assets/logo.svg",
   docsDir: ".",
   docsBranch: "main",
-  docsRepo: "windicss/docs",
+  docsRepo: "YunYouJun/element-theme-ink",
   editLinks: true,
   editLinkText: "✍️ Suggest changes to this page",
   nav,
